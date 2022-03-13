@@ -1,0 +1,15 @@
+.nav-tabs, .topbar ul, ul.contact-info, ul.menu {
+  list-style: none !important;
+  padding-left: 0; }
+
+.site-branding-logo {
+  max-height: inherit;
+}
+
+.site-branding-logo img {
+  max-height: 125px;
+  width: auto;
+}
+
+header .site-branding-logo img.logo-site {
+  display: block !important; }

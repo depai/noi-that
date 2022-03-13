@@ -1,0 +1,217 @@
+#contact-map-container {
+    height: 100% !important;
+    position: absolute !important;
+    width: 100vw
+}
+
+.contacts-list {
+    pointer-events: none;
+}
+
+.contacts-list .gsc-column {
+    background-color: rgba(255, 255, 255, .85);
+    opacity: 0.95;
+    pointer-events: all;
+    height: 75vh;
+    overflow: auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+}
+
+.contacts-list-geolocate h3,
+.contacts-list-geolocate .contact-state {
+    position: relative;
+    cursor: pointer;
+}
+
+.contacts-list-geolocate h3::after {
+    position: absolute;
+    content: '\f067';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    font-size: 10px;
+    top: 7px;
+    padding-left: 5px;
+}
+
+.contacts-list .gsc-column h3 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    color: #000000;
+}
+
+.contacts-list .gsc-column h4 {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.contacts-list .gsc-column .column-content p {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 0.5;
+    color: #000000;
+}
+
+.contacts-list-geolocate h3.icon::after {
+    content: '\f068';
+}
+
+.contacts-list-geolocate h3~.view-content-wrap,
+.contacts-list-geolocate .contact-state~.contact-info {
+    display: none;
+}
+
+.view-content-wrap.active,
+.contact-info.active {
+    display: block !important;
+}
+
+.contacts-list-geolocate {
+    margin-top: 24px;
+}
+
+.contacts-list-geolocate h3 {
+    font-size: 18px !important;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    color: #cba43d !important;
+    margin-bottom: 16px;
+}
+
+.contact-state {
+    font-size: 16px !important;
+    font-weight: normal;
+    line-height: normal;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.contact-info.active {
+    /* width: 50%;
+    margin-left: 25%; */
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #000000;
+}
+
+.gm-style-iw.gm-style-iw-c {
+    border-radius: 0;
+    text-align: center;
+    max-width: 300px !important;
+    top: 10px !important;
+}
+
+.gm-style-iw.gm-style-iw-c:before {
+    content: " ";
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.gm-style .gm-style-iw-c:after {
+    content: " ";
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.contact-details .title,
+.contact-details h4.store-name {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    color: #000000;
+}
+
+p.field_full_address {
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.5;
+    text-align: center;
+    color: #000000;
+    width: 60%;
+    margin-left: 20%;
+    font-family: IbarraRealNova, sans-serif;
+}
+
+button.gm-ui-hover-effect {
+    z-index: 999 !important;
+    right: 5px !important;
+    top: 5px !important;
+}
+
+button.gm-ui-hover-effect img {
+    border: 1px solid #333;
+    border-radius: 100%;
+    width: 20px !important;
+    height: 20px !important;
+    padding: 2px;
+}
+
+.gm-style .gm-style-iw-t::after {
+    background: linear-gradient(45deg, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 51%, rgba(0, 0, 0, 0) 100%) !important;
+    width: 17px;
+    height: 17px;
+    top: 12px;
+}
+
+.contact-details a {
+    outline: none !important;
+    color: #cba43d;
+    text-decoration: none;
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+a.product-asinfo {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    color: #000000;
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #000000;
+    width: auto;
+    max-width: 100%;
+    padding: 12.5px 30px;
+}
+
+.private-content.gbb-row .bb-inner {
+    padding-bottom: 0px !important
+}
+
+.link-per-scaricare {
+    padding: 25px 0px 0px 10px
+}
+@media all and (max-width:560px){
+     .luxury-row .disclaimer-viparea{
+        display:none
+    }
+    .luxury-row.luxury-disclaimer .disclaimer-viparea{
+        display:block
+    }
+    .luxury-row.luxury-disclaimer .center-col:first-child{
+        display:none
+    }
+}
+
+div.field.field--name-field-available-materials div.field__item:nth-child(4){display: none !important;}
