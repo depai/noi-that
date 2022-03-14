@@ -16,6 +16,7 @@ class CreateRocksTable extends Migration
         Schema::create('rocks', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('image')->nullable()->default(null)->comment('anh da, hoac icon...');
             $table->timestamps();
         });
     }

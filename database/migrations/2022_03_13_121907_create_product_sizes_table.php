@@ -20,7 +20,7 @@ class CreateProductSizesTable extends Migration
             $table->bigInteger('width')->nullable();
             $table->bigInteger('height')->nullable();
             $table->bigInteger('depth')->nullable();
-            $table->unsignedBigInteger('product_id');
+            $table->unsignedBigInteger('product_rock_id');
             $table->timestamps();
         });
     }
