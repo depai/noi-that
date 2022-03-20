@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('users.homepage');
 });
+
+Route::get('/list', function () {
+    return view('users.list');
+});
+
+Route::get('/detail', function () {
+    return view('users.detail');
+});
