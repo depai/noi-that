@@ -1,0 +1,89 @@
+/*******************************/
+/*******************************/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=vietnamese");
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.gredient-info-bg {
+  background: -webkit-gradient(linear, left top, right top, from(#41a6f6), to(#425be0));
+  background: linear-gradient(to right, #41a6f6 0%, #425be0 100%);
+}
+
+.product-sales .c3-shape {
+  stroke: transparent !important;
+  stroke-width: 3px;
+}
+
+/*******************
+Earnings
+*******************/
+.earnings {
+  position: relative;
+  height: 250px;
+}
+
+.earnings .ct-series-a .ct-area {
+  fill-opacity: 0.2;
+  fill: url(#gradient);
+}
+
+.earnings .ct-series-a .ct-line,
+.earnings .ct-series-a .ct-point {
+  stroke: #2962FF;
+  stroke-width: 2px;
+}
+
+.earnings .ct-series-b .ct-area {
+  fill: #4fc3f7;
+  fill-opacity: 0.1;
+}
+
+.earnings .ct-series-b .ct-line,
+.earnings .ct-series-b .ct-point {
+  stroke: #4fc3f7;
+  stroke-width: 2px;
+}
+
+.earnings .ct-series-a .ct-point,
+.earnings .ct-series-b .ct-point {
+  stroke-width: 6px;
+}
+
+.ct-grid {
+  stroke-width: 0.3px;
+  stroke-dasharray: 0px;
+}
+
+.ct-series-a .ct-bar {
+  stroke: #2962FF;
+}
+
+@media (max-width: 1023px) {
+  .gredient-info-bg .info {
+    margin-top: 15px;
+  }
+}
+/*# sourceMappingURL=dashboard8.css.map */

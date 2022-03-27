@@ -18,6 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('first_name');
             $table->string('last_name');
             $table->string('email');
+            $table->string('phone')->default(null)->nullable();
+            $table->string('address')->default(null)->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->tinyInteger('role')->default(1);
             $table->string('password');

@@ -1,0 +1,81 @@
+/*******************************/
+/*******************************/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=vietnamese");
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.auth-wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+.auth-wrapper .auth-box {
+  background: #fff;
+  padding: 20px;
+  -webkit-box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+          box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+  max-width: 400px;
+  width: 90%;
+  margin: 10% 0;
+}
+
+.auth-wrapper .auth-box .logo {
+  text-align: center;
+}
+
+.auth-wrapper .auth-box.on-sidebar {
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  margin: 0px;
+  position: absolute;
+}
+
+.auth-wrapper #recoverform {
+  display: none;
+}
+
+.auth-wrapper .auth-sidebar {
+  position: fixed;
+  height: 100%;
+  right: 0px;
+  overflow: auto;
+  margin: 0px;
+  top: 0px;
+}
+
+@media (max-width: 767px) {
+  .auth-wrapper .auth-sidebar {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin: 40px 0 60px;
+  }
+  .auth-wrapper .demo-text {
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=authentication.css.map */

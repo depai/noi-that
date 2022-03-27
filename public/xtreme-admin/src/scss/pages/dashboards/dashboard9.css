@@ -1,0 +1,43 @@
+/*******************************/
+/*******************************/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=vietnamese");
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.ct-series-a .ct-bar {
+  stroke: #2962FF;
+}
+
+.ct-series-b .ct-bar {
+  stroke: #4fc3f7;
+}
+
+@media (max-width: 767px) {
+  .ct-bar {
+    stroke-width: 10px !important;
+  }
+}
+/*# sourceMappingURL=dashboard9.css.map */

@@ -1,0 +1,114 @@
+/*******************************/
+/*******************************/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=vietnamese");
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+.email-app {
+  position: relative;
+}
+
+.email-app .list-group .list-group-item {
+  padding: 0px;
+  background: transparent;
+  border: none;
+}
+
+.email-app .list-group .list-group-item .list-group-item-action {
+  padding: 12px 15px;
+  display: block;
+  color: #3e5569;
+}
+
+.email-app .list-group .list-group-item .list-group-item-action .mdi {
+  font-size: 18px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.email-app .list-group .list-group-item .list-group-item-action:hover, .email-app .list-group .list-group-item .list-group-item-action.active {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.email-app .email-table {
+  table-layout: fixed;
+}
+
+.email-app .email-table .selected {
+  background: #fff8e1;
+}
+
+.email-app .email-table .max-texts,
+.email-app .email-table .user-name h6 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.email-app .email-table .max-texts {
+  padding: 1rem 5px;
+}
+
+.email-app .email-table .chb {
+  width: 50px;
+}
+
+.email-app .email-table .time {
+  width: 100px;
+  text-align: right;
+}
+
+.email-app .email-table .starred,
+.email-app .email-table .clip {
+  width: 25px;
+  padding: 1rem 5px;
+}
+
+.email-app .email-table .user-image {
+  width: 45px;
+  padding: 1rem 5px;
+}
+
+.email-app .email-table .user-name {
+  width: 130px;
+  padding: 1rem 5px;
+}
+
+.email-app .email-table .user-name .m-b-0 {
+  font-weight: 300;
+}
+
+.email-app .email-table .unread .m-b-0,
+.email-app .email-table .unread .max-texts {
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .email-table {
+    min-width: 500px;
+  }
+}
+/*# sourceMappingURL=emails.css.map */

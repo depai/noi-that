@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,iCAAiC;AAIjC,iCAAiC;AAEjC,OAAO,CAAC,sIAAI;AAGZ,gBAAgB;AAgBhB,iBAAiB;AAUjB,kBAAkB;AAelB,sBAAsB;AAMtB,UAAU;AASV,eAAe;AAMf,uBAAuB;AA0BvB,iCAAiC;AAIjC,iCAAiC;AAGjC;;;;;;;;;;;;;;;;GAgBG;ADhHH;;oBAEoB;AACpB,AACI,YADQ,CACR,QAAQ,CAAA;EACJ,YAAY,EAAC,GAAG;CACnB;;AAGL,AACI,cADU,AACT,GAAG,CAAC,IAAI,EADb,cAAc,AACE,GAAG,CAAC,IAAI,CAAC;EACjB,MAAM,EC4GH,OAAO;CD1Gb;;AAJL,AAKI,cALU,CAKV,SAAS,CAAA;EACL,MAAM,ECsGN,IAAI,CDtGS,UAAU;EACvB,YAAY,EAAC,GAAG;CACnB",
+    "sources": [
+        "dashboard5.scss",
+        "../../variable.scss"
+    ],
+    "names": [],
+    "file": "dashboard5.css"
+}

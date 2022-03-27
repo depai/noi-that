@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,6 +14,19 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::prefix('admin')->group(function () {
+    route::get('login', function(){
+        return view('admin.auth.login');
+    })->name('view.login');
+
+    route::post('login', [AuthController::class, 'login'])->name('login');
+
+    Route::prefix('')->middleware(['auth:admins'])->group(function () {
+        route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+        route::post('logout', [AuthController::class, 'logout'])->name('logout');
+    });
+});
 
 Route::get('/', function () {
     return view('users.homepage');

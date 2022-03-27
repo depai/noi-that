@@ -1,0 +1,106 @@
+/*******************************/
+/*******************************/
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=vietnamese");
+/*Theme Colors*/
+/*Topbar Colors*/
+/*Sidebar Colors*/
+/*Boxed layout width*/
+/*Shadow*/
+/*transitions*/
+/*Dark transparent bg*/
+/*******************************/
+/*******************************/
+/**
+ * Table Of Content
+ *
+ *  1. Color system
+ *  2. Options
+ *  3. Body
+ *  4. Typography
+ *  5. Breadcrumbs
+ *  6. Cards
+ *  7. Dropdowns
+ *  8. Buttons
+ *  9. Typography
+ *  10. Progress bars
+ *  11. Tables
+ *  12. Forms
+ *  14. Component
+ */
+/*******************
+ Campaign
+*******************/
+.e-campaign .css-bar .data-text {
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  z-index: 200;
+  right: 0;
+  top: 70px;
+  text-align: center;
+}
+
+.e-campaign .css-bar .data-text .success-rate {
+  font-size: 60px;
+}
+
+.e-campaign .css-bar .data-text .rate-label {
+  margin-top: -20px;
+}
+
+.e-campaign .c-cost {
+  padding: 10px 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 5px;
+}
+
+.e-campaign .c-cost i {
+  font-size: 48px;
+}
+
+.poll-widget .collapsible {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.poll-widget .collapsible .collapsible-header,
+.poll-widget .collapsible .collapsible-body {
+  border-bottom: none;
+  padding: 1rem 0;
+}
+
+#calendar .fc-toolbar {
+  padding: 0px 15px 24px;
+}
+
+.jvectormap-zoomout,
+.jvectormap-zoomin {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .e-campaign .c-cost {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .e-campaign .stats {
+    text-align: center;
+  }
+}
+
+.css-bar-xlg {
+  width: 223px;
+  height: 223px;
+  font-size: 20px;
+}
+
+.css-bar-xlg:after,
+.css-bar-xlg > img {
+  width: 213px;
+  height: 213px;
+  margin-left: 5px;
+  margin-top: 5px;
+  line-height: 30px;
+}
+/*# sourceMappingURL=dashboard6.css.map */

@@ -1,0 +1,16 @@
+{
+  "sProcessing":   "Processing...",
+  "sZeroRecords":  "No record found.",
+  "sInfo":         "View from _START_ to _END_ in total _TOTAL_ results",
+  "sInfoEmpty":    "View from 0 to 0 in total 0 results",
+  "sInfoFiltered": "(filtered from _MAX_ results)",
+  "sInfoPostFix":  "",
+  "sSearch":       "Search:",
+  "sUrl":          "",
+  "oPaginate": {
+    "sFirst":    "First",
+    "sPrevious": "Previous",
+    "sNext":     "Next",
+    "sLast":     "Last"
+  }
+}
