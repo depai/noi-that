@@ -1,0 +1,23 @@
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.create-zone {
+    text-align: right;
+    position: absolute;
+    right: 22px;
+    top: 15px;
+}
+
+.dataTables_filter {
+    float: left;
+}
+
+.index-table {
+    width: 40px !important;
+}
+
+.action-table {
+    width: 100px !important;
+}

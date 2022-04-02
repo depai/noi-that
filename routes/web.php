@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\AuthController;
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\DashboardController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,6 +27,9 @@ Route::prefix('admin')->group(function () {
         route::get('/', [DashboardController::class, 'index'])->name('dashboard');
         route::post('logout', [AuthController::class, 'logout'])->name('logout');
     });
+
+    Route::get('categories/datatable', [CategoryController::class, 'datatable'])->name('categories.datatable');
+    Route::resource('categories', CategoryController::class);
 });
 
 Route::get('/', function () {
@@ -39,3 +43,5 @@ Route::get('/list', function () {
 Route::get('/detail', function () {
     return view('users.detail');
 });
+
+Route::post('/ckeditor', [DashboardController::class, 'index'])->name('ckeditor.upload');

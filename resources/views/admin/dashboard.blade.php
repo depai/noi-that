@@ -1,5 +1,5 @@
 @extends('admin.layouts.app')
-@section('title_for_layout', 'Dashboard Mental Health')
+@section('title_for_layout', 'Dashboard')
 @section('css')
     <link rel="stylesheet" type="text/css" href="{{ asset('xtreme-admin/assets/libs/bootstrap-switch/dist/css/bootstrap3/bootstrap-switch.min.css') }}">
 @endsection

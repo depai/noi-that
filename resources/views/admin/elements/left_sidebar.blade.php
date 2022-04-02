@@ -19,7 +19,9 @@
                         <li class="sidebar-item"><a href="index10.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Modern </span></a></li>
                     </ul>  --}}
                 </li>
-                <li class="sidebar-item"> <a class="sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Manage Users</span></a>
+                <li class="sidebar-item"> <a class="sidebar-link" href="#" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Products</span></a>
+                </li>
+                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('categories.index') }}" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Categories</span></a>
                 </li>
 
             </ul>

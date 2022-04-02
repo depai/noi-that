@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProductRockTable extends Migration
+class CreateSizesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreateProductRockTable extends Migration
      */
     public function up()
     {
-        Schema::create('product_rocks', function (Blueprint $table) {
+        Schema::create('sizes', function (Blueprint $table) {
             $table->id();
+            $table->string('name')->nullable();
+            $table->bigInteger('price')->default(0);
+            $table->bigInteger('width')->nullable();
+            $table->bigInteger('height')->nullable();
+            $table->bigInteger('depth')->nullable();
             $table->unsignedBigInteger('product_id');
-            $table->unsignedBigInteger('rock_id');
             $table->timestamps();
         });
     }
@@ -28,6 +32,6 @@ class CreateProductRockTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product_rock');
+        Schema::dropIfExists('sizes');
     }
 }

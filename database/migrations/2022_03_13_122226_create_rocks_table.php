@@ -17,6 +17,8 @@ class CreateRocksTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('image')->nullable()->default(null)->comment('anh da, hoac icon...');
+            $table->unsignedBigInteger('product_id');
+            $table->bigInteger('price')->default(0);
             $table->timestamps();
         });
     }

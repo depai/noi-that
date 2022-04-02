@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Favicon icon -->
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/icon_logo.png') }}">
     <title>@yield('title_for_layout')</title>
@@ -17,6 +18,7 @@
     <!-- Custom CSS -->
     <link href="{{ asset('xtreme-admin/dist/css/style.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     @yield('css')
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -103,7 +105,12 @@
     <!-- All Jquery -->
     <!-- ============================================================== -->
     @stack('before-scripts')
-    <script src="{{ asset('xtreme-admin/assets/libs/jquery/dist/jquery.min.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.3.1/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/1.3.1/js/buttons.colVis.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="{{ asset('xtreme-admin/assets/libs/popper.js/dist/umd/popper.min.js') }}"></script>
     <script src="{{ asset('xtreme-admin/assets/libs/bootstrap/dist/js/bootstrap.min.js') }}"></script>
@@ -124,7 +131,9 @@
     <!--Custom JavaScript -->
     <script src="{{ asset('xtreme-admin/dist/js/custom.min.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
-
+    <script src="{{ asset('js/all.js') }}"></script>
+    <script src="{{ asset('js/global.js') }}"></script>
+    <script src="{{ asset('js/sweet_alert.js') }}"></script>
     @stack('scripts')
     <script>
         @if( Session::has("success") )
@@ -153,6 +162,7 @@
             }
         @endif
     </script>
+    @include('admin.js')
     @stack('after-scripts')
 </body>
 
