@@ -30,6 +30,9 @@ Route::prefix('admin')->group(function () {
 
     Route::get('categories/datatable', [CategoryController::class, 'datatable'])->name('categories.datatable');
     Route::resource('categories', CategoryController::class);
+
+    Route::get('products/datatable', [ProductController::class, 'datatable'])->name('products.datatable');
+    Route::resource('products', ProductController::class);
 });
 
 Route::get('/', function () {

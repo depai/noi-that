@@ -3,18 +3,18 @@
 @section('content')
     @include('commons.admin.breadcrumb', [
         'breadcrumbs' => [
-            ['name' => 'List Of Categories', 'url' => route('categories.index'), 'class' => ''],
+            ['name' => 'List Of Products', 'url' => route('products.index'), 'class' => ''],
             ['name' => 'Create', 'url' => '', 'class' => 'active']
         ],
-        'title' => 'Create Category'
+        'title' => 'Create Product'
     ])
     <div class="content">
         <div class="card box-primary">
             <div class="card-body">
                 <div class="row">
-                    {!! Form::open(['route' => 'categories.store', 'class' => 'col-12', 'enctype' => 'multipart/form-data']) !!}
+                    {!! Form::open(['route' => 'products.store', 'class' => 'col-12', 'enctype' => 'multipart/form-data']) !!}
 
-                        @include('admin.categories.fields', ['back' => route('categories.index')])
+                        @include('admin.products.fields', ['back' => route('products.index')])
 
                     {!! Form::close() !!}
                 </div>

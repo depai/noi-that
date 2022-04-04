@@ -14,7 +14,7 @@ class CategoryController extends Controller
 {
     public function index()
     {
-        return view('admin.categories.index')->with('merchants');
+        return view('admin.categories.index');
     }
 
     public function create()
