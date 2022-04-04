@@ -14,49 +14,49 @@ class CollectionSeeder extends Seeder
      */
     public function run()
     {
-        Collection::create([
+        Collection::insert([
             [
-                'name' => 'mirage',
+                'title' => 'mirage',
                 'slug' => 'mirage'
             ],
             [
-                'name' => 'charisma',
+                'title' => 'charisma',
                 'slug' => 'charisma'
             ],
             [
-                'name' => 'infinity',
+                'title' => 'infinity',
                 'slug' => 'infinity'
             ],
             [
-                'name' => 'vision',
+                'title' => 'vision',
                 'slug' => 'vision'
             ],
             [
-                'name' => 'alchemy',
+                'title' => 'alchemy',
                 'slug' => 'alchemy'
             ],
             [
-                'name' => 'coliseum',
+                'title' => 'coliseum',
                 'slug' => 'coliseum'
             ],
             [
-                'name' => 'lifetime',
+                'title' => 'lifetime',
                 'slug' => 'lifetime'
             ],
             [
-                'name' => 'daydream',
+                'title' => 'daydream',
                 'slug' => 'daydream'
             ],
             [
-                'name' => 'absolute',
+                'title' => 'absolute',
                 'slug' => 'absolute'
             ],
             [
-                'name' => 'sunrise',
+                'title' => 'sunrise',
                 'slug' => 'sunrise'
             ],
             [
-                'name' => 'vogue',
+                'title' => 'vogue',
                 'slug' => 'vogue'
             ],
         ]);

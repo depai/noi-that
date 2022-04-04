@@ -14,7 +14,7 @@ class CategorySeeder extends Seeder
      */
     public function run()
     {
-        Categoryy::create([
+        Category::insert([
             [
                 'id' => 1,
                 'title' => 'living',
