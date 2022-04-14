@@ -6,7 +6,7 @@
     @include('commons.input.input', ['title' => 'Slug', 'field' => 'slug', 'entry' => @$data->slug, 'half' => true, 'require' => true, 'class' => 'slug'])
 </div>
 <div class="row">
-    @include('commons.input.image', ['title' => 'Image', 'field' => 'image', 'entry' => @$data->image ? asset('storage/categories/' . $data->image) : '', 'half' => true])
+    @include('commons.input.select', ['title' => 'Collection', 'field' => 'collection_id', 'entry' => @$data->collection_id, 'selects' => @$collections, 'require' => true, 'half' => true, 'default' => ''])
     @include('commons.input.select', ['title' => 'Category', 'field' => 'category_id', 'entry' => @$data->category_id, 'selects' => @$selects, 'require' => true, 'half' => true, 'default' => ''])
 </div>
 <!-- Submit Field -->

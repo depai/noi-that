@@ -27,9 +27,9 @@
     <script>
         var column = [
             { data: 'id', name: 'id' },
-            { data: 'image', name: 'image' },
+            { data: 'image', name: 'image', orderable: false, searchable:false },
             { data: 'title', name: 'title' },
-            { data: 'parent', name: 'parent' },
+            { data: 'parent', name: 'parent', orderable: false, searchable:false },
             { data: 'action', name: 'action', orderable: false, searchable:false}
         ];
         TABU.dataTable('{!! route('categories.datatable') !!}', column, $('#table'));

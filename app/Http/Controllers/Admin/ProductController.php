@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Collection;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
@@ -18,15 +19,16 @@ class ProductController extends Controller
     public function create()
     {
         $selects = Category::get();
-        return view('admin.products.create', compact('selects'));
+        $collections = Collection::get();
+        return view('admin.products.create', compact('selects', 'collections'));
     }
 
-    public function store(StoreCategoryRequest $request)
+    public function store(Request $request)
     {
         $input = $request->except('_token', 'image', 'delete_image');
         if ($request->image) {
             $imageName = uniqid() . $request->image->getClientOriginalExtension();
-            $request->image->storeAs('public/categories/', $imageName);
+            $request->image->storeAs('public/products/', $imageName);
             $input['image'] = $imageName;
         } elseif ($request->delete_image) {
             $input['image'] = '';
@@ -38,11 +40,12 @@ class ProductController extends Controller
     public function edit($id)
     {
         $data = Product::find($id);
-        $selects = Product::where('parent_id', Product::PARENT)->get();
-        return view('admin.products.edit', compact('data', 'selects'));
+        $selects = Category::where('parent_id', '<>', Category::PARENT)->get();
+        $collections = Collection::get();
+        return view('admin.products.edit', compact('data', 'selects', 'collections'));
     }
 
-    public function update($id, UpdateProductRequest $request)
+    public function update($id, Request $request)
     {
         $input = $request->except('_token', 'image', 'delete_image');
         if ($request->image) {
@@ -72,6 +75,9 @@ class ProductController extends Controller
             })
             ->addColumn('category', function ($datum) {
                 return $datum->category->title;
+            })
+            ->addColumn('collection', function ($datum) {
+                return $datum->collection->title;
             })
             ->addColumn('rock', function ($datum) {
                 return implode(', ', $datum->rocks->pluck('name')->toArray());

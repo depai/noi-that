@@ -6,6 +6,7 @@
                 <th>Image</th>
                 <th>Title</th>
                 <th>Category</th>
+                <th>Collection</th>
                 <th>Rock</th>
                 <th>Size</th>
                 <th class="action-table">Action</th>
