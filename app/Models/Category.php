@@ -11,7 +11,7 @@ class Category extends Model
     protected $guarded = [];
     const PARENT = 0;
 
-    public function products () 
+    public function products ()
     {
         return $this->hasMany(Product::class);
     }
@@ -25,4 +25,21 @@ class Category extends Model
     {
         return $this->hasMany(Category::class, 'parent_id');
     }
+
+    public function getTitleAttribute($key)
+    {
+        return ucfirst($key);
+    }
+
+    /**
+     * get category
+     * @author lamnt
+     * @param int parent = 0 là get tất cả category cha, parent != 0 là get tất cả category con theo id parent
+     */
+    public function getCategory($parent_id = 0)
+    {
+        $data = $this->with('children')->where('parent_id', $parent_id);
+        return $data->get();
+    }
+
 }

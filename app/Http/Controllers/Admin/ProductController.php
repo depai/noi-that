@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Collection;
 use App\Models\Product;
+use App\Models\Rock;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
@@ -15,12 +16,13 @@ class ProductController extends Controller
     {
         return view('admin.products.index');
     }
-
+  
     public function create()
     {
-        $selects = Category::get();
+        $selects = Category::where('parent_id', '<>', 0)->get();
         $collections = Collection::get();
-        return view('admin.products.create', compact('selects', 'collections'));
+        $rocks = Rock::all();
+        return view('admin.products.create', compact('selects', 'collections', 'rocks'));
     }
 
     public function store(Request $request)

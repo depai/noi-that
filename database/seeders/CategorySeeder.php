@@ -40,5 +40,28 @@ class CategorySeeder extends Seeder
                 'parent_id' => 0
             ],
         ]);
+
+        Category::insert([
+            [
+                'title' => 'dining tables',
+                'slug' => 'dining-tables',
+                'parent_id' => 1
+            ],
+            [
+                'title' => 'dining chairs',
+                'slug' => 'dining-chairs',
+                'parent_id' => 1
+            ],
+            [
+                'title' => 'buffets',
+                'slug' => 'buffets',
+                'parent_id' => 1
+            ],
+            [
+                'title' => 'consoles',
+                'slug' => 'consoles',
+                'parent_id' => 1
+            ],
+        ]);
     }
 }

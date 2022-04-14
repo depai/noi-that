@@ -1,16 +1,16 @@
-<div class="form-group row  align-content-start {{ @$half ? 'col-6' : '' }}">
-    <label class="offset-1 col-11" style="padding-left: 0">{{ $title }}
+<div class="form-group  align-content-start {{ @$half ? 'col-6' : '' }}">
+    <label class="" style="padding-left: 0">{{ $title }}
         @if(@$require)
             <span class="error">*</span>
         @endif
     </label>
-    <div class="custom-file form-control offset-1 col-10 {{ @$class }}">
+    <div class="custom-file form-control  {{ @$class }}">
         <input name="image" accept="image/*" type="file" class="custom-file-input">
         <label class="custom-file-label" for="image">Choose file</label>
     </div>
     <input type="hidden" name="delete_image" value="">
     @error($field)
-        <span class="invalid-feedback d-block offset-1 col-10" role="alert">
+        <span class="invalid-feedback d-block " role="alert">
             <strong>{{ $message }}</strong>
         </span>
     @enderror

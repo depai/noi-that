@@ -22,3 +22,6 @@
         </div>
     </div>
 @endsection
+@push('after-scripts')
+    @include('admin.products.js')
+@endpush
