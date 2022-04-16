@@ -69,28 +69,20 @@
                                             </header>
 
 
-
-
                                             <div class="view-content-wrap">
                                                 <div class="item">
                                                     <div class="views-field views-field-nothing">
                                                         <span class="field-content"> </span>
                                                     </div>
                                                 </div>
-                                                @foreach ($detailCategory->children as $category)
-                                                @if ($category->products->count() > 0)
                                                 <div class="item">
                                                     <div class="views-field views-field-nothing">
                                                         <span class="field-content">
-                                                            <div class="cat-list-link">
-                                                                <h2>{{ $category->title }}</h2>
-                                                                <a href="https://giorgiocollection.com/decor?collezione=15" class="cat-viewmore-link">View more</a>
-                                                            </div>
                                                             <div class="collection-prodlist collection-category-prodlist">
                                                                 <div class="views-element-container">
                                                                     <div class="gva-view js-view-dom-id-b92bf216bdae24e6ea67d17395966dcb738d9ef26243b6b406f4f2d1a22f53e7">
                                                                         <div class="view-content-wrap">
-                                                                            @foreach ($category->products as $product)
+                                                                            @foreach ($listProduct as $product)
                                                                                 <div class="item">
                                                                                 <div class="views-field views-field-nothing">
                                                                                     <span class="field-content">
@@ -113,45 +105,40 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-
-                                                            {{-- <div class="cat-page-prodlist collection-category-prodlist-mobile">
-                                                                <div class="views-element-container">
-                                                                    <div class="gva-view js-view-dom-id-7fcbf7bfe57b29b7ffef3edca4a70b70aa39f22b96f3301b2089d6f5f25441ed">
-                                                                        <div class="view-content-wrap">
-                                                                            <div class="item">
-                                                                                <div class="views-field views-field-nothing">
-                                                                                    <span class="field-content">
-                                                                                        <div class="related-products">
-                                                                                            <div class="prod-related-img">
-                                                                                                <div class="item-image">
-                                                                                                    <img src="/sites/default/files/styles/square/public/2020-12/Progetto%20senza%20titolo%20-%202020-12-16T174454.621.png?itok=8yQLm7cd" alt="" typeof="Image" />
-                                                                                                </div>
-                                                                                            </div>
-                                                                                            <a href="https://giorgiocollection.com/charisma-charisma-sunburst-panel" class="related-prod-link">
-                                                                                                <p class="related-prod-collezioni"> CHARISMA </p>
-                                                                                                <p class="related-prod-title"> Charisma sunburst panel </p>
-                                                                                            </a>
-                                                                                        </div>
-                                                                                    </span>
-                                                                                </div>
-                                                                            </div>
-
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div> --}}
-
                                                         </span>
                                                     </div>
                                                 </div>
                                                 <div class="item">
                                                     <div class="views-field views-field-nothing"><span class="field-content"></span></div>
                                                 </div>
-                                                @endif
-                                                @endforeach
-
-
                                             </div>
+
+                                            <nav class="pager">
+                                                <ul class="pager__items js-pager__items">
+                                                    <li class="pager__item is-active">
+                                                        <a href="?page=0%2C0" title="Current page">
+                                                            <span class="visually-hidden">Current page</span>1
+                                                        </a>
+                                                    </li>
+                                                    <li class="pager__item">
+                                                        <a href="?page=0%2C1" title="Go to page 2">
+                                                            <span class="visually-hidden"> Page </span>2</a>
+                                                    </li>
+                                                    <li class="pager__item pager__item--next">
+                                                        <a href="?page=0%2C1" title="Go to next page" rel="next">
+                                                            <span class="visually-hidden">Next page</span>
+                                                            <span aria-hidden="true">Next ›</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="pager__item pager__item--last">
+                                                        <a href="?page=0%2C1" title="Go to last page">
+                                                            <span class="visually-hidden">Last page</span>
+                                                            <span aria-hidden="true">Last »</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+
                                         </div>
                                     </div>
                                 </div>

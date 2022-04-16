@@ -34,4 +34,13 @@ class Product extends Model
     {
         return $this->hasMany(Size::class);
     }
+
+    public function getProducts($paginate = null)
+    {
+        $data = $this->with('category', 'collection', 'productImages', 'rocks', 'sizes')->orderBy('id', 'desc');
+        if(!empty($paginate)){
+            return $data->paginate($paginate);
+        }
+        return $data->get();
+    }
 }

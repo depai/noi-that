@@ -39,7 +39,7 @@
                                                 <span class="back-menu-m"><i class="fal fa-chevron-left"></i></span>
                                                 @foreach ($categoryParent->children as $category)
                                                 <li class="menu-item menu-item--collapsed">
-                                                    <a href="#"> {{ $category->title }} </a>
+                                                    <a href="{{ route('view.category', $category->slug) }}"> {{ $category->title }} </a>
                                                 </li>
                                                 @endforeach
                                             </ul>
