@@ -31,7 +31,7 @@
                                 @foreach ($listCategory as $categoryParent)
                                     <?php $check = $categoryParent->children->count(); ?>
                                     <li class="menu-item menu-item--expanded ">
-                                        <a href="#"> {{ $categoryParent->title }}
+                                        <a href="{{ route('view.category', $categoryParent->slug) }}"> {{ $categoryParent->title }}
                                             {!! $check > 0 ? '<span class="icaret nav-plus fas fa-chevron-down"></span>' : null !!}
                                         </a>
                                         @if ($check > 0)
@@ -56,16 +56,11 @@
                   </div>
                   <div class="d-lg-none">
                     <div>
-                        <nav aria-labelledby="block-topmenu-menu"
-                            id="block-topmenu"
-                            class="top-menu block block-menu navigation menu--top-menu">
-
+                        <nav aria-labelledby="block-topmenu-menu" id="block-topmenu" class="top-menu block block-menu navigation menu--top-menu">
                             <p class="visually-hidden block-title block-title" id="block-topmenu-menu">
                                 <span>Top Menu anonymous</span></p>
                             <div class="block-content">
-
                                 <ul class="gva_menu">
-
                                     <li class="menu-item">
                                         <a href="/about-us" gva_layout="menu-list"
                                             gva_layout_columns="3"
@@ -141,34 +136,18 @@
 
                             </div>
                         </nav>
-                        <div id="block-dropdownlanguage"
-                            class="language-top block block-dropdown-language block-dropdown-languagelanguage-interface no-title">
-
-
+                        <div id="block-dropdownlanguage" class="language-top block block-dropdown-language block-dropdown-languagelanguage-interface no-title">
                             <div class="content block-content">
                                 <div class="dropbutton-wrapper">
                                     <div class="dropbutton-widget">
                                         <ul
                                             class="dropdown-language-item dropbutton">
                                             <li class="en">
-                                                <span
-                                                    class="language-link active-language"
-                                                    hreflang="en">EN</span>
+                                                <span class="language-link active-language" hreflang="en">EN</span>
                                             </li>
-                                            <li class="it">
-                                                <a href="/it/charisma-divano-fisso-0"
-                                                    class="language-link"
-                                                    hreflang="it">IT</a>
-                                            </li>
-                                            <li class="ar">
-                                                <a href="/ar/charisma-arykt-thabtt-0"
-                                                    class="language-link"
-                                                    hreflang="ar">AR</a>
-                                            </li>
+
                                             <li class="fr">
-                                                <a href="/fr/charisma-fixed-sofa-1"
-                                                    class="language-link"
-                                                    hreflang="fr">FR</a>
+                                                <a href="/fr/charisma-fixed-sofa-1" class="language-link"  hreflang="fr">FR</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -177,12 +156,8 @@
                         </div>
 
                     </div>
-
                 </div>
-
-
             </div>
-
         </div>
 
         <div id="menu-bar"

@@ -42,4 +42,13 @@ class Category extends Model
         return $data->get();
     }
 
+    /**
+     * get by slug
+     * @author lamnt
+     * @param string slug
+     */
+    public function getCategoryBySlug($slug)
+    {
+        return $this->with('children.products')->where('slug', $slug)->first();
+    }
 }
