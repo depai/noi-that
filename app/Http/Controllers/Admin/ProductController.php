@@ -3,10 +3,14 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\StoreProductRequest;
+use App\Http\Requests\UpdateProductRequest;
 use App\Models\Category;
 use App\Models\Collection;
 use App\Models\Product;
+use App\Models\ProductImage;
 use App\Models\Rock;
+use App\Models\Size;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
@@ -19,46 +23,41 @@ class ProductController extends Controller
   
     public function create()
     {
-        $selects = Category::where('parent_id', '<>', 0)->get();
+        $selects = Category::with('parent')->where('parent_id', '<>', Category::PARENT)->get();
         $collections = Collection::get();
-        $rocks = Rock::all();
         return view('admin.products.create', compact('selects', 'collections', 'rocks'));
     }
 
-    public function store(Request $request)
+    public function store(StoreProductRequest $request)
     {
-        $input = $request->except('_token', 'image', 'delete_image');
-        if ($request->image) {
-            $imageName = uniqid() . $request->image->getClientOriginalExtension();
-            $request->image->storeAs('public/products/', $imageName);
-            $input['image'] = $imageName;
-        } elseif ($request->delete_image) {
-            $input['image'] = '';
-        }
-        Product::create($input);
+        $input = $request->except('_token', 'size', 'rocks', 'images');
+        $product = Product::create($input);
+        $product->productImages()->delete();
+        ProductImage::saveMany($product, $request->images);
+        Size::saveMany($product, $request->size);
+        Rock::saveMany($product, $request->rocks);
         return redirect(route('products.index'))->with(['success' => 'Product saved successfully.']);
     }
 
     public function edit($id)
     {
-        $data = Product::find($id);
-        $selects = Category::where('parent_id', '<>', Category::PARENT)->get();
+        $data = Product::with('rocks', 'productImages', 'sizes')->find($id);
+        $selects = Category::with('parent')->where('parent_id', '<>', Category::PARENT)->get();
         $collections = Collection::get();
-        return view('admin.products.edit', compact('data', 'selects', 'collections'));
+        $sizes = $data->sizes;
+        $rocks = $data->rocks;
+        return view('admin.products.edit', compact('data', 'selects', 'collections', 'sizes', 'rocks'));
     }
 
-    public function update($id, Request $request)
+    public function update($id, UpdateProductRequest $request)
     {
-        $input = $request->except('_token', 'image', 'delete_image');
-        if ($request->image) {
-            $imageName = uniqid() . $request->image->getClientOriginalExtension();
-            $request->image->storeAs('public/products/', $imageName);
-            $input['image'] = $imageName;
-        } elseif ($request->delete_image) {
-            $input['image'] = '';
-        }
-
-        Product::findOrFail($id)->update($input);
+        $input = $request->except('_token', 'size', 'rocks', 'images');
+        $product = Product::find($id);
+        $product->update($input);
+        $product->productImages()->delete();
+        ProductImage::saveMany($product, $request->images);
+        Size::saveMany($product, $request->size);
+        Rock::saveMany($product, $request->rocks);
         return redirect(route('products.index'))->with(['success' => 'Product updated successfully.']);
     }
 
@@ -73,7 +72,7 @@ class ProductController extends Controller
         $data = Product::with('category', 'productImages', 'rocks', 'sizes');
         $dataReturn = DataTables::of($data)
             ->addColumn('image', function ($datum) {
-                return '<img src=' . asset('storage/products/' . $datum->$datum->productImages->first()->name) . ' style="width:auto; height: 60px">';
+                return '<img src=' . asset('storage/' . $datum->productImages->first()->name) . ' style="width:auto; height: 60px">';
             })
             ->addColumn('category', function ($datum) {
                 return $datum->category->title;

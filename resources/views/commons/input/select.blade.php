@@ -7,7 +7,11 @@
     <select class="form-control  {{ @$class }}" name="{{ $field }}" {{ @$extend }}>
         <option value={{ $default }}></option>
         @foreach ($selects as $select)
-            <option @if(old($field, @$entry) == $select->id) selected @endif value="{{ $select->id }}">{{ $select->title }}</option>
+            @if ($select->parent)
+                <option @if(old($field, @$entry) == $select->id) selected @endif value="{{ $select->id }}">{{ $select->parent->title . ' - ' . $select->title }}</option>
+            @else
+                <option @if(old($field, @$entry) == $select->id) selected @endif value="{{ $select->id }}">{{ $select->title }}</option>
+            @endif
         @endforeach
     </select>
     @error($field)

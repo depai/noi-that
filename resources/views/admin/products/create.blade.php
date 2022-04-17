@@ -22,6 +22,10 @@
         </div>
     </div>
 @endsection
+@section('css')
+<link rel="stylesheet" href="https://cdn.rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+@endsection
+@php($images = getFileFromPath(@$data->productImages, 'storage/'))
 @push('after-scripts')
     @include('admin.products.js')
 @endpush

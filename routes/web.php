@@ -6,6 +6,8 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\User\HomeController;
 use App\Http\Controllers\User\ProductController;
 use App\Http\Controllers\Admin\ProductController as AdminProductController;
+use App\Http\Controllers\Admin\RockController;
+use App\Http\Controllers\UploadImageController;
 use App\Http\Controllers\User\CategoryController as UserCategoryController;
 use Illuminate\Support\Facades\Route;
 
@@ -62,3 +64,5 @@ Route::prefix('')->group(function () {
         route::get('/{slug}', [UserCategoryController::class, 'viewCategory'])->name('view.category');
     });
 });
+
+Route::post('upload-image', [UploadImageController::class, 'store'])->name('upload_image');

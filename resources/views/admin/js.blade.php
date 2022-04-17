@@ -66,4 +66,19 @@
             reader.readAsDataURL(input.files[0]);
         }
     }
+
+    $(document).on('change', '.js-input-image', function () {
+        readURLImage(this, $(this));
+    })
+
+    function readURLImage(input, $this) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function(e) {
+                let html = `<img src="${e.target.result}" style="height: 35px; width: auto">`
+                $this.parent().siblings('.js-preview-image').html(html);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
 </script>

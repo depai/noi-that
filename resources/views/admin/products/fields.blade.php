@@ -14,33 +14,16 @@
     @include('commons.input.textarea', ['title' => 'Description', 'field' => 'description', 'entry' => @$data->description, 'require' => true, 'half' => true])
 </div>
 <div class="row">
+    @include('commons.input.dropzone', ['title' => 'Image', 'field' => 'image[]', 'entry' => @$images, 'half' => true])
     <div class="form-group col-6">
-        <label class="" style="padding-left: 0">Rocks</label>
         <div class="row mb-3">
-            <div class="col-6">
-                <select name="rocks[]name" class="form-control">
-                    <option value=""></option>
-                    @foreach ($rocks as $rock)
-                        <option value="{{ $rock->id }}">{{ $rock->name }}</option>
-                    @endforeach
-                </select>
-            </div>
-            <div class="col-2 align-self-center">
-                <label class="m-0" style="padding-left: 0">Price(VND): </label>
-            </div>
-            <div class="col-3">
-                <input type="number" class="form-control" name="rocks[]price" value="0">
+            <div class="col-11">
+                <label class="" style="padding-left: 0">Size</label>
             </div>
             <div class="col-1">
-                <button class="btn btn-primary w-100" type="button" id="js-add-rock">+</button>
+                <button class="btn btn-primary w-100" type="button" id="js-add-size">+</button>
             </div>
         </div>
-        <div id="rock">
-        </div>
-    </div>
-
-    <div class="form-group col-6">
-        <label class="" style="padding-left: 0">Size</label>
         <div class="row mb-3">
             <div class="col-3">
                 <label class="m-0" style="padding-left: 0">Name</label>
@@ -55,32 +38,128 @@
                 <label class="m-0" style="padding-left: 0">Height(cm)</label>
             </div>
             <div class="col-2">
-                <label class="m-0" style="padding-left: 0">Price</label>
+                <label class="m-0" style="padding-left: 0">Extra Price</label>
             </div>
         </div>
-        <div class="row mb-3">
-            <div class="col-3">
-                <input type="text" class="form-control" name="size[]name" value="">
+
+        @php($countSize = 0)
+        @forelse ($sizes as $size)
+            <input type="hidden" name="rocks[{{ $countSize }}][id]" value="{{ $size->id }}">
+            <div class="row mb-3 child">
+                <div class="col-3">
+                    <input type="text" class="form-control" name="size[{{ $countSize }}][name]" value="{{ $size->name }}">
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" name="size[{{ $countSize }}][width]" value="{{ $size->width }}">
+                </div>
+                <div class="col-2 align-self-center">
+                    <input type="number" class="form-control" name="size[{{ $countSize }}][depth]" value="{{ $size->depth }}">  
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" name="size[{{ $countSize }}][height]" value="{{ $size->height }}">
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" name="size[{{ $countSize }}][price]" value="{{ $size->price }}">
+                </div>
+                <div class="col-1"> 
+                    <button class="btn btn-primary w-100 js-remove" type="button">-</button>
+                </div>
             </div>
-            <div class="col-2">
-                <input type="number" class="form-control" name="size[]width" value="">
+            @php($countSize++)
+        @empty
+            <div class="row mb-3 child">
+                <div class="col-3">
+                    <input type="text" class="form-control" name="size[0][name]" value="">
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" name="size[0][width]" value="">
+                </div>
+                <div class="col-2 align-self-center">
+                    <input type="number" class="form-control" name="size[0][depth]" value="">  
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" name="size[0][height]" value="">
+                </div>
+                <div class="col-2">
+                    <input type="number" class="form-control" name="size[0][price]" value="0">
+                </div>
+                <div class="col-1"> 
+                    <button class="btn btn-primary w-100 js-remove" type="button">-</button>
+                </div>
             </div>
-            <div class="col-2 align-self-center">
-                <input type="number" class="form-control" name="size[]depth" value="">  
-            </div>
-            <div class="col-2">
-                <input type="number" class="form-control" name="size[]height" value="">
-            </div>
-            <div class="col-2">
-                <input type="number" class="form-control" name="size[]price" value="0">
-            </div>
-            <div class="col-1">
-                <button class="btn btn-primary w-100" type="button" id="js-add-size">+</button>
-            </div>
-        </div>
+        @endforelse
         <div id="size">
         </div>
     </div>
+</div>
+
+<div class="row">
+    <div class="form-group col-6">
+        <div class="row mb-3">
+            <div class="col-11">
+                <label class="" style="padding-left: 0">Rocks</label>
+            </div>
+            <div class="col-1">
+                <button class="btn btn-primary w-100" type="button" id="js-add-rock">+</button>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-4">
+                <label class="m-0" style="padding-left: 0">Name</label>
+            </div>
+            <div class="col-4">
+                <label class="m-0" style="padding-left: 0">Image</label>
+            </div>
+            <div class="col-3">
+                <label class="m-0" style="padding-left: 0">Extra Price</label>
+            </div>
+        </div>
+        @php($count = 0)
+        @forelse ($rocks as $rock)
+            <div class="row mb-3 child">
+                <input type="hidden" name="rocks[{{ $count }}][id]" value="{{ $rock->id }}">
+                <div class="col-4">
+                    <input type="text" class="form-control" name="rocks[{{ $count }}][name]" value="{{ $rock->name }}">
+                </div>
+                <div class="col-3">
+                    <input type="file" accept="image/png, image/jpeg" class="form-control js-input-image" name="rocks[{{ $count }}][image]" value="0">
+                </div>
+                <div class="col-1 js-preview-image">
+                    <img src="{{ asset('storage/products/' . $rock->image) }}" style="height: 35px; width: auto">
+                </div>
+                <div class="col-3">
+                    <input type="number" class="form-control" name="rocks[{{ $count }}][price]" value="{{ $rock->price }}">
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary js-remove w-100" type="button" id="">-</button>
+                </div>
+            </div>
+            @php($count++)
+        @empty
+            <div class="row mb-3 child">
+                <div class="col-4">
+                    <input type="text" class="form-control" name="rocks[0][name]" value="">
+                </div>
+                <div class="col-3">
+                    <input type="file" accept="image/png, image/jpeg" class="form-control js-input-image" name="rocks[0][image]" value="0">
+                </div>
+                <div class="col-1 js-preview-image">
+                </div>
+                <div class="col-3">
+                    <input type="number" class="form-control" name="rocks[0][price]" value="0">
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-primary js-remove w-100" type="button" id="">-</button>
+                </div>
+            </div>
+        @endforelse
+        
+        <div id="rock">
+        </div>
+    </div>
+
+    
 </div>
 <!-- Submit Field -->
 <div class="form-group col-sm-12 offset-5">
