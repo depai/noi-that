@@ -89,12 +89,12 @@
                                                                                         <div class="related-products">
                                                                                             <div class="prod-related-img">
                                                                                                 <div class="item-image">
-                                                                                                    <img src="/sites/default/files/styles/square/public/2021-01/Charisma%20wall%20light.jpg?itok=JlyIvu9N" alt="" typeof="Image" />
+                                                                                                    <img src="{{ asset('storage/' . $product->productImages->first()->name) }}" alt="" typeof="Image" />
                                                                                                 </div>
                                                                                             </div>
-                                                                                            <a href="https://giorgiocollection.com/charisma-charisma-wall-light" class="related-prod-link">
-                                                                                                <p class="related-prod-collezioni"> CHARISMA </p>
-                                                                                                <p class="related-prod-title"> Charisma wall light </p>
+                                                                                            <a href="{{ route('product.detail', $product->slug) }}" class="related-prod-link">
+                                                                                                <p class="related-prod-collezioni"> {{ $product->collection->title }} </p>
+                                                                                                <p class="related-prod-title"> {{ $product->title }} </p>
                                                                                             </a>
                                                                                         </div>
                                                                                     </span>

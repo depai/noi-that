@@ -16,47 +16,47 @@ class CollectionSeeder extends Seeder
     {
         Collection::insert([
             [
-                'title' => 'mirage',
+                'title' => 'MIRAGE',
                 'slug' => 'mirage'
             ],
             [
-                'title' => 'charisma',
+                'title' => 'CHARISMA',
                 'slug' => 'charisma'
             ],
             [
-                'title' => 'infinity',
+                'title' => 'INFINITY',
                 'slug' => 'infinity'
             ],
             [
-                'title' => 'vision',
+                'title' => 'VISION',
                 'slug' => 'vision'
             ],
             [
-                'title' => 'alchemy',
+                'title' => 'ALCHEMY',
                 'slug' => 'alchemy'
             ],
             [
-                'title' => 'coliseum',
+                'title' => 'COLISEUM',
                 'slug' => 'coliseum'
             ],
             [
-                'title' => 'lifetime',
+                'title' => 'LIFETIME',
                 'slug' => 'lifetime'
             ],
             [
-                'title' => 'daydream',
+                'title' => 'DAYDREAM',
                 'slug' => 'daydream'
             ],
             [
-                'title' => 'absolute',
+                'title' => 'ABSOLUTE',
                 'slug' => 'absolute'
             ],
             [
-                'title' => 'sunrise',
+                'title' => 'SUNRISE',
                 'slug' => 'sunrise'
             ],
             [
-                'title' => 'vogue',
+                'title' => 'VOGUE',
                 'slug' => 'vogue'
             ],
         ]);

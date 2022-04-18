@@ -38,9 +38,11 @@
                                                             <div
                                                                 class="field field--name-field-featured-image field--type-image field--label-hidden field__item">
                                                                 <div class="item-image">
-                                                                    <img src="/sites/default/files/2021-01/Progetto%20senza%20titolo%20-%202021-01-14T155423.819.png"
-                                                                        alt="Fixed sofa"
-                                                                        typeof="foaf:Image" />
+                                                                    @if($product->productImages->first())
+                                                                        <img src="{{ asset('storage/' . $product->productImages->first()->name) }}"
+                                                                            alt="{{ $product->image }}"
+                                                                            typeof="foaf:Image" />
+                                                                    @endif
 
                                                                 </div>
                                                             </div>
@@ -48,22 +50,18 @@
                                                         <div class="product-gallery">
                                                             <div
                                                                 class="field field--name-field-gallery field--type-image field--label-hidden field__items">
-                                                                <div class="field__item">
-                                                                    <div class="item-image">
-                                                                        <img src="/sites/default/files/2020-11/GIOC-138.jpg"
-                                                                            alt="Fixed sofa"
-                                                                            typeof="foaf:Image" />
+                                                                @foreach($product->productImages as $key => $productImage)
+                                                                    @if ($key)
+                                                                    <div class="field__item">
+                                                                        <div class="item-image">
+                                                                            <img src="{{ asset('storage/' . $productImage->name) }}"
+                                                                                alt="{{ $product->image }}"
+                                                                                typeof="foaf:Image" />
 
+                                                                        </div>
                                                                     </div>
-                                                                </div>
-                                                                <div class="field__item">
-                                                                    <div class="item-image">
-                                                                        <img src="/sites/default/files/2020-11/GIOC-126.jpg"
-                                                                            alt="Fixed sofa"
-                                                                            typeof="foaf:Image" />
-
-                                                                    </div>
-                                                                </div>
+                                                                    @endif
+                                                                @endforeach
                                                             </div>
 
                                                         </div>
@@ -78,8 +76,8 @@
 
                                                             <p class="event-type"><a
                                                                     href="/collections/charisma">Discover
-                                                                    the collection CHARISMA</a></p>
-                                                            <p class="collezione-big">CHARISMA</p>
+                                                                    the collection {{ $product->collection->title }}</a></p>
+                                                            <p class="collezione-big">{{ $product->collection->title }}</p>
 
                                                             <div class="title-and-links">
 
@@ -89,15 +87,6 @@
                                                                         class="views-element-container">
                                                                         <div
                                                                             class="gva-view js-view-dom-id-285507a1e8ef4722d653ae3e02913ec818617b0108db463d287bf6f048f0b861">
-
-
-
-
-
-
-
-
-
                                                                             <div
                                                                                 class="views-view-entity-pager entity-pager count-word-many">
                                                                                 <ul
@@ -116,25 +105,11 @@
                                                                                     </li>
                                                                                 </ul>
                                                                             </div>
-
-
-
-
-
-
-
-
                                                                         </div>
                                                                     </div>
                                                                 </div>
-
-
-                                                                <h1 class="post-title"><span>Fixed
-                                                                        sofa</span>
+                                                                <h1 class="post-title"><span>{{ $product->title }}</span>
                                                                 </h1>
-
-
-
                                                             </div>
                                                         </div>
 
@@ -142,13 +117,7 @@
 
                                                             <div
                                                                 class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                                                                <p>Sofa seats and sides with special
-                                                                    stitching in polyurethane foam
-                                                                    wrapped in down feather. Sofa
-                                                                    armrests realized in quilted finish.
-                                                                    Base and metal trims on the armrests
-                                                                    in light gold chrome stainless
-                                                                    steel.</p>
+                                                                {!! nl2br($product->description) !!}
                                                             </div>
 
                                                             <a href="#" class="product-asinfo">REQUEST
@@ -161,22 +130,24 @@
 
                                                             <div
                                                                 class="field field--name-field-technical-information field--type-text-long field--label-hidden field__item">
-                                                                <p class="text-align-center">Art.
-                                                                    290/02<br />
-                                                                    Size: cm 200W x 111D x 80H<br />
-                                                                    Size: 79”W x 44”D x 31”½H</p>
-
-                                                                <p class="text-align-center">Art.
-                                                                    290/03<br />
-                                                                    Size: cm 240W x 111D x 80H<br />
-                                                                    Size: 94”½W x 44”D x 31”½H</p>
-
-                                                                <p class="text-align-center">Art.
-                                                                    290/04<br />
-                                                                    Size: cm 280W x 111D x 80H<br />
-                                                                    Size: 110"W x 44"D x 31"½H</p>
+                                                                @foreach ($product->sizes as $size)
+                                                                <p class="text-align-center">{{ $size->name }}<br />
+                                                                    Size: cm {{ $size->width }}W x {{ $size->depth }}D x {{ $size->height }}</p>
+                                                                @endforeach
                                                             </div>
 
+                                                            <p class="available-sizes">Available rocks
+                                                            </p>
+
+                                                            <div
+                                                                class="field field--name-field-technical-information field--type-text-long field--label-hidden field__item">
+                                                                @foreach ($product->rocks as $rock)
+                                                                    <p class="text-align-center">{{ $rock->name }}</p>
+                                                                    @if($rock->image)
+                                                                        <img src="{{ asset('storage/products/' . $rock->image) }}" style="height: 60px; width: auto" alt="">
+                                                                    @endif
+                                                                @endforeach
+                                                            </div>
 
                                                             <div class="field__item"><span
                                                                     class="file file--mime-application-pdf file--application-pdf"><a
@@ -225,206 +196,38 @@
                 <div>
                     <div class="views-element-container block block-views block-views-blockproducts-block-1 no-title"
                         id="block-views-block-products-block-1">
-
-
                         <div class="content block-content">
                             <div>
                                 <div
                                     class="gva-view js-view-dom-id-36ab859bc264d09dabcc1fd427b42a2fdb3a1e51d421e5c09036612465f21f9d">
-
-
-
-
-
-
-
-
                                     <div class="view-content-wrap">
+                                        @foreach ($relatedProducts as $relatedProduct)
                                         <div class="item">
                                             <div class="views-field views-field-nothing"><span
                                                     class="field-content">
                                                     <div class="related-products">
                                                         <div class="prod-related-img">
                                                             <div class="item-image">
-                                                                <img src="/sites/default/files/styles/square/public/2020-10/200-82---Sofa-2-seats.jpg?itok=-MgFW4vW"
-                                                                    alt="Sofa 3 seats" typeof="Image" />
+                                                            
+                                                                <img src="{{ asset('storage/' . @$relatedProduct->productImages->first()->name) }}"
+                                                                    alt="{{ $relatedProduct->title }}" typeof="Image" />
 
 
                                                             </div>
                                                         </div>
-                                                        <a href="https://giorgiocollection.com/daydream-fixed-sofa-0"
+                                                        <a href="{{ route('product.detail', $relatedProduct->slug) }}"
                                                             class="related-prod-link">
-                                                            <p class="related-prod-collezioni">DAYDREAM
+                                                            <p class="related-prod-collezioni">{{ $relatedProduct->collection->title }}
                                                             </p>
-                                                            <p class="related-prod-title">Fixed sofa
+                                                            <p class="related-prod-title">{{ $relatedProduct->title }}
                                                             </p>
                                                         </a>
                                                     </div>
-                                                </span></div>
+                                                </span>
+                                            </div>
                                         </div>
-                                        <div class="item">
-                                            <div class="views-field views-field-nothing"><span
-                                                    class="field-content">
-                                                    <div class="related-products">
-                                                        <div class="prod-related-img">
-                                                            <div class="item-image">
-                                                                <img src="/sites/default/files/styles/square/public/2021-01/400-03%20-%20Sofa%203%20seats.jpg?itok=p6FuZ4PH"
-                                                                    alt="" typeof="Image" />
-
-
-                                                            </div>
-                                                        </div>
-                                                        <a href="https://giorgiocollection.com/absolute-fixed-sofa"
-                                                            class="related-prod-link">
-                                                            <p class="related-prod-collezioni">ABSOLUTE
-                                                            </p>
-                                                            <p class="related-prod-title">Fixed sofa
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                </span></div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="views-field views-field-nothing"><span
-                                                    class="field-content">
-                                                    <div class="related-products">
-                                                        <div class="prod-related-img">
-                                                            <div class="item-image">
-                                                                <img src="/sites/default/files/styles/square/public/2021-01/400-83%20-%20Sofa%203%20seats.jpg?itok=YQlJEeQW"
-                                                                    alt="" typeof="Image" />
-
-
-                                                            </div>
-                                                        </div>
-                                                        <a href="https://giorgiocollection.com/absolute-fixed-sofa-0"
-                                                            class="related-prod-link">
-                                                            <p class="related-prod-collezioni">ABSOLUTE
-                                                            </p>
-                                                            <p class="related-prod-title">Fixed sofa
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                </span></div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="views-field views-field-nothing"><span
-                                                    class="field-content">
-                                                    <div class="related-products">
-                                                        <div class="prod-related-img">
-                                                            <div class="item-image">
-                                                                <img src="/sites/default/files/styles/square/public/2020-10/300---sofa_1.jpg?itok=vSKsCITb"
-                                                                    alt="Sofa 3 seats" typeof="Image" />
-
-
-                                                            </div>
-                                                        </div>
-                                                        <a href="https://giorgiocollection.com/sunrise-fixed-sofa-0"
-                                                            class="related-prod-link">
-                                                            <p class="related-prod-collezioni">SUNRISE
-                                                            </p>
-                                                            <p class="related-prod-title">Fixed sofa
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                </span></div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="views-field views-field-nothing"><span
-                                                    class="field-content">
-                                                    <div class="related-products">
-                                                        <div class="prod-related-img">
-                                                            <div class="item-image">
-                                                                <img src="/sites/default/files/styles/square/public/2021-01/BERG%D0%95RE%20sofa.jpg?itok=I5v0lezY"
-                                                                    alt="" typeof="Image" />
-
-
-                                                            </div>
-                                                        </div>
-                                                        <a href="https://giorgiocollection.com/sunrise-fixed-sofa"
-                                                            class="related-prod-link">
-                                                            <p class="related-prod-collezioni">SUNRISE
-                                                            </p>
-                                                            <p class="related-prod-title">Fixed sofa
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                </span></div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="views-field views-field-nothing"><span
-                                                    class="field-content">
-                                                    <div class="related-products">
-                                                        <div class="prod-related-img">
-                                                            <div class="item-image">
-                                                                <img src="/sites/default/files/styles/square/public/2020-10/300-03-02-Sofa_0.jpg?itok=MxjoJqG-"
-                                                                    alt="Sofa 3 seats" typeof="Image" />
-
-
-                                                            </div>
-                                                        </div>
-                                                        <a href="https://giorgiocollection.com/sunrise-fixed-sofa-1"
-                                                            class="related-prod-link">
-                                                            <p class="related-prod-collezioni">SUNRISE
-                                                            </p>
-                                                            <p class="related-prod-title">Fixed sofa
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                </span></div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="views-field views-field-nothing"><span
-                                                    class="field-content">
-                                                    <div class="related-products">
-                                                        <div class="prod-related-img">
-                                                            <div class="item-image">
-                                                                <img src="/sites/default/files/styles/square/public/2021-01/Progetto%20senza%20titolo%20-%202021-01-14T155454.127.png?itok=jO3YEa5v"
-                                                                    alt="Sofa" typeof="Image" />
-
-
-                                                            </div>
-                                                        </div>
-                                                        <a href="https://giorgiocollection.com/mirage-fixed-sofa"
-                                                            class="related-prod-link">
-                                                            <p class="related-prod-collezioni">MIRAGE
-                                                            </p>
-                                                            <p class="related-prod-title">Fixed sofa
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                </span></div>
-                                        </div>
-                                        <div class="item">
-                                            <div class="views-field views-field-nothing"><span
-                                                    class="field-content">
-                                                    <div class="related-products">
-                                                        <div class="prod-related-img">
-                                                            <div class="item-image">
-                                                                <img src="/sites/default/files/styles/square/public/2021-01/Progetto%20senza%20titolo%20-%202021-01-14T154750.007.png?itok=iF-ZEQwT"
-                                                                    alt="Sofa" typeof="Image" />
-
-
-                                                            </div>
-                                                        </div>
-                                                        <a href="https://giorgiocollection.com/mirage-fixed-sofa-0"
-                                                            class="related-prod-link">
-                                                            <p class="related-prod-collezioni">MIRAGE
-                                                            </p>
-                                                            <p class="related-prod-title">Fixed sofa
-                                                            </p>
-                                                        </a>
-                                                    </div>
-                                                </span></div>
-                                        </div>
+                                        @endforeach
                                     </div>
-
-
-
-
-
-
-
-
                                 </div>
                             </div>
 

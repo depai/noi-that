@@ -24,6 +24,13 @@
                 <button class="btn btn-primary w-100" type="button" id="js-add-size">+</button>
             </div>
         </div>
+        @error('size.*.name')
+        <div class="row mb-3">
+            <div class="col-12">
+                <span class="error">{{ array_values($errors->get('size.*.name'))[0][0] }}</span>
+            </div>
+        </div>
+        @enderror
         <div class="row mb-3">
             <div class="col-3">
                 <label class="m-0" style="padding-left: 0">Name</label>
@@ -103,6 +110,13 @@
                 <button class="btn btn-primary w-100" type="button" id="js-add-rock">+</button>
             </div>
         </div>
+        @error('rocks.*.name')
+        <div class="row mb-3">
+            <div class="col-12">
+                <span class="error">{{ array_values($errors->get('rocks.*.name'))[0][0] }}</span>
+            </div>
+        </div>
+        @enderror
 
         <div class="row mb-3">
             <div class="col-4">
@@ -126,7 +140,9 @@
                     <input type="file" accept="image/png, image/jpeg" class="form-control js-input-image" name="rocks[{{ $count }}][image]" value="0">
                 </div>
                 <div class="col-1 js-preview-image">
-                    <img src="{{ asset('storage/products/' . $rock->image) }}" style="height: 35px; width: auto">
+                    @if ($rock->image)
+                        <img src="{{ asset('storage/products/' . $rock->image) }}" style="height: 35px; width: auto">
+                    @endif
                 </div>
                 <div class="col-3">
                     <input type="number" class="form-control" name="rocks[{{ $count }}][price]" value="{{ $rock->price }}">

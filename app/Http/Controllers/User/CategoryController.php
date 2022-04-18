@@ -16,13 +16,13 @@ class CategoryController extends BaseController
         if(!empty($detailCategory->parent_id)){
             // list product theo category có phân trang
             $listProduct = $product->getProducts(20);
-            return view('users.category.category_childrent')->with([
-                'detailCategory'=>$detailCategory,
-                'listProduct'=>$listProduct
+            return view('users.category.category_children')->with([
+                'detailCategory' => $detailCategory,
+                'listProduct' => $listProduct
             ]);
         }
         return view('users.category.index')->with([
-            'detailCategory'=>$detailCategory
+            'detailCategory' => $detailCategory
         ]);
     }
 }

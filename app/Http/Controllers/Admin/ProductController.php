@@ -25,7 +25,8 @@ class ProductController extends Controller
     {
         $selects = Category::with('parent')->where('parent_id', '<>', Category::PARENT)->get();
         $collections = Collection::get();
-        return view('admin.products.create', compact('selects', 'collections', 'rocks'));
+        $rocks = $sizes = [];
+        return view('admin.products.create', compact('selects', 'collections', 'rocks', 'sizes'));
     }
 
     public function store(StoreProductRequest $request)
