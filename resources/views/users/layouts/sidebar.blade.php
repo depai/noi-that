@@ -60,6 +60,7 @@
                             <p class="visually-hidden block-title block-title" id="block-topmenu-menu">
                                 <span>Top Menu anonymous</span></p>
                             <div class="block-content">
+                                <img src="{{ asset('icons/cart.svg') }}" alt="">
                                 <ul class="gva_menu">
                                     <li class="menu-item">
                                         <a href="/about-us" gva_layout="menu-list"

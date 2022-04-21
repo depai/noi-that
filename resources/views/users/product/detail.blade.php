@@ -114,14 +114,14 @@
                                                         </div>
 
                                                         <div class="product-info">
-
+                                                            <p class="available-sizes">Price: {{ number_format($product->price) }} đ
+                                                            </p>
                                                             <div
                                                                 class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
                                                                 {!! nl2br($product->description) !!}
                                                             </div>
 
-                                                            <a href="#" class="product-asinfo">REQUEST
-                                                                INFORMATION</a>
+                                                            
                                                             <p class="available-materials">Available
                                                                 materials</p>
 
@@ -132,7 +132,8 @@
                                                                 class="field field--name-field-technical-information field--type-text-long field--label-hidden field__item">
                                                                 @foreach ($product->sizes as $size)
                                                                 <p class="text-align-center">{{ $size->name }}<br />
-                                                                    Size: cm {{ $size->width }}W x {{ $size->depth }}D x {{ $size->height }}</p>
+                                                                    Size: cm {{ $size->width }}W x {{ $size->depth }}D x {{ $size->height }}<br />
+                                                                    Extra price: +{{ number_format($size->price) }} đ</p>
                                                                 @endforeach
                                                             </div>
 
@@ -145,9 +146,13 @@
                                                                     <p class="text-align-center">{{ $rock->name }}</p>
                                                                     @if($rock->image)
                                                                         <img src="{{ asset('storage/products/' . $rock->image) }}" style="height: 60px; width: auto" alt="">
+                                                                        <br>
                                                                     @endif
+                                                                    Extra price: +{{ number_format($rock->price) }} đ
                                                                 @endforeach
                                                             </div>
+
+                                                            <a href="#" class="product-asinfo">ADD TO CART</a>
 
                                                             <div class="field__item"><span
                                                                     class="file file--mime-application-pdf file--application-pdf"><a
@@ -241,86 +246,52 @@
                             <form
                                 class="webform-submission-form webform-submission-add-form webform-submission-request-information-form webform-submission-request-information-add-form webform-submission-request-information-node-2680-form webform-submission-request-information-node-2680-add-form js-webform-details-toggle webform-details-toggle"
                                 data-drupal-selector="webform-submission-request-information-node-2680-add-form"
-                                action="/charisma-fixed-sofa-1" method="post"
+                                action="{{ route('add_to_cart') }}" method="post"
                                 id="webform-submission-request-information-node-2680-add-form"
                                 accept-charset="UTF-8">
-
+                                @csrf
+                                <input type="hidden" value="{{ $product->id }}" name="product_id">
+                                <h1 class="post-title"><span>{{ $product->title }}</span>
+                                                                </h1>
                                 <div
                                     class="js-form-item form-item js-form-type-textfield form-item-name js-form-item-name">
                                     <label for="edit-name"
-                                        class="js-form-required form-required">Name</label>
-                                    <input data-drupal-selector="edit-name" type="text" id="edit-name"
-                                        name="name" value="" size="60" maxlength="255"
-                                        class="form-text required" required="required"
-                                        aria-required="true" />
+                                        class="js-form-required form-required">Size</label>
+                                    <select name="size_id" id="">
+                                        <option value=""></option>
+                                        @foreach ($product->sizes as $size)
+                                            <option value="{{ $size->id }}">{{ $size->name }}</option>
+                                        @endforeach
+                                    </select>
 
                                 </div>
                                 <div
                                     class="js-form-item form-item js-form-type-email form-item-email js-form-item-email">
                                     <label for="edit-email"
-                                        class="js-form-required form-required">Email</label>
-                                    <input data-drupal-selector="edit-email" type="email"
-                                        id="edit-email" name="email" value="" size="60" maxlength="254"
-                                        class="form-email required" required="required"
-                                        aria-required="true" />
-
+                                        class="js-form-required form-required">Rock</label>
+                                        <select name="rock_id" id="">
+                                            <option value=""></option>
+                                            @foreach ($product->rocks as $rock)
+                                                <option value="{{ $rock->id }}">{{ $rock->name }}</option>
+                                            @endforeach
+                                        </select>
                                 </div>
                                 <div
-                                    class="js-form-item form-item js-form-type-textfield form-item-phone js-form-item-phone">
-                                    <label for="edit-phone"
-                                        class="js-form-required form-required">Phone</label>
-                                    <input data-drupal-selector="edit-phone" type="text" id="edit-phone"
-                                        name="phone" value="" size="60" maxlength="255"
-                                        class="form-text required" required="required"
-                                        aria-required="true" />
-
-                                </div>
-                                <div
-                                    class="js-form-item form-item js-form-type-textarea form-item-message js-form-item-message">
-                                    <label for="edit-message"
-                                        class="js-form-required form-required">Message</label>
-                                    <div>
-                                        <textarea data-drupal-selector="edit-message" id="edit-message" name="message" rows="5" cols="60"
-                                            placeholder="I would like information on..."
-                                            class="form-textarea required" required="required"
-                                            aria-required="true"></textarea>
-                                    </div>
-
-                                </div>
-                                <div
-                                    class="js-form-item form-item js-form-type-checkbox form-item-i-accept-the-privacy-policy js-form-item-i-accept-the-privacy-policy">
-                                    <input
-                                        data-webform-required-error="You need to accept the privacy policy."
-                                        data-drupal-selector="edit-i-accept-the-privacy-policy"
-                                        type="checkbox" id="edit-i-accept-the-privacy-policy"
-                                        name="i_accept_the_privacy_policy" value="1"
-                                        class="form-checkbox required" required="required"
-                                        aria-required="true" />
-
-                                    <label for="edit-i-accept-the-privacy-policy"
-                                        class="option js-form-required form-required">I accept the
-                                        privacy policy</label>
-                                </div>
-                                <div
-                                    class="js-form-item form-item js-form-type-checkbox form-item-i-accept-the-cookie-policy js-form-item-i-accept-the-cookie-policy">
-                                    <input
-                                        data-webform-required-error="You need to accept the cookie policy"
-                                        data-drupal-selector="edit-i-accept-the-cookie-policy"
-                                        type="checkbox" id="edit-i-accept-the-cookie-policy"
-                                        name="i_accept_the_cookie_policy" value="1"
-                                        class="form-checkbox required" required="required"
-                                        aria-required="true" />
-
-                                    <label for="edit-i-accept-the-cookie-policy"
-                                        class="option js-form-required form-required">I accept the
-                                        cookie policy</label>
+                                    class="js-form-item form-item js-form-type-email form-item-email js-form-item-email">
+                                    <label for="edit-email"
+                                        class="js-form-required form-required">Quantity</label>
+                                        <select name="quantity" id="">
+                                            @for ($i = 1; $i <= 10; $i++)
+                                                <option value="{{ $i }}">{{ $i }}</option>
+                                            @endfor
+                                        </select>
                                 </div>
                                 <div data-drupal-selector="edit-actions"
                                     class="form-actions webform-actions js-form-wrapper form-wrapper"
                                     id="edit-actions"><input
                                         class="webform-button--submit button button--primary js-form-submit form-submit"
                                         data-drupal-selector="edit-actions-submit" type="submit"
-                                        id="edit-actions-submit" name="op" value="Send" />
+                                        id="edit-actions-submit" name="op" value="Add" />
 
                                 </div>
                                 <input autocomplete="off"
