@@ -53,6 +53,26 @@ Route::get('/detail', function () {
     return view('users.detail');
 });
 
+Route::get('/collection', function () {
+    return view('users.collection');
+});
+
+Route::get('/about-us', function () {
+    return view('users.about-us');
+});
+
+Route::get('/contacts', function () {
+    return view('users.contacts');
+});
+
+Route::get('/news', function () {
+    return view('users.news');
+});
+
+Route::get('/press', function () {
+    return view('users.press');
+});
+
 Route::post('/ckeditor', [DashboardController::class, 'index'])->name('ckeditor.upload');
 
 Route::prefix('')->group(function () {
