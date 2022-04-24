@@ -15,7 +15,7 @@ class CategoryController extends BaseController
         $detailCategory = $category->getCategoryBySlug($request->slug);
         if(!empty($detailCategory->parent_id)){
             // list product theo category có phân trang
-            $listProduct = $product->getProducts(20);
+            $listProduct = $detailCategory->products()->paginate(20);
             return view('users.category.category_children')->with([
                 'detailCategory' => $detailCategory,
                 'listProduct' => $listProduct

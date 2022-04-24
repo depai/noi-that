@@ -230,6 +230,22 @@ jQuery(document).ready(function() {
             }
         });
 
+        jQuery('.product-asinfo-2').click(function() {
+            if (window.contactFormRichiediOpened === false &&
+                window.materialModalOpened === false &&
+                featuredImageLightboxOpened === false) {
+
+                disableHover();
+
+                jQuery('.close-webform-modal-2').on('click', function() {
+                    jQuery('#block-webform-2').css('display', 'none');
+                    window.contactFormRichiediOpened = false;
+                    enableHover();
+                });
+
+                jQuery('#block-webform-2').css('display', 'block');
+            }
+        });
     }
 
     // product page

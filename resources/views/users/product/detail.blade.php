@@ -240,8 +240,6 @@
                     </div>
                     <div id="block-webform"
                         class="request-info-prod block block-webform block-webform-block no-title">
-
-
                         <div class="content block-content">
                             <form
                                 class="webform-submission-form webform-submission-add-form webform-submission-request-information-form webform-submission-request-information-add-form webform-submission-request-information-node-2680-form webform-submission-request-information-node-2680-add-form js-webform-details-toggle webform-details-toggle"
@@ -251,6 +249,7 @@
                                 accept-charset="UTF-8">
                                 @csrf
                                 <input type="hidden" value="{{ $product->id }}" name="product_id">
+                                <input type="hidden" value="{{ $product->title }}" name="product_title">
                                 <h1 class="post-title"><span>{{ $product->title }}</span>
                                                                 </h1>
                                 <div

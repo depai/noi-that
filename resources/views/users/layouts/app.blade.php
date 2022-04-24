@@ -77,7 +77,7 @@
     <link rel="shortcut icon" href="/sites/default/files/favicon.png" type="image/png" />
 
     <title>@yield('title_for_layout')</title>
-
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <link rel="stylesheet" media="all"  href="/core/themes/stable/css/system/components/ajax-progress.module.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/align.module.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/autocomplete-loading.module.css?r8qfr8" />
@@ -265,15 +265,15 @@
                         </div>
                     </div>
                 </header>
-
                 @yield('content')
-
             </div>
             @include('users.layouts.footer')
         </div>
     </div>
-
-
+    @include('commons.modals.checkout')
+    @if (session('thanks'))
+        @include('commons.modals.thanks')
+    @endif
     <script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
     <script src="/modules/_d8_recaptcha_v3/js/recaptcha.js?r8qfr8" defer="true" async="true"></script>
     <script src="/modules/iubenda/js/iubenda.js?v=8.9.13"></script>

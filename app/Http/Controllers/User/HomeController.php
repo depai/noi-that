@@ -14,6 +14,6 @@ class HomeController extends BaseController
      */
     public function indexHome(Request $request)
     {
-        return view('users.homepage');
+        return view('users.homepage', ['style' => 1]);
     }
 }

@@ -41,10 +41,6 @@ Route::prefix('admin')->group(function () {
     Route::resource('products', AdminProductController::class);
 });
 
-Route::get('/', function () {
-    return view('users.homepage');
-});
-
 Route::get('/list', function () {
     return view('users.list');
 });
@@ -76,7 +72,7 @@ Route::get('/press', function () {
 Route::post('/ckeditor', [DashboardController::class, 'index'])->name('ckeditor.upload');
 
 Route::prefix('')->group(function () {
-    route::get('/', [HomeController::class, 'indexHome'])->name('dashboard');
+    route::get('/', [HomeController::class, 'indexHome'])->name('home');
     Route::prefix('product')->group(function () {
         route::get('/{slug}', [ProductController::class, 'productDetail'])->name('product.detail');
     });
@@ -89,3 +85,4 @@ Route::post('upload-image', [UploadImageController::class, 'store'])->name('uplo
 
 Route::post('/add-to-cart', [ProductController::class, 'addToCart'])->name('add_to_cart');
 Route::post('/remove-to-cart', [ProductController::class, 'removeToCart'])->name('remove_to_cart');
+Route::post('/check-out', [ProductController::class, 'checkout'])->name('checkout');

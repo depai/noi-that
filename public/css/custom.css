@@ -62,3 +62,49 @@
     font-size: 16px;
     color: red;
   }
+
+  .btn-remove {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #000000;
+    display: block;
+    padding: 0 10px;
+    line-height: 18px;
+    cursor: pointer;
+  }
+
+  .btn-checkout {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #000000;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+  }
+
+  .box-cart {
+    width: 350px; 
+    top: 35px; 
+    left: 0; 
+    font-size: 16px; 
+    color: #000000;
+    z-index: 9999;
+  }
+
+  .fs-14 {
+    font-size: 14px;
+  }
+
+  .menu-item .box-cart {
+    display: none !important;
+  }
+
+  .menu-item:hover .box-cart {
+    display: flex !important;
+  }
