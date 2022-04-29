@@ -4,7 +4,7 @@
         <span class="error">*</span>
     @endif
     </label>
-    <input type="{{ @$type ?? 'text'}}" class="form-control {{ @$class }}" name="{{ $field }}" value="{{ old($field) ?? @$entry }}" {{ @$extend }}>
+    <input @if(@$require) required @endif type="{{ @$type ?? 'text'}}" class="form-control {{ @$class }}" name="{{ $field }}" value="{{ old($field) ?? @$entry }}" {{ @$extend }}>
     @error($field)
         <span class="error">{{ $errors->get($field)[0] }}</span>
     @enderror

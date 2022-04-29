@@ -5,7 +5,9 @@
         <nav class="sidebar-nav">
             <ul id="sidebarnav">
                 <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Personal</span></li>
-                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('dashboard') }}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i>Dashboard </a>
+                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('dashboard') }}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i>
+                         <span class="hide-menu">Dashboard</span>
+                    </a>
                     {{--  <ul aria-expanded="false" class="collapse  first-level">
                         <li class="sidebar-item"><a href="index.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Classic </span></a></li>
                         <li class="sidebar-item"><a href="index2.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Analytical </span></a></li>
@@ -23,7 +25,14 @@
                 </li>
                 <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('categories.index') }}" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Categories</span></a>
                 </li>
-
+                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('orders.index') }}" aria-expanded="false">
+                        <i class="mdi mdi-motorbike"></i>
+                        <span class="hide-menu">Orders @if ($countNewOrder)
+                                <span class="badge badge-primary">{{ $countNewOrder }}</span>
+                            @endif
+                        </span>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- End Sidebar navigation -->

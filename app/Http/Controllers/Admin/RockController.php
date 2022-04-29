@@ -7,7 +7,7 @@ use App\Models\Rock;
 use Illuminate\Http\Request;
 use Yajra\DataTables\DataTables;
 
-class RockController extends Controller
+class RockController extends BaseController
 {
-    
+
 }

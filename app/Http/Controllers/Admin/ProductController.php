@@ -14,13 +14,13 @@ use App\Models\Size;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
-class ProductController extends Controller
+class ProductController extends BaseController
 {
     public function index()
     {
         return view('admin.products.index');
     }
-  
+
     public function create()
     {
         $selects = Category::with('parent')->where('parent_id', '<>', Category::PARENT)->get();

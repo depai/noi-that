@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 use Flash;
 use Yajra\DataTables\DataTables;
 
-class CategoryController extends Controller
+class CategoryController extends BaseController
 {
     public function index()
     {
