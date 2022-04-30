@@ -16,4 +16,14 @@ class HomeController extends BaseController
     {
         return view('users.homepage', ['style' => 1]);
     }
+
+    public function viewAboutUs()
+    {
+        return view('users.about-us');
+    }
+
+    public function viewContactUs()
+    {
+        return view('users.contacts');
+    }
 }

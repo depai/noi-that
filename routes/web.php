@@ -34,13 +34,9 @@ Route::get('/collection', function () {
     return view('users.collection');
 });
 
-Route::get('/about-us', function () {
-    return view('users.about-us');
-});
+Route::get('/about-us', [HomeController::class,'viewAboutUs'])->name('view.about.us');
 
-Route::get('/contacts', function () {
-    return view('users.contacts');
-});
+Route::get('/contacts', [HomeController::class, 'viewContactUs'])->name('view.contact.us');
 
 Route::get('/news', function () {
     return view('users.news');
