@@ -1,4 +1,4 @@
-<div class="form-group  align-content-start {{ @$half ? 'col-6' : '' }}">
+<div class="form-group  align-content-start {{ @$half ? 'col-6' : 'col-12' }}">
     <label class="" style="padding-left: 0">{{ $title }}
         @if(@$require)
             <span class="error">*</span>

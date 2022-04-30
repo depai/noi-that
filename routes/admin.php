@@ -6,6 +6,7 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\ProductController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Admin\OrderController;
+use App\Http\Controllers\Admin\SettingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,6 +39,9 @@ Route::middleware(['auth:admins'])->group(function () {
     Route::post('orders/add-item', [OrderController::class, 'addItem'])->name('orders.add_item');
     Route::post('orders/remove-item', [OrderController::class, 'removeItem'])->name('orders.remove_item');
     Route::resource('orders', OrderController::class);
+
+    Route::get('settings', [SettingController::class, 'index'])->name('settings.index');
+    Route::post('settings', [SettingController::class, 'store'])->name('settings.store');
 });
 
 

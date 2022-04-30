@@ -81,4 +81,9 @@
             reader.readAsDataURL(input.files[0]);
         }
     }
+
+    $('.custom-file-input').change(function() {
+        var file = $(this)[0].files[0].name;
+        $(this).siblings('.custom-file-label').text(file);
+    });
 </script>

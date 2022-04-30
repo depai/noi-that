@@ -4,7 +4,7 @@
             <div class="d-md-none">
                 <div>
                     <a href="/" title="Home" rel="home" class="site-branding-logo">
-                        <img class="logo-default logo-one" src="/themes/gavias_facdori/logo.svg" alt="Home" />
+                        <img class="logo-default logo-one" src="/themes/gavias_facdori/logo.png" alt="Home" />
                         <img class="logo-default logo-two hidden" src="/themes/gavias_facdori/logo-white.png" alt="Home" />
                         <img class="logo-default logo-three hidden" src="/themes/gavias_facdori/logo-black.png" alt="Home" />
                     </a>

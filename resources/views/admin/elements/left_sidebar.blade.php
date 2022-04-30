@@ -33,6 +33,12 @@
                         </span>
                     </a>
                 </li>
+                <li class="sidebar-item">
+                    <a class="sidebar-link" href="{{ route('settings.index') }}" aria-expanded="false">
+                        <i class="mdi mdi-settings"></i>
+                        <span class="hide-menu">Settings</span>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- End Sidebar navigation -->
