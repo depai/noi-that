@@ -8,6 +8,7 @@
                 <th>Email</th>
                 <th>Address</th>
                 <th>Price (VND)</th>
+                <th>Note</th>
                 <th>Status</th>
                 <th class="action-table">Action</th>
             </tr>

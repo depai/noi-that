@@ -50,6 +50,19 @@ class ProductController extends BaseController
         return view('admin.products.edit', compact('data', 'selects', 'collections', 'sizes', 'rocks'));
     }
 
+    public function show($id, Request $request)
+    {
+        if ($request->ajax()) {
+            $data = Product::with('rocks', 'sizes')->find($id);
+            $sizes = $data->sizes;
+            $rocks = $data->rocks;
+            $response = [
+                'view' => view('admin.products.show', compact('sizes', 'rocks'))->render()
+            ];
+            return response()->json($response);
+        }
+    }
+
     public function update($id, UpdateProductRequest $request)
     {
         $input = $request->except('_token', 'size', 'rocks', 'images');

@@ -32,4 +32,9 @@ class Rock extends Model
         $product->rocks()->insert($data);
         return true;
     }
+
+    public function getTitleAttribute ()
+    {
+        return $this->name;
+    }
 }

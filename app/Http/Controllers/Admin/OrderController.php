@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Order;
 use App\Models\Product;
+use App\Models\Rock;
+use App\Models\Size;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
@@ -17,41 +19,65 @@ class OrderController extends BaseController
 
     public function create()
     {
+        $cart = session()->pull('cart') ?: [];
         $products = Product::all();
-        return view('admin.orders.create', compact('products'));
+        return view('admin.orders.create', compact('products', 'cart'));
     }
 
-    public function store(StoreProductRequest $request)
+    public function store(Request $request)
     {
-        $input = $request->except('_token', 'size', 'rocks', 'images');
-        $product = Product::create($input);
-        $product->productImages()->delete();
-        ProductImage::saveMany($product, $request->images);
-        Size::saveMany($product, $request->size);
-        Rock::saveMany($product, $request->rocks);
-        return redirect(route('orders.index'))->with(['success' => 'Product saved successfully.']);
+        $cart = session()->pull('cart') ?: [];
+        $items = [];
+        $price = 0;
+        if (!empty($cart)) {
+            foreach ($cart as $item) {
+                $items[] = [
+                    'product_id' => $item['id'],
+                    'rock_id' => $item['rock_id'],
+                    'size_id' => $item['size_id'],
+                    'quantity' => $item['quantity'],
+                ];
+                $price += $item['price'];
+            }
+        }
+        $input = $request->only('full_name', 'phone', 'email', 'address', 'note');
+        $input['price'] = $price;
+        $order = Order::create($input);
+        $order->orderItems()->createMany($items);
+        return redirect(route('orders.index'))->with(['success' => 'Order saved successfully.']);
     }
 
     public function edit($id)
     {
-        $data = Product::with('rocks', 'productImages', 'sizes')->find($id);
-        $selects = Category::with('parent')->where('parent_id', '<>', Category::PARENT)->get();
-        $collections = Collection::get();
-        $sizes = $data->sizes;
-        $rocks = $data->rocks;
-        return view('admin.orders.edit', compact('data', 'selects', 'collections', 'sizes', 'rocks'));
+        $data = Order::with('orderItems.rock', 'orderItems.product', 'orderItems.size')->find($id);
+        $statuses = [
+            Order::NEW => 'New',
+            Order::DELIVERING => 'Delivering',
+            Order::COMPLETED => 'Completed',
+            Order::REJECT => 'Reject',
+        ];
+        foreach ($data->orderItems as $item) {
+            $cart[] = [
+                'id' => $item->product_id,
+                'title' => $item->product->title,
+                'rock_id' => $item->rock_id,
+                'rock_title' => @$item->rock->name ?: '',
+                'size_id' => $item->size_id,
+                'size_title' => @$item->size->name ?: '',
+                'quantity' => $item->quantity,
+                'price' => 0
+            ];
+        }
+
+        return view('admin.orders.edit', compact('data', 'cart', 'statuses'));
     }
 
-    public function update($id, UpdateProductRequest $request)
+    public function update($id, Request $request)
     {
-        $input = $request->except('_token', 'size', 'rocks', 'images');
-        $product = Product::find($id);
+        $input = $request->only('status', 'reason', 'note');
+        $product = Order::find($id);
         $product->update($input);
-        $product->productImages()->delete();
-        ProductImage::saveMany($product, $request->images);
-        Size::saveMany($product, $request->size);
-        Rock::saveMany($product, $request->rocks);
-        return redirect(route('orders.index'))->with(['success' => 'Product updated successfully.']);
+        return redirect(route('orders.index'))->with(['success' => 'Order updated successfully.']);
     }
 
     public function destroy($id)
@@ -92,5 +118,49 @@ class OrderController extends BaseController
             ->escapeColumns([]);
 
         return $dataReturn->make(true);
+    }
+
+    public function addItem (Request $request)
+    {
+        $rock = $size = '';
+        $cart = session()->pull('cart') ?: [];
+        $product = Product::find($request->product_id);
+        $price = $product->price;
+        if ($request->rock_id) {
+            $rock = Rock::find($request->rock_id);
+            $price += $rock->price;
+        }
+
+        if ($request->size_id) {
+            $size = Size::find($request->size_id);
+            $price += $size->price;
+        }
+
+        $cart[] = [
+            'id' => $request->product_id,
+            'title' => $product->title,
+            'rock_id' => $request->rock_id,
+            'rock_title' => @$rock->name ?: '',
+            'size_id' => $request->size_id,
+            'size_title' => @$size->name ?: '',
+            'quantity' => $request->quantity,
+            'price' => $price * $request->quantity
+        ];
+        session(['cart' => $cart]);
+        $response = [
+            'view' => view('admin.orders.cart', compact('cart'))->render()
+        ];
+        return response()->json($response);
+    }
+
+    public function removeItem (Request $request)
+    {
+        $cart = session()->pull('cart') ?: [];
+        unset($cart[$request->id]);
+        session(['cart' => $cart]);
+        $response = [
+            'view' => view('admin.orders.cart', compact('cart'))->render()
+        ];
+        return response()->json($response);
     }
 }

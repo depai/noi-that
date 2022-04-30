@@ -3,18 +3,18 @@
 @section('content')
     @include('commons.admin.breadcrumb', [
       'breadcrumbs' => [
-          ['name' => 'List Of Products', 'url' => route('products.index'), 'class' => ''],
+          ['name' => 'List Of Orders', 'url' => route('orders.index'), 'class' => ''],
           ['name' => 'Edit', 'url' => '', 'class' => 'active']
       ],
-      'title' => 'Edit Product'
+      'title' => 'Update Order'
     ])
    <div class="content">
        <div class="card box-primary">
            <div class="card-body">
                <div class="row">
-                   {!! Form::model($data, ['route' => ['products.update', $data->id], 'method' => 'patch', 'class' => 'col-12', 'enctype' => 'multipart/form-data']) !!}
+                   {!! Form::model($data, ['route' => ['orders.update', $data->id], 'method' => 'patch', 'class' => 'col-12', 'enctype' => 'multipart/form-data']) !!}
 
-                    @include('admin.products.fields', ['back' => route('products.index')])
+                    @include('admin.orders.fields', ['back' => route('orders.index'), 'extend' => 'readonly', 'update' => true])
 
                    {!! Form::close() !!}
                </div>
@@ -23,9 +23,8 @@
    </div>
 @endsection
 @section('css')
-<link rel="stylesheet" href="https://cdn.rawgit.com/enyo/dropzone/master/dist/dropzone.css">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 @endsection
-@php($images = getFileFromPath(@$data->productImages, '/storage/'))
 @push('after-scripts')
-    @include('admin.products.js')
+    @include('admin.orders.js')
 @endpush

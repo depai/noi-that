@@ -32,6 +32,7 @@
             { data: 'email', name: 'email', orderable: false },
             { data: 'address', name: 'address', orderable: false },
             { data: 'price', name: 'price' },
+            { data: 'note', name: 'note', orderable: false, searchable:false },
             { data: 'status', name: 'status', searchable:false },
             { data: 'action', name: 'action', orderable: false, searchable:false}
         ];

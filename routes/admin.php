@@ -35,6 +35,8 @@ Route::middleware(['auth:admins'])->group(function () {
     Route::resource('products', ProductController::class);
 
     Route::get('orders/datatable', [OrderController::class, 'datatable'])->name('orders.datatable');
+    Route::post('orders/add-item', [OrderController::class, 'addItem'])->name('orders.add_item');
+    Route::post('orders/remove-item', [OrderController::class, 'removeItem'])->name('orders.remove_item');
     Route::resource('orders', OrderController::class);
 });
 

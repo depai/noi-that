@@ -26,4 +26,9 @@ class Size extends Model
         $product->sizes()->insert($data);
         return true;
     }
+
+    public function getTitleAttribute ()
+    {
+        return $this->name;
+    }
 }
