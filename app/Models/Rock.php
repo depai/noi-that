@@ -16,7 +16,7 @@ class Rock extends Model
         foreach ($rocks as $rock) {
             $rock['product_id'] = $product->id;
             if (@$rock['image']) {
-                $imageName = uniqid() . $rock['image']->getClientOriginalExtension();
+                $imageName = uniqid() . '.' . $rock['image']->getClientOriginalExtension();
                 $rock['image']->storeAs('public/products/', $imageName);
                 $rock['image'] = $imageName;
             }
