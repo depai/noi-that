@@ -37,7 +37,7 @@ class ProductController extends BaseController
             $price += Size::find($request->size_id)->price;
         }
 
-        $cart[$request->product_id] = [
+        $cart[] = [
             'id' => $request->product_id,
             'title' => $request->product_title,
             'rock_id' => $request->rock_id,

@@ -79,7 +79,7 @@ jQuery(document).ready(function() {
         }
     });
 
-    // video background play stop 
+    // video background play stop
     jQuery(".video-row").click(function() {
         let video = jQuery('video')[0];
         video[video.paused ? 'play' : 'pause']();
@@ -245,6 +245,10 @@ jQuery(document).ready(function() {
 
                 jQuery('#block-webform-2').css('display', 'block');
             }
+        });
+
+        jQuery('.close-webform-modal-3').on('click', function() {
+            jQuery('#block-webform-3').css('display', 'none');
         });
     }
 

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
-  <head> 
+  <head>
     <meta charset="utf-8" />
 <link rel="canonical" href="https://giorgiocollection.com/collections/mirage" />
 <meta name="description" content="A collection with a contemporary spirit that with its square shapes gives all the elements an elegant and sophisticated look." />
@@ -147,26 +147,26 @@ pintrk('track', 'pagevisit');
     <link rel="stylesheet" href="https://giorgiocollection.com/themes/gavias_facdori/css/custom.css" media="screen" />
     <link rel="stylesheet" href="https://giorgiocollection.com/themes/gavias_facdori/css/update.css" media="screen" />
 
-    
+
 
           <style type="text/css">
         @media only screen and (max-device-width: 480px) and (min-device-width:320px){div.product-gallery{width: 100% !important;}}
       </style>
-    
+
           <style class="customize"></style>
-    
+
   </head>
 
-  
+
   <body class="gavias-content-builder layout-no-sidebars wide path-taxonomy">
 
     <a href="#main-content" class="visually-hidden focusable">
       Skip to main content
     </a>
 
-      
 
-    
+
+
       <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
     <div class="gva-body-wrapper">
 	<div class="body-page gva-body-page">
@@ -176,53 +176,53 @@ pintrk('track', 'pagevisit');
       <div class="topbar-inner">
         <div class="container">
           <div class="row">
-            
-            
+
+
             <div class="col-lg-12 col-sm-12 topbar-right">
-              <div class="topbar-content-inner clearfix"> 
+              <div class="topbar-content-inner clearfix">
                 <div class="topbar-content">  <div>
     <nav aria-labelledby="block-topmenu-menu" id="block-topmenu" class="top-menu block block-menu navigation menu--top-menu">
-          
-  
+
+
   <p  class="visually-hidden block-title block-title" id="block-topmenu-menu"><span>Top Menu anonymous</span></p>
-  
+
   <div class="block-content">
-                 
+
               <ul class="gva_menu">
-        
+
             <li  class="menu-item">
         <a href="/about-us" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/123">About us</a>
-        
+
       </li>
-    
+
             <li  class="menu-item">
         <a href="/contacts" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/153">Contacts</a>
-        
+
       </li>
-    
+
             <li  class="menu-item">
         <a href="/news" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/125">News</a>
-        
+
       </li>
-    
+
             <li  class="menu-item">
         <a href="/press" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/133">Press</a>
-        
+
       </li>
-    
+
             <li  class="menu-item">
         <a href="/privatearea-3d-2d-hd" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/3422">Login or Register</a>
-        
+
       </li>
         </ul>
-  
 
 
-        </div>  
+
+        </div>
 </nav>
 <div id="block-dropdownlanguage" class="language-top block block-dropdown-language block-dropdown-languagelanguage-interface no-title">
-  
-    
+
+
       <div class="content block-content">
         <div class="dropbutton-wrapper"><div class="dropbutton-widget"><ul class="dropdown-language-item dropbutton"><li class="en"><span class="language-link active-language" hreflang="en">EN</span></li><li class="it"><a href="/it/collezioni/mirage" class="language-link" hreflang="it">IT</a></li><li class="ar"><a href="/ar/collections/mirage" class="language-link" hreflang="ar">AR</a></li><li class="fr"><a href="/fr/collections/mirage" class="language-link" hreflang="fr">FR</a></li></ul></div></div>
     </div>
@@ -230,15 +230,15 @@ pintrk('track', 'pagevisit');
 
   </div>
 </div>
-              </div>  
+              </div>
             </div>
 
-          </div>   
+          </div>
         </div>
       </div>
     </div>
-    
-      
+
+
 
    <div class="header-main ">
       <div class="container header-content-layout">
@@ -247,17 +247,17 @@ pintrk('track', 'pagevisit');
               <div class="col-md-12 col-sm-12 col-xs-12 content-inner">
                 <div class="branding">
                                         <div>
-    
+
       <a href="/" title="Home" rel="home" class="site-branding-logo">
-               <img class="logo-default logo-one" src="/themes/gavias_facdori/logo.svg" alt="Home" />
+               <img class="logo-default logo-one" src="/themes/gavias_facdori/logo.png" alt="Home" />
          <img class="logo-default logo-two hidden" src="/themes/gavias_facdori/logo-white.png" alt="Home" />
          <img class="logo-default logo-three hidden" src="/themes/gavias_facdori/logo-black.png" alt="Home" />
-        
+
     </a>
-    
+
   </div>
 
-                    
+
                 </div>
                 <div class="header-inner clearfix">
                   <div class="main-menu">
@@ -266,14 +266,14 @@ pintrk('track', 'pagevisit');
                           <div class="gva-offcanvas-mobile">
                             <div class="d-md-none">
                                                             <div>
-    
+
       <a href="/" title="Home" rel="home" class="site-branding-logo">
-               <img class="logo-default logo-one" src="/themes/gavias_facdori/logo.svg" alt="Home" />
+               <img class="logo-default logo-one" src="/themes/gavias_facdori/logo.png" alt="Home" />
          <img class="logo-default logo-two hidden" src="/themes/gavias_facdori/logo-white.png" alt="Home" />
          <img class="logo-default logo-three hidden" src="/themes/gavias_facdori/logo-black.png" alt="Home" />
-        
+
     </a>
-    
+
   </div>
 
                                                       </div>
@@ -281,238 +281,238 @@ pintrk('track', 'pagevisit');
                           <div class="main-menu-inner">
                                                             <div>
     <nav aria-labelledby="block-gavias-facdori-mainnavigation-menu" id="block-gavias-facdori-mainnavigation" class="block block-menu navigation menu--main">
-          
-  
+
+
   <p  class="visually-hidden block-title block-title" id="block-gavias-facdori-mainnavigation-menu"><span>Main navigation</span></p>
-  
+
   <div class="block-content">
-                 
+
 <div class="gva-navigation">
 
               <ul  class="clearfix gva_menu gva_menu_main">
-      
-                              
+
+
             <li  class="menu-item menu-item--expanded menu-item--active-trail ">
         <a href="/collection-page">          Collections<span class="icaret nav-plus fas fa-chevron-down"></span>        </a>
-          
+
                       <ul class="menu sub-menu">
       <span class="back-menu-m"><i class="fal fa-chevron-left"></i></span>
-                              
+
             <li  class="menu-item menu-item--active-trail">
         <a href="/collections/mirage">          MIRAGE        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/collections/charisma">          CHARISMA        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/collections/infinity">          INFINITY        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/collections/vision">          VISION        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/collections/alchemy">          ALCHEMY        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/collections/coliseum">          COLISEUM        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/collections/lifetime">          LIFETIME        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/collections/daydream">          DAYDREAM        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/collections/absolute">          ABSOLUTE        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/collections/sunrise">          SUNRISE        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/collections/vogue">          VOGUE        </a>
-          
+
               </li>
         </ul>
         </li>
-                          
+
             <li  class="menu-item menu-item--expanded ">
         <a href="/living">          LIVING<span class="icaret nav-plus fas fa-chevron-down"></span>        </a>
-          
+
                       <ul class="menu sub-menu">
       <span class="back-menu-m"><i class="fal fa-chevron-left"></i></span>
-                              
+
             <li  class="menu-item menu-item--collapsed">
         <a href="/dining-tables">          Dining tables        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item menu-item--collapsed">
         <a href="/dining-chairs">          Dining Chairs        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/buffets">          Buffets        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/consoles">          Consoles        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item menu-item--collapsed">
         <a href="/sofas">          Sofas        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item menu-item--collapsed">
         <a href="/occasional-chairs">          Occasional chairs        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/cocktail-end-tables">          Cocktail &amp; end tables        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/display-cabinets">          Display cabinets        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/tv-units">          TV units        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item menu-item--collapsed">
         <a href="/home-bar">          Home Bar        </a>
-          
+
               </li>
         </ul>
         </li>
-                          
+
             <li  class="menu-item menu-item--expanded ">
         <a href="/bedroom">          BEDROOM<span class="icaret nav-plus fas fa-chevron-down"></span>        </a>
-          
+
                       <ul class="menu sub-menu">
       <span class="back-menu-m"><i class="fal fa-chevron-left"></i></span>
-                              
+
             <li  class="menu-item">
         <a href="/beds">          Beds        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/night-tables">          Night Tables        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/benches">          Benches        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/chests-and-dressers">          Chests &amp; dressers        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item menu-item--collapsed">
         <a href="/vanity-desks">          Vanity desks        </a>
-          
+
               </li>
         </ul>
         </li>
-                          
+
             <li  class="menu-item menu-item--expanded ">
         <a href="/office">          OFFICE<span class="icaret nav-plus fas fa-chevron-down"></span>        </a>
-          
+
                       <ul class="menu sub-menu">
       <span class="back-menu-m"><i class="fal fa-chevron-left"></i></span>
-                              
+
             <li  class="menu-item">
         <a href="/desks">          Desks        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item menu-item--collapsed">
         <a href="/office-chairs">          Office Chairs        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/bookcases">          Bookcases        </a>
-          
+
               </li>
         </ul>
         </li>
-                          
+
             <li  class="menu-item menu-item--expanded ">
         <a href="/decor">          DECOR<span class="icaret nav-plus fas fa-chevron-down"></span>        </a>
-          
+
                       <ul class="menu sub-menu">
       <span class="back-menu-m"><i class="fal fa-chevron-left"></i></span>
-                              
+
             <li  class="menu-item menu-item--collapsed">
         <a href="/lightings">          Lightings        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/mirrors">          Mirrors        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/carpets">          Carpets        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/vases">          Vases        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/artworks">          Artworks        </a>
-          
+
               </li>
-                          
+
             <li  class="menu-item">
         <a href="/wallpapers-and-interior-decorations">          Wallpapers &amp; interior decorations        </a>
-          
+
               </li>
         </ul>
         </li>
         </ul>
-  
+
 
 </div>
 
 
-        </div>  
+        </div>
 </nav>
 
   </div>
@@ -520,47 +520,47 @@ pintrk('track', 'pagevisit');
                                                         <div class="d-lg-none">
                                                                 <div>
     <nav aria-labelledby="block-topmenu-menu" id="block-topmenu" class="top-menu block block-menu navigation menu--top-menu">
-          
-  
+
+
   <p  class="visually-hidden block-title block-title" id="block-topmenu-menu"><span>Top Menu anonymous</span></p>
-  
+
   <div class="block-content">
-                 
+
               <ul class="gva_menu">
-        
+
             <li  class="menu-item">
         <a href="/about-us" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/123">About us</a>
-        
+
       </li>
-    
+
             <li  class="menu-item">
         <a href="/contacts" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/153">Contacts</a>
-        
+
       </li>
-    
+
             <li  class="menu-item">
         <a href="/news" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/125">News</a>
-        
+
       </li>
-    
+
             <li  class="menu-item">
         <a href="/press" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/133">Press</a>
-        
+
       </li>
-    
+
             <li  class="menu-item">
         <a href="/privatearea-3d-2d-hd" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/3422">Login or Register</a>
-        
+
       </li>
         </ul>
-  
 
 
-        </div>  
+
+        </div>
 </nav>
 <div id="block-dropdownlanguage" class="language-top block block-dropdown-language block-dropdown-languagelanguage-interface no-title">
-  
-    
+
+
       <div class="content block-content">
         <div class="dropbutton-wrapper"><div class="dropbutton-widget"><ul class="dropdown-language-item dropbutton"><li class="en"><span class="language-link active-language" hreflang="en">EN</span></li><li class="it"><a href="/it/collezioni/mirage" class="language-link" hreflang="it">IT</a></li><li class="ar"><a href="/ar/collections/mirage" class="language-link" hreflang="ar">AR</a></li><li class="fr"><a href="/fr/collections/mirage" class="language-link" hreflang="fr">FR</a></li></ul></div></div>
     </div>
@@ -571,9 +571,9 @@ pintrk('track', 'pagevisit');
                                                           </div>
                             </div>
 
-                            
-                                                      </div> 
-                          
+
+                                                      </div>
+
                           <div id="menu-bar" class="menu-bar menu-bar-mobile d-lg-none d-xl-none">
                             <span class="one"></span>
                             <span class="two"></span>
@@ -582,8 +582,8 @@ pintrk('track', 'pagevisit');
 
                       </div>
                     </div>
-                  </div>  
-                </div> 
+                  </div>
+                </div>
               </div>
 
             </div>
@@ -594,9 +594,9 @@ pintrk('track', 'pagevisit');
 </header>
 
 		<div role="main" class="main main-page">
-		
+
 			<div class="clearfix"></div>
-				
+
 
 							<div class="help gav-help-region">
 					<div class="container">
@@ -609,42 +609,42 @@ pintrk('track', 'pagevisit');
 						</div>
 					</div>
 				</div>
-						
+
 			<div class="clearfix"></div>
-						
+
 			<div class="clearfix"></div>
-			
+
 			<div id="content" class="content content-full">
 				<div class="container-full container-bg">
 					<div class="content-main-inner">
 	<div id="page-main-content" class="main-content">
 		<div class="main-content-inner">
-			
+
 							<div class="content-main">
 					  <div>
     <div id="block-gavias-facdori-content" class="block block-system block-system-main-block no-title">
-  
-    
+
+
       <div class="content block-content">
       <div class="category-page gva-view view-page js-view-dom-id-e4c76a4414478cd0abc94b03ed7081e4448199f8ee35c36a46f63020fd1c3d46">
-  
-  
-  
+
+
+
 
       <header>
       <div class="gva-view js-view-dom-id-bacf079efeba13a24f23621dffe7e5124bee2cfe7cafa7d5178b881898969ed9">
-  
-  
-  
 
-  
-  
-  
+
+
+
+
+
+
 
   <div class="view-content-wrap">
              <div class="item">
        <div class="views-field views-field-nothing"><span class="field-content"><div class="category-image">
-    
+
 <div class="item-image">
   <img src="/sites/default/files/2021-08/immagine_collezione.jpg" alt="MIRAGE" typeof="Image" />
 
@@ -677,19 +677,19 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
      </div>
    </div>
 
-    
 
-  
-  
 
-  
-  
+
+
+
+
+
 </div>
 
     </header>
-  
-  
-  
+
+
+
 
   <div class="view-content-wrap">
              <div class="item">
@@ -699,13 +699,13 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
        <div class="views-field views-field-nothing"><span class="field-content">            <div class="cat-list-link"><h2>LIVING</h2> <a href="https://giorgiocollection.com/living?collezione=104" class="cat-viewmore-link">View more</a></div>
         <div class="collection-prodlist collection-category-prodlist">
             <div class="views-element-container"><div class="gva-view js-view-dom-id-693b7c5b30f8b4fcd099edfaf8374d3c396180f929cb82e8389d6732cb72f1f1">
-  
-  
-  
 
-  
-  
-  
+
+
+
+
+
+
 
   <div class="view-content-wrap">
              <div class="item">
@@ -1070,26 +1070,26 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
      </div>
    </div>
 
-    
 
-  
-  
 
-  
-  
+
+
+
+
+
 </div>
 </div>
 
         </div>
         <div class="cat-page-prodlist collection-category-prodlist-mobile">
             <div class="views-element-container"><div class="gva-view js-view-dom-id-53fde612bb05e799ed9a92ee48fb66fa4807e0db8d053c6a77b98cf49d67f8b5">
-  
-  
-  
 
-  
-  
-  
+
+
+
+
+
+
 
   <div class="view-content-wrap">
              <div class="item">
@@ -1454,13 +1454,13 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
      </div>
    </div>
 
-    
 
-  
-  
 
-  
-  
+
+
+
+
+
 </div>
 </div>
 
@@ -1537,13 +1537,13 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
        <div class="views-field views-field-nothing"><span class="field-content">            <div class="cat-list-link"><h2>BEDROOM</h2> <a href="https://giorgiocollection.com/bedroom?collezione=104" class="cat-viewmore-link">View more</a></div>
         <div class="collection-prodlist collection-category-prodlist">
             <div class="views-element-container"><div class="gva-view js-view-dom-id-7095138e808bed7b8085871c9fb2ac557f47a5509d99b865ba5227b6797da9de">
-  
-  
-  
 
-  
-  
-  
+
+
+
+
+
+
 
   <div class="view-content-wrap">
              <div class="item">
@@ -1668,26 +1668,26 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
      </div>
    </div>
 
-    
 
-  
-  
 
-  
-  
+
+
+
+
+
 </div>
 </div>
 
         </div>
         <div class="cat-page-prodlist collection-category-prodlist-mobile">
             <div class="views-element-container"><div class="gva-view js-view-dom-id-f33ebdaec98ca7e0799c3e05af1f3cc34f1bb2fda9e312b1a60c55fd0daab39d">
-  
-  
-  
 
-  
-  
-  
+
+
+
+
+
+
 
   <div class="view-content-wrap">
              <div class="item">
@@ -1812,13 +1812,13 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
      </div>
    </div>
 
-    
 
-  
-  
 
-  
-  
+
+
+
+
+
 </div>
 </div>
 
@@ -1871,13 +1871,13 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
        <div class="views-field views-field-nothing"><span class="field-content">            <div class="cat-list-link"><h2>OFFICE</h2> <a href="https://giorgiocollection.com/office?collezione=104" class="cat-viewmore-link">View more</a></div>
         <div class="collection-prodlist collection-category-prodlist">
             <div class="views-element-container"><div class="gva-view js-view-dom-id-61007d89d8dd35dc0de397943e462db76525ef27063141acb4cb9c091c328b88">
-  
-  
-  
 
-  
-  
-  
+
+
+
+
+
+
 
   <div class="view-content-wrap">
              <div class="item">
@@ -1927,26 +1927,26 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
      </div>
    </div>
 
-    
 
-  
-  
 
-  
-  
+
+
+
+
+
 </div>
 </div>
 
         </div>
         <div class="cat-page-prodlist collection-category-prodlist-mobile">
             <div class="views-element-container"><div class="gva-view js-view-dom-id-bc876ff146a618bd6eed324f8488d1c6e3474b91bd71932d929851f846a1f535">
-  
-  
-  
 
-  
-  
-  
+
+
+
+
+
+
 
   <div class="view-content-wrap">
              <div class="item">
@@ -1996,13 +1996,13 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
      </div>
    </div>
 
-    
 
-  
-  
 
-  
-  
+
+
+
+
+
 </div>
 </div>
 
@@ -2043,13 +2043,13 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
        <div class="views-field views-field-nothing"><span class="field-content">            <div class="cat-list-link"><h2>DECOR</h2> <a href="https://giorgiocollection.com/decor?collezione=104" class="cat-viewmore-link">View more</a></div>
         <div class="collection-prodlist collection-category-prodlist">
             <div class="views-element-container"><div class="gva-view js-view-dom-id-84db9609b15764c1827c8ad457c5996f40992ab3e913a13274a91f1cf9be0100">
-  
-  
-  
 
-  
-  
-  
+
+
+
+
+
+
 
   <div class="view-content-wrap">
              <div class="item">
@@ -2534,26 +2534,26 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
      </div>
    </div>
 
-    
 
-  
-  
 
-  
-  
+
+
+
+
+
 </div>
 </div>
 
         </div>
         <div class="cat-page-prodlist collection-category-prodlist-mobile">
             <div class="views-element-container"><div class="gva-view js-view-dom-id-e804486ec33b8b5731ab0bdc0604ff13e475ac4d73727459244188238365689e">
-  
-  
-  
 
-  
-  
-  
+
+
+
+
+
+
 
   <div class="view-content-wrap">
              <div class="item">
@@ -3038,13 +3038,13 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
      </div>
    </div>
 
-    
 
-  
-  
 
-  
-  
+
+
+
+
+
 </div>
 </div>
 
@@ -3101,13 +3101,13 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
      </div>
    </div>
 
-    
 
-  
-  
 
-  
-  
+
+
+
+
+
 </div>
 
     </div>
@@ -3116,7 +3116,7 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
   </div>
 
 				</div>
-			
+
 					</div>
 	</div>
 </div>
@@ -3124,79 +3124,79 @@ MIRAGE offers a refined total look with over 50 pieces, also including precious 
 				</div>
 			</div>
 
-			
-						
+
+
 		</div>
 	</div>
 
-	
+
 <footer id="footer" class="footer">
   <div class="footer-inner">
-    
-         
+
+
      <div class="footer-center">
-        <div class="container">      
+        <div class="container">
            <div class="row">
                               <div class="footer-first col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 footer-column">
                     <div>
     <div id="block-footeraddress" class="block block-block-content block-block-content619a5508-258d-4888-8057-23306ce38656 no-title">
-  
-    
+
+
       <div class="content block-content">
-      
+
             <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>6 Via Einstein - 20831<br />
 Seregno (MB) - ITALY</p>
 </div>
-      
+
     </div>
   </div>
 
   </div>
 
-                </div> 
-              
+                </div>
+
                              <div class="footer-second col-xl-3 col-lg-4 col-md-12 col-sm-12 col-xs-12 footer-column">
                     <div>
     <div id="block-footertel" class="block block-block-content block-block-contentc8b04782-b1e2-412a-9bb8-2690fec81fbe no-title">
-  
-    
+
+
       <div class="content block-content">
-      
+
             <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>T. <a href="tel:+39 0362 243 471">+39 0362 243 471</a><br />
 T. <a href="tel:+39 0362 326 814">+39 0362 326 814</a></p>
 </div>
-      
+
     </div>
   </div>
 
   </div>
 
-                </div> 
-              
+                </div>
+
                               <div class="footer-third col-xl-3 col-lg-2 col-md-12 col-sm-12 col-xs-12 footer-column">
                     <div>
     <div id="block-footeremails" class="block block-block-content block-block-content0b1cf2c7-e512-40da-9a4b-0af60dc520b8 no-title">
-  
-    
+
+
       <div class="content block-content">
-      
+
             <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a href="mailto:giorgiocollection@giorgiocollection.it">giorgiocollection@giorgiocollection.it</a><br /><a href="mailto:sales@giorgiocollection.it">sales@giorgiocollection.it</a></p>
 </div>
-      
+
     </div>
   </div>
 
   </div>
 
-                </div> 
-              
+                </div>
+
                                <div class="footer-four col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 footer-column">
                     <div>
     <div id="block-footersocial" class="block block-block-content block-block-content486f085d-1635-4972-b2da-2dd90ea07115 no-title">
-  
-    
+
+
       <div class="content block-content">
-      
+
             <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>Follow Giorgio Collection</p>
 <div class="social-copyright">
     <div class="socials">
@@ -3210,43 +3210,43 @@ T. <a href="tel:+39 0362 326 814">+39 0362 326 814</a></p>
 <style> svg.iconify{margin-top:6px !important; width:120% !important;}  .tiktok:hover{color:#000 !important;}</style>
     </div>
 </div></div>
-      
+
     </div>
   </div>
 
   </div>
 
-                </div> 
-                         </div>   
+                </div>
+                         </div>
         </div>
-    </div>  
-  </div>   
+    </div>
+  </div>
 
       <div class="copyright">
       <div class="container">
         <div class="copyright-inner">
               <div>
     <div id="block-footerlegal" class="block block-block-content block-block-content484fd5d3-054d-4968-9ac3-6f01b7a62336 no-title">
-  
-    
+
+
       <div class="content block-content">
-      
+
             <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><b>Giorgio Collection </b>Via Einstein 6, 20831 Seregno (MB) - ITALY | V.A.T./Tax Code: IT00863740965 - <a href="https://www.iubenda.com/privacy-policy/28371116" class="iubenda-black no-brand iubenda-noiframe iubenda-embed iubenda-noiframe " title="Privacy Policy ">Privacy Policy</a><script type="text/javascript">
 <!--//--><![CDATA[// ><!--
 (function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);
 //--><!]]>
 </script></p>
 </div>
-      
+
     </div>
   </div>
 
   </div>
 
-        </div>   
-      </div>   
+        </div>
+      </div>
     </div>
-  
+
 </footer>
 </div>
 
@@ -3256,39 +3256,39 @@ T. <a href="tel:+39 0362 326 814">+39 0362 326 814</a></p>
          <a href="#" class="quick-side-close"><i class="fa fa-times"></i></a>
            <div>
     <div id="block-gavias-facdori-about" class="block block-block-content block-block-content6d5ade86-9d5b-4f7d-8df0-eab5c3d27e0c">
-  
+
       <p class="block-title" ><span>About</span></p>
-    
+
       <div class="content block-content">
-      
+
             <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">We are professional and reliable provider since we offer customers the most powerful and beautiful themes. Besides, we always catch the latest technology and adapt to follow world’s new trends to deliver the best themes to the market.</div>
-      
+
     </div>
   </div>
 <div id="block-socialside" class="block block-block-content block-block-content401a3d02-888c-4339-9329-b43588ec86d3 no-title">
-  
-    
+
+
       <div class="content block-content">
-      
+
             <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><div class="social-icon">
 	<a class="icon" href="#"><i class="fab fa-twitter"></i></a>
 	<a class="icon" href="#"><i class="fab fa-facebook"></i></a>
 	<a class="icon" href="#"><i class="fab fa-instagram"></i></a>
        <a class="icon" href="#"><i class="fab fa-dribbble"></i></a>
 </div></div>
-      
+
     </div>
   </div>
 
   </div>
 
-       </div>  
+       </div>
    </div>
   </div>
 
   </div>
 
-    
+
     <script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
 <script src="/modules/_d8_recaptcha_v3/js/recaptcha.js?r8qfr8" defer="true" async="true"></script>
 <script src="/modules/iubenda/js/iubenda.js?v=8.9.13"></script>
@@ -3298,7 +3298,7 @@ T. <a href="tel:+39 0362 326 814">+39 0362 326 814</a></p>
 <script src="/modules/dropdown_language/js/dropdown_language_selector.js?v=8.9.13"></script>
 <script src="/core/misc/dropbutton/dropbutton.js?v=8.9.13"></script>
 
-    
+
         <div id="gva-overlay"></div>
   </body>
 </html>

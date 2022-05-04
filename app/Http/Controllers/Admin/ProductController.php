@@ -14,13 +14,13 @@ use App\Models\Size;
 use Illuminate\Http\Request;
 use Yajra\DataTables\Facades\DataTables;
 
-class ProductController extends Controller
+class ProductController extends BaseController
 {
     public function index()
     {
         return view('admin.products.index');
     }
-  
+
     public function create()
     {
         $selects = Category::with('parent')->where('parent_id', '<>', Category::PARENT)->get();
@@ -48,6 +48,19 @@ class ProductController extends Controller
         $sizes = $data->sizes;
         $rocks = $data->rocks;
         return view('admin.products.edit', compact('data', 'selects', 'collections', 'sizes', 'rocks'));
+    }
+
+    public function show($id, Request $request)
+    {
+        if ($request->ajax()) {
+            $data = Product::with('rocks', 'sizes')->find($id);
+            $sizes = $data->sizes;
+            $rocks = $data->rocks;
+            $response = [
+                'view' => view('admin.products.show', compact('sizes', 'rocks'))->render()
+            ];
+            return response()->json($response);
+        }
     }
 
     public function update($id, UpdateProductRequest $request)

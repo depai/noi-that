@@ -22,25 +22,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('admin')->group(function () {
-    route::get('login', function(){
-        return view('admin.auth.login');
-    })->name('view.login');
-
-    route::post('login', [AuthController::class, 'login'])->name('login');
-
-    Route::prefix('')->middleware(['auth:admins'])->group(function () {
-        route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-        route::post('logout', [AuthController::class, 'logout'])->name('logout');
-    });
-
-    Route::get('categories/datatable', [CategoryController::class, 'datatable'])->name('categories.datatable');
-    Route::resource('categories', CategoryController::class);
-
-    Route::get('products/datatable', [AdminProductController::class, 'datatable'])->name('products.datatable');
-    Route::resource('products', AdminProductController::class);
-});
-
 Route::get('/list', function () {
     return view('users.list');
 });
@@ -53,13 +34,9 @@ Route::get('/collection', function () {
     return view('users.collection');
 });
 
-Route::get('/about-us', function () {
-    return view('users.about-us');
-});
+Route::get('/about-us', [HomeController::class,'viewAboutUs'])->name('view.about.us');
 
-Route::get('/contacts', function () {
-    return view('users.contacts');
-});
+Route::get('/contacts', [HomeController::class, 'viewContactUs'])->name('view.contact.us');
 
 Route::get('/news', function () {
     return view('users.news');

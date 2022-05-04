@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class SizeController extends Controller
+class SizeController extends BaseController
 {
     //
 }

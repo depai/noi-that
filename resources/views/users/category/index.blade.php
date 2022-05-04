@@ -68,9 +68,6 @@
                                                 </div>
                                             </header>
 
-
-
-
                                             <div class="view-content-wrap">
                                                 <div class="item">
                                                     <div class="views-field views-field-nothing">

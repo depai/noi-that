@@ -1,4 +1,4 @@
-<a href="javascript:void(0)" class="position-relative cart product-asinfo-2">
+<a href="javascript:void(0)" class="position-relative cart @if(!empty(@$cart)) product-asinfo-2 @endif">
     <svg style="width: 20px; margin-bottom: -12px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="40px" height="36px" viewBox="0 0 40 36" style="enable-background:new 0 0 40 36;" xml:space="preserve">
         <g id="Page-1_4_" sketch:type="MSPage">
@@ -9,8 +9,8 @@
             </g>
         </g>
     </svg>
-    @if(@count($cart))
-        <a href="javascript:void(0)" class="px-1 float-right bg-danger rounded color-white" style="top: -30px">{{ count($cart) }}</a>  
+    @if(!empty(@$cart))
+        <a href="javascript:void(0)" class="px-1 float-right bg-danger rounded color-white" style="top: -30px">{{ count($cart) }}</a>
     @endif
     <div class="position-absolute rounded row bg-light box-cart">
         @if (@$cart)
@@ -33,7 +33,7 @@
                     x{{ $product['quantity'] }}
                 </div>
                 <form class="col-2 align-self-center" action="{{ route('remove_to_cart') }}" method="post">
-                    @csrf 
+                    @csrf
                     <input type="hidden" value="{{ $key }}" name="id">
                     <button class="btn-remove">-</button>
                 </form>
