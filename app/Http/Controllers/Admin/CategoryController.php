@@ -27,7 +27,7 @@ class CategoryController extends BaseController
     {
         $input = $request->except('_token', 'image', 'delete_image');
         if ($request->image) {
-            $imageName = uniqid() . $request->image->getClientOriginalExtension();
+            $imageName = uniqid() . '.' . $request->image->getClientOriginalExtension();
             $request->image->storeAs('public/categories/', $imageName);
             $input['image'] = $imageName;
         } elseif ($request->delete_image) {
@@ -48,7 +48,7 @@ class CategoryController extends BaseController
     {
         $input = $request->except('_token', 'image', 'delete_image');
         if ($request->image) {
-            $imageName = uniqid() . $request->image->getClientOriginalExtension();
+            $imageName = uniqid() . '.' . $request->image->getClientOriginalExtension();
             $request->image->storeAs('public/categories/', $imageName);
             $input['image'] = $imageName;
         } elseif ($request->delete_image) {
