@@ -72,10 +72,6 @@
   </noscript>
   <script></script>
   <meta name="p:domain_verify" content="307b8d6765ab5ca822326af169fcb2dc" />
-  <link rel="alternate" hreflang="en" href="https://giorgiocollection.com/" />
-  <link rel="alternate" hreflang="it" href="https://giorgiocollection.com/it" />
-  <link rel="alternate" hreflang="ar" href="https://giorgiocollection.com/ar" />
-  <link rel="alternate" hreflang="fr" href="https://giorgiocollection.com/fr" />
   <link rel="shortcut icon" href="/sites/default/files/favicon.png" type="image/png" />
 
   <title>Giorgio Collection: luxury Italian furniture &amp; designer interiors</title>
@@ -366,7 +362,6 @@
                                                     </div>
                                                   </div>
                                                 </div>
-
                                               </div>
                                             </div>
                                           </div>
@@ -399,8 +394,8 @@
                                                     </div>
                                                   </div>
                                                 </div>
-
                                               </div>
+
                                               <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12 flex-change-percentage ">
                                                 <div class="column-inner  bg-size-cover  ">
                                                   <div class="column-content-inner">
@@ -412,14 +407,12 @@
                                                     </div>
                                                   </div>
                                                 </div>
-
                                               </div>
                                               <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
                                                 <div class="column-inner  bg-size-cover  ">
                                                   <div class="column-content-inner">
                                                   </div>
                                                 </div>
-
                                               </div>
                                               <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
                                                 <div class="column-inner  bg-size-cover  ">
@@ -430,18 +423,14 @@
                                                         color: #000;
                                                         border-color: #000;
                                                       }
-
                                                       #button-gdss5y806pbu:hover {}
                                                     </style>
-
                                                     <div class="clearfix"></div>
-                                                    <a href="/company" class="gsc-button button-transparent-black  mini " id="button-gdss5y806pbu">
-                                                      OUR PHILOSOPHY </a>
-
+                                                    <a href="/company" class="gsc-button button-transparent-black  mini " id="button-gdss5y806pbu"> OUR PHILOSOPHY </a>
                                                   </div>
                                                 </div>
-
                                               </div>
+
                                               <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
                                                 <div class="column-inner  bg-size-cover  ">
                                                   <div class="column-content-inner">
@@ -454,314 +443,28 @@
                                         </div>
                                       </div>
 
+                                      @foreach ($collections as $key=>$collection)
                                       <div class="gbb-row-wrapper section row-first-level charisma-row gbb-row  bg-size-cover" style="" data-onepage-title="Charisma Row">
                                         <div class="bb-inner remove_padding">
                                           <div class="bb-container container-fw">
                                             <div class="row row-wrapper">
-                                              <div class="gsc-column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12  ">
-                                                <div class="column-inner  bg-size-cover  ">
-                                                  <div class="column-content-inner">
-                                                    <div class="widget gsc-image text-left ">
-                                                      <div class="widget-content">
+                                                @if ($key % 2 == 0)
+                                                    @include('users.collection_home.collection_image', ['collection'=>$collection])
+                                                    @include('users.collection_home.collection_content', ['collection'=>$collection])
+                                                @else
+                                                    @include('users.collection_home.collection_content', ['collection'=>$collection])
+                                                    @include('users.collection_home.collection_image', ['collection'=>$collection])
+                                                @endif
 
-                                                        <img src="https://giorgiocollection.com/sites/default/files/22-02-20_10030_m%20(VERT)1b1111_3.jpg" alt="" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-
-                                              </div>
-                                              <div class="gsc-column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12  align-self-center">
-                                                <div class="column-inner  bg-size-cover  ">
-                                                  <div class="column-content-inner">
-                                                    <div class="column-content charisma-heading ">
-                                                      <h2>Mirage&nbsp;</h2>
-                                                    </div>
-                                                    <div class="column-content charisma-subheading ">
-                                                      <p style="text-align: center;"><span style="font-family: 'Ibarra Real Nova', serif; font-size: 16px; background-color: #ffffff;">Contemporary style, square shapes and clean lines for a sophisticated look and feel: the Mirage collection embraces materials and textures to add a vibrant spirit to luxury interior spaces.</span></p>
-                                                    </div>
-                                                    <div class="gbb-row-wrapper section charisma-prodotti gbb-row  bg-size-cover" style="">
-                                                      <div class="bb-inner default">
-                                                        <div class="bb-container container">
-                                                          <div class="row row-wrapper">
-                                                            <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
-                                                              <div class="column-inner  bg-size-cover  ">
-                                                                <div class="column-content-inner">
-                                                                  <div class="widget gsc-image text-none ">
-                                                                    <div class="widget-content">
-                                                                      <a href="/node/3254">
-
-                                                                        <img src="https://giorgiocollection.com/sites/default/files/Progetto%20senza%20titolo%20-%202020-10-16T163755.688.png" alt="" />
-                                                                      </a>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
-
-                                                            </div>
-                                                            <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
-                                                              <div class="column-inner  bg-size-cover  ">
-                                                                <div class="column-content-inner">
-                                                                  <div class="widget gsc-image text-none ">
-                                                                    <div class="widget-content">
-                                                                      <a href="/node/3289">
-
-                                                                        <img src="https://giorgiocollection.com/sites/default/files/Progetto%20senza%20titolo%20-%202020-10-16T163823.089.png" alt="" />
-                                                                      </a>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
-
-                                                            </div>
-                                                            <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
-                                                              <div class="column-inner  bg-size-cover  ">
-                                                                <div class="column-content-inner">
-                                                                  <div class="widget gsc-image text-none ">
-                                                                    <div class="widget-content">
-                                                                      <a href="/mirage-mirage-sectional">
-
-                                                                        <img src="https://giorgiocollection.com/sites/default/files/Progetto%20senza%20titolo%20-%202020-10-16T163852.462.png" alt="" />
-                                                                      </a>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
-
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-
-                                                    <style rel="stylesheet">
-                                                      #button-64qw7tkpqkdl {
-                                                        color: #000;
-                                                        border-color: #000;
-                                                      }
-
-                                                      #button-64qw7tkpqkdl:hover {}
-                                                    </style>
-
-                                                    <div class="clearfix"></div>
-                                                    <a href="/collections/mirage" class="gsc-button button-transparent-black  mini " id="button-64qw7tkpqkdl">
-                                                      See all products </a>
-
-                                                  </div>
-                                                </div>
-
-                                              </div>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
+                                      @endforeach
 
-                                      <div class="gbb-row-wrapper section row-first-level infinity-row gbb-row  bg-size-cover" style="" data-onepage-title="Infinity Row">
-                                        <div class="bb-inner remove_padding">
-                                          <div class="bb-container container-fw">
-                                            <div class="row row-wrapper">
-                                              <div class="gsc-column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12  align-self-center">
-                                                <div class="column-inner  bg-size-cover  ">
-                                                  <div class="column-content-inner">
-                                                    <div class="column-content infinity-heading ">
-                                                      <h2>Charisma&nbsp;</h2>
-                                                    </div>
-                                                    <div class="column-content infinity-subheading ">
-                                                      <p dir="ltr" style="line-height: 1.2; text-align: center; background-color: #ffffff; margin-top: 0pt; margin-bottom: 14pt;"><span style="font-family: 'Ibarra Real Nova', serif; font-size: 16px;">Synonymous with charm and magnetism, Charisma is the exclusive detail that characterises the new lifestyle by Giorgio Collection: a multi-sensory journey among beauty and luxury, which encapsulates craftsmanship and elegance, in perfect Italian style.&nbsp;</span></p>
-                                                      <p dir="rtl" style="line-height: 1.2; text-align: center; background-color: #ffffff; margin-top: 0pt; margin-bottom: 14pt;"><span style="font-size: 12pt; font-family: 'Times New Roman'; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span></p>
-                                                    </div>
-                                                    <div class="gbb-row-wrapper section infinity-prodotti gbb-row  bg-size-cover" style="">
-                                                      <div class="bb-inner default">
-                                                        <div class="bb-container container">
-                                                          <div class="row row-wrapper">
-                                                            <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
-                                                              <div class="column-inner  bg-size-cover  ">
-                                                                <div class="column-content-inner">
-                                                                  <div class="widget gsc-image text-none ">
-                                                                    <div class="widget-content">
-                                                                      <a href="/node/2680">
 
-                                                                        <img src="https://giorgiocollection.com/sites/default/files/Progetto%20senza%20titolo%20-%202020-10-16T174119.994.png" alt="" />
-                                                                      </a>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
 
-                                                            </div>
-                                                            <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
-                                                              <div class="column-inner  bg-size-cover  ">
-                                                                <div class="column-content-inner">
-                                                                  <div class="widget gsc-image text-none ">
-                                                                    <div class="widget-content">
-                                                                      <a href="/node/2849">
 
-                                                                        <img src="https://giorgiocollection.com/sites/default/files/Progetto%20senza%20titolo%20-%202020-10-16T174023.485.png" alt="" />
-                                                                      </a>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
-
-                                                            </div>
-                                                            <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
-                                                              <div class="column-inner  bg-size-cover  ">
-                                                                <div class="column-content-inner">
-                                                                  <div class="widget gsc-image text-none ">
-                                                                    <div class="widget-content">
-                                                                      <a href="/node/2935">
-
-                                                                        <img src="https://giorgiocollection.com/sites/default/files/Progetto%20senza%20titolo%20-%202020-10-16T174048.197.png" alt="" />
-                                                                      </a>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
-
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-
-                                                    <style rel="stylesheet">
-                                                      #button-oc3e7ubadykh {
-                                                        color: #000;
-                                                        border-color: #000;
-                                                      }
-
-                                                      #button-oc3e7ubadykh:hover {}
-                                                    </style>
-
-                                                    <div class="clearfix"></div>
-                                                    <a href="/collections/charisma" class="gsc-button button-transparent-black  mini " id="button-oc3e7ubadykh">
-                                                      See all products </a>
-
-                                                  </div>
-                                                </div>
-
-                                              </div>
-                                              <div class="gsc-column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 padding-0-left-right ">
-                                                <div class="column-inner  bg-size-cover  ">
-                                                  <div class="column-content-inner">
-                                                    <div class="widget gsc-image text-left ">
-                                                      <div class="widget-content">
-
-                                                        <img src="https://giorgiocollection.com/sites/default/files/GIOC-274.jpg" alt="" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <div class="gbb-row-wrapper section row-first-level charisma-row gbb-row  bg-size-cover" style="" data-onepage-title="Charisma Row">
-                                        <div class="bb-inner remove_padding">
-                                          <div class="bb-container container-fw">
-                                            <div class="row row-wrapper">
-                                              <div class="gsc-column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12  ">
-                                                <div class="column-inner  bg-size-cover  ">
-                                                  <div class="column-content-inner">
-                                                    <div class="widget gsc-image text-left ">
-                                                      <div class="widget-content">
-
-                                                        <img src="https://giorgiocollection.com/sites/default/files/_MG_4477_INF%20(2).jpg" alt="" />
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-
-                                              </div>
-                                              <div class="gsc-column col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12  align-self-center">
-                                                <div class="column-inner  bg-size-cover  ">
-                                                  <div class="column-content-inner">
-                                                    <div class="column-content charisma-heading ">
-                                                      <h2>Infinity</h2>
-                                                    </div>
-                                                    <div class="column-content charisma-subheading ">
-                                                      <div class="column-content charisma-subheading " style="box-sizing: border-box; text-align: center; font-size: 16px; line-height: normal; font-family: 'Ibarra Real Nova', serif; background-color: #ffffff;">
-                                                        <p style="box-sizing: border-box; margin-top: 0px; margin-bottom: 1rem;">Precious fabrics, first quality nubuck leather and ceramics complete the Infinity collection as a new, contemporary status symbol. The fusion of all these elements with the addition of pieces of art inhabits a sophisticated and elegant atmosphere. We want to surprise and fascinate, once again and show Giorgio Collection&rsquo;s unique and exclusive style all over the world.</p>
-                                                      </div>
-                                                    </div>
-                                                    <div class="gbb-row-wrapper section charisma-prodotti gbb-row  bg-size-cover" style="">
-                                                      <div class="bb-inner default">
-                                                        <div class="bb-container container">
-                                                          <div class="row row-wrapper">
-                                                            <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
-                                                              <div class="column-inner  bg-size-cover  ">
-                                                                <div class="column-content-inner">
-                                                                  <div class="widget gsc-image text-none ">
-                                                                    <div class="widget-content">
-                                                                      <a href="/node/2590">
-
-                                                                        <img src="https://giorgiocollection.com/sites/default/files/Progetto%20senza%20titolo%20-%202020-10-16T171401.413_0.png" alt="" />
-                                                                      </a>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
-
-                                                            </div>
-                                                            <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
-                                                              <div class="column-inner  bg-size-cover  ">
-                                                                <div class="column-content-inner">
-                                                                  <div class="widget gsc-image text-none ">
-                                                                    <div class="widget-content">
-                                                                      <a href="/infinity-infinity-sectional">
-
-                                                                        <img src="https://giorgiocollection.com/sites/default/files/Progetto%20senza%20titolo%20-%202020-10-16T171450.147_0.png" alt="" />
-                                                                      </a>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
-
-                                                            </div>
-                                                            <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
-                                                              <div class="column-inner  bg-size-cover  ">
-                                                                <div class="column-content-inner">
-                                                                  <div class="widget gsc-image text-none ">
-                                                                    <div class="widget-content">
-                                                                      <a href="/node/3007">
-
-                                                                        <img src="https://giorgiocollection.com/sites/default/files/Progetto%20senza%20titolo%20-%202020-10-16T171938.450.png" alt="" />
-                                                                      </a>
-                                                                    </div>
-                                                                  </div>
-                                                                </div>
-                                                              </div>
-
-                                                            </div>
-                                                          </div>
-                                                        </div>
-                                                      </div>
-                                                    </div>
-
-                                                    <style rel="stylesheet">
-                                                      #button-9ye54ty49a3y {
-                                                        color: #000;
-                                                        border-color: #000;
-                                                      }
-
-                                                      #button-9ye54ty49a3y:hover {}
-                                                    </style>
-
-                                                    <div class="clearfix"></div>
-                                                    <a href="/collections/infinity" class="gsc-button button-transparent-black  mini " id="button-9ye54ty49a3y">
-                                                      See all products </a>
-
-                                                  </div>
-                                                </div>
-
-                                              </div>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
                                       <div class="gbb-row-wrapper section row-first-level luxury-row luxury-disclaimer gbb-row  bg-size-cover" style="margin-top:60px" data-onepage-title="Luxury Row">
                                         <div class="bb-inner remove_padding">
                                           <div class="bb-container container">
@@ -807,7 +510,6 @@
                                           </div>
                                         </div>
                                       </div>
-
                                       <div class="gbb-row-wrapper section row-first-level luxury-row luxury-button gbb-row  bg-size-cover" style="margin-bottom:90px">
                                         <div class="bb-inner remove_padding">
                                           <div class="bb-container container">
@@ -945,6 +647,7 @@
                                           </div>
                                         </div>
                                       </div>
+
                                     </div>
                                   </div>
                                 </div>

@@ -89,7 +89,7 @@
                                                                                         <div class="related-products">
                                                                                             <div class="prod-related-img">
                                                                                                 <div class="item-image">
-                                                                                                    <img src="{{ asset('storage/' . $product->productImages->first()->name) }}" alt="" typeof="Image" />
+                                                                                                    <img src="{{ !empty($product->productImages->first()) ? asset('storage/' . $product->productImages->first()->name) : '#' }}" alt="" typeof="Image" />
                                                                                                 </div>
                                                                                             </div>
                                                                                             <a href="{{ route('product.detail', $product->slug) }}" class="related-prod-link">

@@ -10,6 +10,11 @@ class Collection extends Model
     use HasFactory;
     protected $guarded = [];
 
+    public function products()
+    {
+        return $this->hasMany(Product::class, 'collection_id');
+    }
+
     /**
      * get all collection
      * @author lamnt
@@ -17,6 +22,6 @@ class Collection extends Model
      */
     public function getCollection()
     {
-        return $this->get();
+        return $this->with('products')->orderBy('id', 'desc')->get();
     }
 }

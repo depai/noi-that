@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Collection;
 use Illuminate\Http\Request;
 
 class HomeController extends BaseController
@@ -12,9 +13,15 @@ class HomeController extends BaseController
      * view home page
      *
      */
-    public function indexHome(Request $request)
+    public function indexHome(Request $request, Collection $collection)
     {
-        return view('users.homepage', ['style' => 1]);
+        //get collection and product in collection
+        $getCollection = $collection->getCollection()->take(3);
+
+        return view('users.homepage', [
+            'style' => 1,
+            'collections'=>$getCollection
+        ]);
     }
 
     public function viewAboutUs()
