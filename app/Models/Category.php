@@ -49,6 +49,14 @@ class Category extends Model
      */
     public function getCategoryBySlug($slug)
     {
-        return $this->with('children.products')->where('slug', $slug)->first();
+        return $this->with('children.products.productImages')->where('slug', $slug)->first();
+    }
+
+    public function getByCollectionId($collection_id)
+    {
+        return $this->with('products.productImages')
+        ->whereHas('products', function ($q) use($collection_id){
+            $q->where('collection_id', $collection_id);
+        })->get();
     }
 }

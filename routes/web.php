@@ -56,6 +56,9 @@ Route::prefix('')->group(function () {
     Route::prefix('category')->group(function () {
         route::get('/{slug}', [UserCategoryController::class, 'viewCategory'])->name('view.category');
     });
+    Route::prefix('collection')->group(function () {
+        route::get('/{slug}', [UserCategoryController::class, 'viewCollection'])->name('view.detail.collection');
+    });
 });
 
 Route::post('upload-image', [UploadImageController::class, 'store'])->name('upload_image');

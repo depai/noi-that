@@ -22,6 +22,11 @@ class Collection extends Model
      */
     public function getCollection()
     {
-        return $this->with('products')->orderBy('id', 'desc')->get();
+        return $this->with('products.productImages')->get();
+    }
+
+    public function getDetailBySlug($slug)
+    {
+        return $this->where('slug', $slug)->first();
     }
 }

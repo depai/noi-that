@@ -23,7 +23,7 @@
                                 <ul class="menu sub-menu">
                                   <span class="back-menu-m"><i class="fal fa-chevron-left"></i></span>
                                     @foreach ($listCollection as $collection)
-                                        <li class="menu-item"><a href="#"> {{ $collection->title }} </a></li>
+                                        <li class="menu-item"><a href="{{ route('view.detail.collection', $collection->slug) }}"> {{ $collection->title }} </a></li>
                                     @endforeach
                                 </ul>
                               </li>

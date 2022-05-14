@@ -3,10 +3,9 @@
       <div class="column-content-inner">
         <div class="widget gsc-image text-left ">
           <div class="widget-content">
-            <img src="https://giorgiocollection.com/sites/default/files/22-02-20_10030_m%20(VERT)1b1111_3.jpg" alt="" />
+            <img src="{{ !empty($collection->image) ? asset($collection->image) : '' }}" alt="" />
           </div>
         </div>
       </div>
     </div>
-
   </div>

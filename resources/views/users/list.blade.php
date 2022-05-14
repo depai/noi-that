@@ -2108,88 +2108,32 @@
                                                                                 </div>
 
                                                                             </div>
-                                                                            <div
-                                                                                class="cat-page-prodlist collection-category-prodlist-mobile">
+                                                                            <div class="cat-page-prodlist collection-category-prodlist-mobile">
                                                                                 <div class="views-element-container">
-                                                                                    <div
-                                                                                        class="gva-view js-view-dom-id-8392687a9377a617a32101c552c7bbe9271d475d5d992d1de066dc4335d6c6ff">
-
-
-
-
-
-
-
-
+                                                                                    <div class="gva-view js-view-dom-id-8392687a9377a617a32101c552c7bbe9271d475d5d992d1de066dc4335d6c6ff">
                                                                                         <div class="view-content-wrap">
-                                                                                            <div
-                                                                                                class="item">
-                                                                                                <div
-                                                                                                    class="views-field views-field-nothing">
-                                                                                                    <span
-                                                                                                        class="field-content">
-                                                                                                        <div
-                                                                                                            class="related-products">
-                                                                                                            <div
-                                                                                                                class="prod-related-img">
-                                                                                                                <div
-                                                                                                                    class="item-image">
-                                                                                                                    <img src="/sites/default/files/styles/square/public/2020-12/Progetto%20senza%20titolo%20-%202020-12-16T164740.238.png?itok=xxndnkWM"
-                                                                                                                        alt=""
-                                                                                                                        typeof="Image" />
-
-
+                                                                                            <div class="item">
+                                                                                                <div class="views-field views-field-nothing">
+                                                                                                    <span class="field-content">
+                                                                                                        <div class="related-products">
+                                                                                                            <div class="prod-related-img">
+                                                                                                                <div class="item-image">
+                                                                                                                    <img src="/sites/default/files/styles/square/public/2020-12/Progetto%20senza%20titolo%20-%202020-12-16T164740.238.png?itok=xxndnkWM" alt="" typeof="Image" />
                                                                                                                 </div>
                                                                                                             </div>
-                                                                                                            <a href="https://giorgiocollection.com/charisma-rectangular-table"
-                                                                                                                class="related-prod-link">
-                                                                                                                <p
-                                                                                                                    class="related-prod-collezioni">
+                                                                                                            <a href="https://giorgiocollection.com/charisma-rectangular-table" class="related-prod-link">
+                                                                                                                <p class="related-prod-collezioni">
                                                                                                                     CHARISMA
                                                                                                                 </p>
-                                                                                                                <p
-                                                                                                                    class="related-prod-title">
-                                                                                                                    Rectangular
-                                                                                                                    table
+                                                                                                                <p class="related-prod-title">
+                                                                                                                    Rectangular table
                                                                                                                 </p>
                                                                                                             </a>
                                                                                                         </div>
-                                                                                                    </span></div>
+                                                                                                    </span>
+                                                                                                </div>
                                                                                             </div>
-                                                                                            <div
-                                                                                                class="item">
-                                                                                                <div
-                                                                                                    class="views-field views-field-nothing">
-                                                                                                    <span
-                                                                                                        class="field-content">
-                                                                                                        <div
-                                                                                                            class="related-products">
-                                                                                                            <div
-                                                                                                                class="prod-related-img">
-                                                                                                                <div
-                                                                                                                    class="item-image">
-                                                                                                                    <img src="/sites/default/files/styles/square/public/2020-12/Progetto%20senza%20titolo%20-%202020-12-16T143550.358.png?itok=vTSW2UqU"
-                                                                                                                        alt=""
-                                                                                                                        typeof="Image" />
 
-
-                                                                                                                </div>
-                                                                                                            </div>
-                                                                                                            <a href="https://giorgiocollection.com/charisma-round-table"
-                                                                                                                class="related-prod-link">
-                                                                                                                <p
-                                                                                                                    class="related-prod-collezioni">
-                                                                                                                    CHARISMA
-                                                                                                                </p>
-                                                                                                                <p
-                                                                                                                    class="related-prod-title">
-                                                                                                                    Round
-                                                                                                                    table
-                                                                                                                </p>
-                                                                                                            </a>
-                                                                                                        </div>
-                                                                                                    </span></div>
-                                                                                            </div>
                                                                                             <div
                                                                                                 class="item">
                                                                                                 <div
@@ -3097,7 +3041,8 @@
                                                                                 </div>
 
                                                                             </div>
-                                                                        </span></div>
+                                                                        </span>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="item">
                                                                     <div class="views-field views-field-nothing"><span

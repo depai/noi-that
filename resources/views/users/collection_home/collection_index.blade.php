@@ -1,5 +1,5 @@
 @extends('users.layouts.app')
-@section('title_for_layout', 'categogy')
+@section('title_for_layout', 'collection detail')
 @section('css')
 @endsection
 @section('content')
@@ -37,7 +37,7 @@
                                                                     <div class="category-image">
 
                                                                         <div class="item-image">
-                                                                            <img src="/sites/default/files/2020-12/Charisma1.png" alt="CHARISMA" typeof="Image" />
+                                                                            <img src="{{ !empty($detailCollection->image) ? asset($detailCollection->image) : null }}" alt="CHARISMA" typeof="Image" />
                                                                         </div>
 
                                                                     </div>
@@ -47,13 +47,13 @@
                                                                             <div class="col-lg-5 col-sm-12 offset-lg-1">
                                                                                 <div class="title-wrapper">
                                                                                     <i class="fas fa-chevron-left"></i></a>
-                                                                                    <h1 class="category-title"> {{ $detailCategory->title }} </h1>
+                                                                                    <h1 class="category-title"> {{ $detailCollection->title }} </h1>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-lg-6 col-sm-12 description-row">
                                                                                 <div class="category-desc">
                                                                                     <span class="full-descrition">
-                                                                                        <p>{{ $detailCategory->description }}</p>
+                                                                                        <p>{{ !empty($detailCollection->content) ? $detailCollection->content : null }}</p>
                                                                                     </span>
                                                                                 </div>
                                                                                 <a class="read-more">Read More</a>
@@ -68,37 +68,33 @@
                                                 </div>
                                             </header>
 
+                                            @foreach ($listProduct as $category)
                                             <div class="view-content-wrap">
                                                 <div class="item">
-                                                    <div class="views-field views-field-nothing">
-                                                        <span class="field-content"> </span>
-                                                    </div>
+                                                    <div class="views-field views-field-nothing"><span class="field-content"> </span></div>
                                                 </div>
-                                                @foreach ($detailCategory->children as $category)
-                                                @if ($category->products->count() > 0)
                                                 <div class="item">
                                                     <div class="views-field views-field-nothing">
                                                         <span class="field-content">
                                                             <div class="cat-list-link">
-                                                                <h2>{{ $category->title }}</h2>
-                                                                <a href="" class="cat-viewmore-link">View more</a>
+                                                                <h2>{{ $category->title }}</h2> <a href="{{ route('view.category', $category->slug) }}" class="cat-viewmore-link">View more</a>
                                                             </div>
                                                             <div class="collection-prodlist collection-category-prodlist">
                                                                 <div class="views-element-container">
-                                                                    <div class="gva-view js-view-dom-id-b92bf216bdae24e6ea67d17395966dcb738d9ef26243b6b406f4f2d1a22f53e7">
+                                                                    <div class="gva-view js-view-dom-id-693b7c5b30f8b4fcd099edfaf8374d3c396180f929cb82e8389d6732cb72f1f1">
                                                                         <div class="view-content-wrap">
                                                                             @foreach ($category->products as $product)
-                                                                                <div class="item">
+                                                                            <div class="item">
                                                                                 <div class="views-field views-field-nothing">
                                                                                     <span class="field-content">
                                                                                         <div class="related-products">
                                                                                             <div class="prod-related-img">
                                                                                                 <div class="item-image">
-                                                                                                    <img src="{{ asset(!empty($product->productImages->first()) ? $product->productImages->first()->name : '') }}" alt="" typeof="Image" />
+                                                                                                    <img src="{{ !empty($product->productImages->first()) ? asset('storage/' . $product->productImages->first()->name) : '#' }}" alt="" typeof="Image" />
                                                                                                 </div>
                                                                                             </div>
                                                                                             <a href="{{ route('product.detail', $product->slug) }}" class="related-prod-link">
-                                                                                                <p class="related-prod-collezioni"> {{ $product->description }} </p>
+                                                                                                <p class="related-prod-collezioni"> {{ $product->collection->title }} </p>
                                                                                                 <p class="related-prod-title"> {{ $product->title }} </p>
                                                                                             </a>
                                                                                         </div>
@@ -113,27 +109,28 @@
 
                                                             <div class="cat-page-prodlist collection-category-prodlist-mobile">
                                                                 <div class="views-element-container">
-                                                                    <div class="gva-view js-view-dom-id-7fcbf7bfe57b29b7ffef3edca4a70b70aa39f22b96f3301b2089d6f5f25441ed">
+                                                                    <div class="gva-view js-view-dom-id-53fde612bb05e799ed9a92ee48fb66fa4807e0db8d053c6a77b98cf49d67f8b5">
                                                                         <div class="view-content-wrap">
+
                                                                             @foreach ($category->products as $product)
                                                                             <div class="item">
-                                                                            <div class="views-field views-field-nothing">
-                                                                                <span class="field-content">
-                                                                                    <div class="related-products">
-                                                                                        <div class="prod-related-img">
-                                                                                            <div class="item-image">
-                                                                                                <img src="{{ asset(!empty($product->productImages->first()) ? $product->productImages->first()->name : '') }}" alt="" typeof="Image" />
+                                                                                <div class="views-field views-field-nothing">
+                                                                                    <span class="field-content">
+                                                                                        <div class="related-products">
+                                                                                            <div class="prod-related-img">
+                                                                                                <div class="item-image">
+                                                                                                    <img src="{{ !empty($product->productImages->first()) ? asset('storage/' . $product->productImages->first()->name) : '#' }}" alt="" typeof="Image" />
+                                                                                                </div>
                                                                                             </div>
+                                                                                            <a href="{{ route('product.detail', $product->slug) }}" class="related-prod-link">
+                                                                                                <p class="related-prod-collezioni"> {{ $product->collection->title }} </p>
+                                                                                                <p class="related-prod-title"> {{ $product->title }} </p>
+                                                                                            </a>
                                                                                         </div>
-                                                                                        <a href="{{ route('product.detail', $product->slug) }}" class="related-prod-link">
-                                                                                            <p class="related-prod-collezioni"> {{ $product->title }} </p>
-                                                                                            <p class="related-prod-title"> {{ $product->description }} </p>
-                                                                                        </a>
-                                                                                    </div>
-                                                                                </span>
+                                                                                    </span>
+                                                                                </div>
                                                                             </div>
-                                                                        </div>
-                                                                        @endforeach
+                                                                            @endforeach
 
                                                                         </div>
                                                                     </div>
@@ -141,16 +138,21 @@
                                                             </div>
 
                                                         </span>
+
                                                     </div>
                                                 </div>
+                                                @foreach ($category->products as $product)
+                                                {{-- số lượng item sẽ bằng số item nothing ở đây --}}
                                                 <div class="item">
-                                                    <div class="views-field views-field-nothing"><span class="field-content"></span></div>
+                                                    <div class="views-field views-field-nothing">
+                                                        <span class="field-content"></span>
+                                                    </div>
                                                 </div>
-                                                @endif
                                                 @endforeach
-
-
                                             </div>
+                                            @endforeach
+
+
                                         </div>
                                     </div>
                                 </div>

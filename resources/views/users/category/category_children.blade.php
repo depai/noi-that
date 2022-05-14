@@ -105,40 +105,45 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
+
+                                                            <div class="cat-page-prodlist collection-category-prodlist-mobile">
+                                                                <div class="views-element-container">
+                                                                    <div class="gva-view js-view-dom-id-8392687a9377a617a32101c552c7bbe9271d475d5d992d1de066dc4335d6c6ff">
+                                                                        <div class="view-content-wrap">
+                                                                            @foreach ($listProduct as $product)
+                                                                            <div class="item">
+                                                                                <div class="views-field views-field-nothing">
+                                                                                    <span class="field-content">
+                                                                                        <div class="related-products">
+                                                                                            <div class="prod-related-img">
+                                                                                                <div class="item-image">
+                                                                                                    <img src="{{ !empty($product->productImages->first()) ? asset('storage/' . $product->productImages->first()->name) : '#' }}" alt="" typeof="Image" />
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <a href="{{ route('product.detail', $product->slug) }}" class="related-prod-link">
+                                                                                                <p class="related-prod-collezioni"> {{ $product->collection->title }} </p>
+                                                                                                <p class="related-prod-title"> {{ $product->title }} </p>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </span>
+                                                                                </div>
+                                                                            </div>
+                                                                        @endforeach
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
                                                         </span>
                                                     </div>
                                                 </div>
+                                                @foreach ($listProduct as $product)
                                                 <div class="item">
                                                     <div class="views-field views-field-nothing"><span class="field-content"></span></div>
                                                 </div>
+                                                @endforeach
                                             </div>
-
-                                            <nav class="pager">
-                                                <ul class="pager__items js-pager__items">
-                                                    <li class="pager__item is-active">
-                                                        <a href="?page=0%2C0" title="Current page">
-                                                            <span class="visually-hidden">Current page</span>1
-                                                        </a>
-                                                    </li>
-                                                    <li class="pager__item">
-                                                        <a href="?page=0%2C1" title="Go to page 2">
-                                                            <span class="visually-hidden"> Page </span>2</a>
-                                                    </li>
-                                                    <li class="pager__item pager__item--next">
-                                                        <a href="?page=0%2C1" title="Go to next page" rel="next">
-                                                            <span class="visually-hidden">Next page</span>
-                                                            <span aria-hidden="true">Next ›</span>
-                                                        </a>
-                                                    </li>
-                                                    <li class="pager__item pager__item--last">
-                                                        <a href="?page=0%2C1" title="Go to last page">
-                                                            <span class="visually-hidden">Last page</span>
-                                                            <span aria-hidden="true">Last »</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </nav>
-
+                                            @include('users.layouts.paginate')
                                         </div>
                                     </div>
                                 </div>

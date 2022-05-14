@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <link rel="canonical" href="https://giorgiocollection.com/charisma-fixed-sofa-1" />
+
+
     <meta name="description" content="4 seater sofa. Base and metal trims on the armrests in light gold chrome stainless steel." />
     <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
     <meta name="MobileOptimized" content="width" />
@@ -238,7 +240,11 @@
     <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
         <div class="gva-body-wrapper">
             <div class="body-page gva-body-page">
-                <header id="header" class="header-default">
+                <header id="header" class="header-1"
+                style="
+                    background: rgb(242 236 236 / 8%);
+                    position: absolute;
+                    width: 100%;">
                     @include('users.layouts.topbar')
                     <div class="header-main ">
                         <div class="container header-content-layout">

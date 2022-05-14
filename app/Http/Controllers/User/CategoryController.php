@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Collection;
 use App\Models\Product;
 use Illuminate\Http\Request;
 
@@ -23,6 +24,16 @@ class CategoryController extends BaseController
         }
         return view('users.category.index')->with([
             'detailCategory' => $detailCategory
+        ]);
+    }
+
+    public function viewCollection(Collection $collection, Request $request, Category $category)
+    {
+        $detailCollection = $collection->getDetailBySlug($request->slug);
+        $listProduct = $category->getByCollectionId($detailCollection->id);
+        return view('users.collection_home.collection_index')->with([
+            'detailCollection'=>$detailCollection,
+            'listProduct'=>$listProduct
         ]);
     }
 }
