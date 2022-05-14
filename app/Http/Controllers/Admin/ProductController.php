@@ -86,7 +86,11 @@ class ProductController extends BaseController
         $data = Product::with('category', 'productImages', 'rocks', 'sizes');
         $dataReturn = DataTables::of($data)
             ->addColumn('image', function ($datum) {
-                return '<img src=' . asset('storage/' . $datum->productImages->first()->name) . ' style="width:auto; height: 60px">';
+                $imagename = "";
+                if(!empty($datum->productImages->first())){
+                   $imagename = asset('storage/' . $datum->productImages->first()->name);
+                }
+                return '<img src=' . $imagename . ' style="width:auto; height: 60px">';
             })
             ->addColumn('category', function ($datum) {
                 return $datum->category->title;
