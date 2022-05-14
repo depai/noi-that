@@ -25,6 +25,8 @@
                 </li>
                 <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('categories.index') }}" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Categories</span></a>
                 </li>
+                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('collections.index') }}" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Collections</span></a>
+                </li>
                 <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('orders.index') }}" aria-expanded="false">
                         <i class="mdi mdi-motorbike"></i>
                         <span class="hide-menu">Orders @if ($countNewOrder)
