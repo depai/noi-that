@@ -7,11 +7,9 @@
     <link rel="canonical" href="{{ route('view.about.us') }}" />
     <meta name="description"
         content="The finest craftsmanship, entrepreneurial spirit and service are the ingredients of the success of Giorgio Collection, an italian company fouded in 1956" />
-    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-138875167-1"></script>
 
 
     <script></script>
@@ -19,6 +17,7 @@
     <link rel="shortcut icon" href="/sites/default/files/favicon.png" type="image/png" />
 
     <title>Italian Luxury Forniture since 1956 | Giorgio Collection</title>
+
     <link rel="stylesheet" media="all"
         href="/core/themes/stable/css/system/components/ajax-progress.module.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/align.module.css?r8qfr8" />
@@ -121,18 +120,6 @@
     </script>
     <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x">
     </script>
-
-
-    <style type="text/css">
-        @media only screen and (max-device-width: 480px) and (min-device-width:320px) {
-            div.product-gallery {
-                width: 100% !important;
-            }
-        }
-
-    </style>
-
-    <style class="customize"></style>
 
 </head>
 

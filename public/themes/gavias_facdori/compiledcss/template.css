@@ -15,10 +15,10 @@
  @import "template/module";
  @import "template/grid";
  @import "template/menu";
- @import "template/views"; 
- @import "template/block-builder"; 
+ @import "template/views";
+ @import "template/block-builder";
  @import "template/effect";
- @import "template/responsive"; 
+ @import "template/responsive";
  @import "template/event";
  @import "template/portfolio";
  @import "template/testimonial";
@@ -17278,5 +17278,3 @@ header.header-default nav#block-topmenu .gva_menu > li a, header.header-default 
 .grecaptcha-badge {
   visibility: hidden;
 }
-/*# sourceMappingURL=https://giorgio.evolvestudio.de/themes/gavias_facdori/compiledcss/template.css.map */
-/*# sourceMappingURL=https://giorgiocollection.com/themes/gavias_facdori/compiledcss/template.css.map */

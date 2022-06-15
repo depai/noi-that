@@ -3,80 +3,16 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="shortlink" href="https://giorgiocollection.com/" />
-  <link rel="canonical" href="https://giorgiocollection.com/" />
   <meta name="description" content="Enter the world of Giorgio Collection and get inspired by the timeless elegance of luxury Italian furniture." />
-  <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
   <meta name="MobileOptimized" content="width" />
   <meta name="HandheldFriendly" content="true" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-138875167-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
 
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-138875167-1');
-  </script>
-  <script>
-    ! function(f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function() {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '537282346894549');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=537282346894549&amp;ev=PageView&amp;noscript=1" /></noscript>
-  <script>
-    ! function(e) {
-      if (!window.pintrk) {
-        window.pintrk = function() {
-          window.pintrk.queue.push(Array.prototype.slice.call(arguments))
-        };
-        var
-          n = window.pintrk;
-        n.queue = [], n.version = "3.0";
-        var
-          t = document.createElement("script");
-        t.async = !0, t.src = e;
-        var
-          r = document.getElementsByTagName("script")[0];
-        r.parentNode.insertBefore(t, r)
-      }
-    }("https://s.pinimg.com/ct/core.js");
-    pintrk('load', '2612935646429', {
-      em: ''
-    });
-    pintrk('page');
-    pintrk('track', 'pagevisit');
-  </script>
-  <noscript>
-    <img height="1" width="1" alt="">&amp;noscript=1" /&gt;
-  </noscript>
-  <script></script>
   <meta name="p:domain_verify" content="307b8d6765ab5ca822326af169fcb2dc" />
   <link rel="shortcut icon" href="/sites/default/files/favicon.png" type="image/png" />
 
   <title>Giorgio Collection: luxury Italian furniture &amp; designer interiors</title>
-  <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/ajax-progress.module.css?r8l2sm" />
-  <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/align.module.css?r8l2sm" />
+
   <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/autocomplete-loading.module.css?r8l2sm" />
   <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/fieldgroup.module.css?r8l2sm" />
   <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/container-inline.module.css?r8l2sm" />
@@ -115,54 +51,6 @@
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/bootstrap.css?r8l2sm" />
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/template.css?r8l2sm" />
 
-{{--
-  <script type="application/json" data-drupal-selector="drupal-settings-json">
-    {
-      "path": {
-        "baseUrl": "\/",
-        "scriptPath": null,
-        "pathPrefix": "",
-        "currentPath": "node\/116",
-        "currentPathIsAdmin": false,
-        "isFront": true,
-        "currentLanguage": "en"
-      },
-      "pluralDelimiter": "\u0003",
-      "suppressDeprecationErrors": true,
-      "d8_recaptcha_v3": {
-        "site_key": null,
-        "captcha_selectors": null,
-        "badge_position": null
-      },
-      "iubenda": {
-        "language": "en",
-        "site_id": "2299602",
-        "policy_id": "86514578",
-        "show_gdpr": 1,
-        "show_ccpa": 1,
-        "country_detection": 0,
-        "buttons": {
-          "accept_button": 1,
-          "accept_button_text": "Accept",
-          "reject_button": 1,
-          "customize_button": 1
-        },
-        "position": "float-top-center",
-        "apply_styles": 1
-      },
-      "ajaxTrustedUrl": {
-        "form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM": true
-      },
-      "user": {
-        "uid": 0,
-        "permissionsHash": "07b61d2569f21086087f9a9fd9e90d9fd786a93b691c4af676114de06b24056d"
-      }
-    }
-  </script> --}}
-
-  <!--[if lte IE 8]>
-<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
-<![endif]-->
   <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
   <script src="/core/misc/drupalSettingsLoader.js?v=8.9.13"></script>
   <script src="/core/misc/drupal.js?v=8.9.13"></script>
@@ -202,15 +90,6 @@
   <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.parallax.min.js?v=1.x"></script>
   <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js?v=1.x"></script>
   <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x"></script>
-
-
-  <link rel="stylesheet" href="https://giorgiocollection.com/themes/gavias_facdori/css/custom.css" media="screen" />
-  <link rel="stylesheet" href="https://giorgiocollection.com/themes/gavias_facdori/css/update.css" media="screen" />
-
-
-
-
-  <style class="customize"></style>
 
 </head>
 
@@ -325,14 +204,15 @@
                                                 <div class="column-inner  bg-size-cover  ">
                                                   <div class="column-content-inner">
                                                     <div class="column-content video-home-og ">
-                                                      <p><video poster="themes/gavias_facdori/videos/poster.jpg" autoplay="autoplay" loop="loop" muted="" width="100%" height="100%">
+                                                      <p>
+                                                          <video poster="themes/gavias_facdori/videos/poster.jpg" autoplay="autoplay" loop="loop" muted="" width="100%" height="100%">
                                                           <source src="themes/gavias_facdori/videos/videoplayback.mp4" type="video/mp4" />
-                                                          Your browser does not support the video tag.
-                                                        </video></p>
+                                                          {{-- Your browser does not support the video tag. --}}
+                                                        </video>
+                                                    </p>
                                                     </div>
                                                     <div class="widget gsc-image text-none play-video-btn">
                                                       <div class="widget-content">
-
                                                         <img src="https://giorgiocollection.com/sites/default/files/play-button.png" alt="" />
                                                       </div>
                                                     </div>
@@ -345,12 +225,6 @@
                                                                 <div class="column-content-inner">
                                                                   <div class="column-content discover-collection-btn ">
                                                                     <p><a href="/collections/mirage">Discover the collection</a></p>
-                                                                  </div>
-                                                                  <div class="widget gsc-image text-none line-img">
-                                                                    <div class="widget-content">
-
-                                                                      <img src="https://giorgiocollection.com/sites/default/files/linee.png" alt="" />
-                                                                    </div>
                                                                   </div>
                                                                 </div>
                                                               </div>
@@ -376,9 +250,9 @@
                                                 <div class="column-inner  bg-size-cover  ">
                                                   <div class="column-content-inner">
                                                     <div class="widget gsc-image text-none lion-image">
+                                                        {{-- Logo --}}
                                                       <div class="widget-content">
-
-                                                        <img src="https://giorgiocollection.com/sites/default/files/leone.png" alt="" />
+                                                        <img src="{{ asset('themes/gavias_facdori/logo-white.png') }}" alt="" />
                                                       </div>
                                                     </div>
                                                   </div>
@@ -402,7 +276,7 @@
                                                     <div class="widget gsc-image text-right lion-image">
                                                       <div class="widget-content">
 
-                                                        <img src="https://giorgiocollection.com/sites/default/files/leone-sx%403x.png" alt="" />
+                                                        <img src="{{ asset('themes/gavias_facdori/logo-white.png') }}" alt="" />
                                                       </div>
                                                     </div>
                                                   </div>
@@ -475,7 +349,7 @@
                                                     <div class="widget gsc-image text-none lion-image">
                                                       <div class="widget-content">
 
-                                                        <img src="https://giorgiocollection.com/sites/default/files/leone.png" alt="" />
+                                                        <img src="{{ asset('themes/gavias_facdori/logo-white.png') }}" alt="" />
                                                       </div>
                                                     </div>
                                                   </div>
@@ -499,7 +373,7 @@
                                                     <div class="widget gsc-image text-right lion-image">
                                                       <div class="widget-content">
 
-                                                        <img src="https://giorgiocollection.com/sites/default/files/leone-sx%403x.png" alt="" />
+                                                        <img src="{{ asset('themes/gavias_facdori/logo-white.png') }}" alt="" />
                                                       </div>
                                                     </div>
                                                   </div>
@@ -678,7 +552,6 @@
     </div>
   </div>
 
-
   <script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
   <script src="/modules/_d8_recaptcha_v3/js/recaptcha.js?r8l2sm" defer="true" async="true"></script>
   <script src="/modules/iubenda/js/iubenda.js?v=8.9.13"></script>
@@ -687,8 +560,6 @@
   <script src="/modules/gavias_content_builder/vendor/main.js?v=1.x"></script>
   <script src="/modules/dropdown_language/js/dropdown_language_selector.js?v=8.9.13"></script>
   <script src="/core/misc/dropbutton/dropbutton.js?v=8.9.13"></script>
-
-
   <div id="gva-overlay"></div>
 </body>
 

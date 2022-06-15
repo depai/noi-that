@@ -614,11 +614,5 @@ jQuery(document).ready(function() {
 
     // Download cataloghi solo agli utenti loggati
 
-    if (jQuery('body').hasClass('logged-in') === false) {
-        jQuery('.collezione-catalog a').attr("href", 'https://giorgiocollection.com/privatearea-3d-2d-hd');
-
-    }
-
-
 
 });

@@ -19,9 +19,9 @@
                                             <li class="menu-item">
                                                 <a href="/contacts" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/153">Contacts</a>
                                             </li>
-                                            <li class="menu-item">
+                                            {{-- <li class="menu-item">
                                                 <a href="/news" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/125">News</a>
-                                            </li>
+                                            </li> --}}
                                             <li class="menu-item">
                                                 <a href="/press" gva_layout="menu-list" gva_layout_columns="3" gva_block="gavias_facdori_about" gva_block_en="gavias_facdori_about" gva_block_it="gavias_facdori_about" gva_block_ru="gavias_facdori_about" gva_block_ar="gavias_facdori_about" gva_block_fr="gavias_facdori_about" data-drupal-link-system-path="node/133">Press</a>
                                             </li>

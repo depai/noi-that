@@ -3,79 +3,11 @@
     prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
 <head>
     <meta charset="utf-8" />
-    <link rel="canonical" href="https://giorgiocollection.com/charisma-fixed-sofa-1" />
-
 
     <meta name="description" content="4 seater sofa. Base and metal trims on the armrests in light gold chrome stainless steel." />
-    <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-138875167-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'UA-138875167-1');
-    </script>
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '537282346894549');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1"
-            src="https://www.facebook.com/tr?id=537282346894549&amp;ev=PageView&amp;noscript=1" /></noscript>
-    <script>
-        ! function(e) {
-            if (!window.pintrk) {
-                window.pintrk = function() {
-                    window.pintrk.queue.push(Array.prototype.slice.call(arguments))
-                };
-                var
-                    n = window.pintrk;
-                n.queue = [], n.version = "3.0";
-                var
-                    t = document.createElement("script");
-                t.async = !0, t.src = e;
-                var
-                    r = document.getElementsByTagName("script")[0];
-                r.parentNode.insertBefore(t, r)
-            }
-        }("https://s.pinimg.com/ct/core.js");
-        pintrk('load', '2612935646429', {
-            em: ''
-        });
-        pintrk('page');
-        pintrk('track', 'pagevisit');
-    </script>
-    <noscript>
-        <img height="1" width="1" alt="">&amp;noscript=1" /&gt;
-    </noscript>
-    <script></script>
-    <meta name="p:domain_verify" content="307b8d6765ab5ca822326af169fcb2dc" />
-    <link rel="alternate" hreflang="en" href="https://giorgiocollection.com/charisma-fixed-sofa-1" />
-    <link rel="alternate" hreflang="it" href="https://giorgiocollection.com/it/charisma-divano-fisso-0" />
-    <link rel="alternate" hreflang="ar" href="https://giorgiocollection.com/ar/charisma-arykt-thabtt-0" />
-    <link rel="alternate" hreflang="fr" href="https://giorgiocollection.com/fr/charisma-fixed-sofa-1" />
     <link rel="shortcut icon" href="/sites/default/files/favicon.png" type="image/png" />
 
     <title>@yield('title_for_layout')</title>
@@ -124,54 +56,6 @@
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/bootstrap.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/template.css?r8qfr8" />
 
-
-    {{-- <script type="application/json" data-drupal-selector="drupal-settings-json">
-        {
-            "path": {
-                "baseUrl": "\/",
-                "scriptPath": null,
-                "pathPrefix": "",
-                "currentPath": "node\/2680",
-                "currentPathIsAdmin": false,
-                "isFront": false,
-                "currentLanguage": "en"
-            },
-            "pluralDelimiter": "\u0003",
-            "suppressDeprecationErrors": true,
-            "d8_recaptcha_v3": {
-                "site_key": null,
-                "captcha_selectors": null,
-                "badge_position": null
-            },
-            "iubenda": {
-                "language": "en",
-                "site_id": "2299602",
-                "policy_id": "86514578",
-                "show_gdpr": 1,
-                "show_ccpa": 1,
-                "country_detection": 0,
-                "buttons": {
-                    "accept_button": 1,
-                    "accept_button_text": "Accept",
-                    "reject_button": 1,
-                    "customize_button": 1
-                },
-                "position": "float-top-center",
-                "apply_styles": 1
-            },
-            "ajaxTrustedUrl": {
-                "form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM": true
-            },
-            "user": {
-                "uid": 0,
-                "permissionsHash": "07b61d2569f21086087f9a9fd9e90d9fd786a93b691c4af676114de06b24056d"
-            }
-        }
-    </script> --}}
-
-    <!--[if lte IE 8]>
-<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
-<![endif]-->
     <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
     <script src="/core/misc/drupalSettingsLoader.js?v=8.9.13"></script>
     <script src="/core/misc/drupal.js?v=8.9.13"></script>
@@ -198,7 +82,6 @@
     <script src="/themes/gavias_facdori/vendor/slick/slick.min.js?v=8.9.13"></script>
     <script src="/themes/gavias_facdori/js/main.js?v=8.9.13"></script>
     <script src="/themes/gavias_facdori/js/custom.js?v=8.9.13"></script>
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDUknyOTN5RnNNbz46hgfoEQ4F89B7OFZs"></script>
     <script src="/themes/gavias_facdori/js/store_locator.js?v=8.9.13"></script>
     <script src="/modules/gavias_sliderlayer/vendor/revolution/js/jquery.themepunch.tools.min.js?v=1.x"></script>
     <script src="/modules/gavias_sliderlayer/vendor/revolution/js/jquery.themepunch.revolution.min.js?v=1.x"></script>
@@ -220,8 +103,7 @@
     </script>
     <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x">
     </script>
-    <link rel="stylesheet" href="https://giorgiocollection.com/themes/gavias_facdori/css/custom.css" media="screen" />
-    <link rel="stylesheet" href="https://giorgiocollection.com/themes/gavias_facdori/css/update.css" media="screen" />
+
     <style type="text/css">
         @media only screen and (max-device-width: 480px) and (min-device-width:320px) {
             div.product-gallery {

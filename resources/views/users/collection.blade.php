@@ -4,80 +4,13 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="canonical" href="https://giorgiocollection.com/collections/mirage" />
     <meta name="description"
         content="A collection with a contemporary spirit that with its square shapes gives all the elements an elegant and sophisticated look." />
     <meta name="Generator" content="Drupal 8 (https://www.drupal.org)" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-138875167-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-138875167-1');
-    </script>
-    <script>
-        ! function(f, b, e, v, n, t, s) {
-            if (f.fbq) return;
-            n = f.fbq = function() {
-                n.callMethod ?
-                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-            };
-            if (!f._fbq) f._fbq = n;
-            n.push = n;
-            n.loaded = !0;
-            n.version = '2.0';
-            n.queue = [];
-            t = b.createElement(e);
-            t.async = !0;
-            t.src = v;
-            s = b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t, s)
-        }(window, document, 'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '537282346894549');
-        fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1"
-            src="https://www.facebook.com/tr?id=537282346894549&amp;ev=PageView&amp;noscript=1" /></noscript>
-    <script>
-        ! function(e) {
-            if (!window.pintrk) {
-                window.pintrk = function() {
-                    window.pintrk.queue.push(Array.prototype.slice.call(arguments))
-                };
-                var
-                    n = window.pintrk;
-                n.queue = [], n.version = "3.0";
-                var
-                    t = document.createElement("script");
-                t.async = !0, t.src = e;
-                var
-                    r = document.getElementsByTagName("script")[0];
-                r.parentNode.insertBefore(t, r)
-            }
-        }("https://s.pinimg.com/ct/core.js");
-        pintrk('load', '2612935646429', {
-            em: ''
-        });
-        pintrk('page');
-        pintrk('track', 'pagevisit');
-    </script>
-    <noscript>
-        <img height="1" width="1" alt="">&amp;noscript=1" /&gt;
-    </noscript>
-    <script></script>
-    <meta name="p:domain_verify" content="307b8d6765ab5ca822326af169fcb2dc" />
-    <link rel="alternate" hreflang="en" href="https://giorgiocollection.com/collections/mirage" />
-    <link rel="alternate" hreflang="it" href="https://giorgiocollection.com/it/collezioni/mirage" />
-    <link rel="alternate" hreflang="ar" href="https://giorgiocollection.com/ar/collections/mirage" />
-    <link rel="alternate" hreflang="fr" href="https://giorgiocollection.com/fr/collections/mirage" />
     <link rel="shortcut icon" href="/sites/default/files/favicon.png" type="image/png" />
     <link rel="drupal:content-translation-overview" href="/taxonomy/term/104/translations" />
     <link rel="drupal:content-translation-add" href="/taxonomy/term/104/translations/add" />
@@ -232,23 +165,6 @@
     <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x">
     </script>
 
-
-    <link rel="stylesheet" href="https://giorgiocollection.com/themes/gavias_facdori/css/custom.css" media="screen" />
-    <link rel="stylesheet" href="https://giorgiocollection.com/themes/gavias_facdori/css/update.css" media="screen" />
-
-
-
-    <style type="text/css">
-        @media only screen and (max-device-width: 480px) and (min-device-width:320px) {
-            div.product-gallery {
-                width: 100% !important;
-            }
-        }
-
-    </style>
-
-    <style class="customize"></style>
-
 </head>
 
 
@@ -311,7 +227,7 @@
                                                                         data-drupal-link-system-path="node/153">Contacts</a>
 
                                                                 </li>
-
+{{--
                                                                 <li class="menu-item">
                                                                     <a href="/news" gva_layout="menu-list"
                                                                         gva_layout_columns="3"
@@ -323,7 +239,7 @@
                                                                         gva_block_fr="gavias_facdori_about"
                                                                         data-drupal-link-system-path="node/125">News</a>
 
-                                                                </li>
+                                                                </li> --}}
 
                                                                 <li class="menu-item">
                                                                     <a href="/press" gva_layout="menu-list"
@@ -830,7 +746,7 @@
 
                                                                                     </li>
 
-                                                                                    <li class="menu-item">
+                                                                                    {{-- <li class="menu-item">
                                                                                         <a href="/news"
                                                                                             gva_layout="menu-list"
                                                                                             gva_layout_columns="3"
@@ -842,7 +758,7 @@
                                                                                             gva_block_fr="gavias_facdori_about"
                                                                                             data-drupal-link-system-path="node/125">News</a>
 
-                                                                                    </li>
+                                                                                    </li> --}}
 
                                                                                     <li class="menu-item">
                                                                                         <a href="/press"

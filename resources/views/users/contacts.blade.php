@@ -9,8 +9,6 @@
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-138875167-1"></script>
-
 
     <meta name="p:domain_verify" content="307b8d6765ab5ca822326af169fcb2dc" />
 
@@ -121,21 +119,6 @@
     </script>
     <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x">
     </script>
-
-
-    <link rel="stylesheet" href="https://giorgiocollection.com/themes/gavias_facdori/css/custom.css" media="screen" />
-    <link rel="stylesheet" href="https://giorgiocollection.com/themes/gavias_facdori/css/update.css" media="screen" />
-
-
-
-    <style type="text/css">
-        @media only screen and (max-device-width: 480px) and (min-device-width:320px) {
-            div.product-gallery {
-                width: 100% !important;
-            }
-        }
-
-    </style>
 
 
 </head>
