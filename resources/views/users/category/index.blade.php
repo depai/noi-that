@@ -37,7 +37,7 @@
                                                                     <div class="category-image">
 
                                                                         <div class="item-image">
-                                                                            <img src="{{ !empty($detailCategory->image) ? asset($detailCategory->image) : '/sites/default/files/2020-12/Charisma1.png' }}" alt="CHARISMA" typeof="Image" />
+                                                                            <img src="{{ !empty($detailCategory->image) ? asset('storage/categories/' . $datum->image) : '/sites/default/files/2020-12/Charisma1.png' }}" alt="CHARISMA" typeof="Image" />
                                                                         </div>
 
                                                                     </div>
