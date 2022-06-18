@@ -287,10 +287,9 @@
                                                                                                                 0362
                                                                                                                 325410
                                                                                                             </p>
-                                                                                                            <p>giorgiocollection@giorgiocollection.it
+                                                                                                            <p>noithat.inoxpro@gmail.com
                                                                                                             </p>
-                                                                                                            <p>sales@giorgiocollection.it
-                                                                                                            </p>
+
                                                                                                         </div>
                                                                                                         <div>
                                                                                                             <div class="widget block clearfix gsc-block-view  gsc-block-drupal block-view title-align-left contacts-list-geolocate text-dark remove-margin-off">

@@ -14,12 +14,12 @@
             <div class="main-menu-inner">
                 <div>
                     <nav aria-labelledby="block-gavias-facdori-mainnavigation-menu" id="block-gavias-facdori-mainnavigation" class="block block-menu navigation menu--main">
-                      <p class="visually-hidden block-title block-title" id="block-gavias-facdori-mainnavigation-menu"><span>Main navigation</span></p>
+                      <p class="visually-hidden block-title block-title" id="block-gavias-facdori-mainnavigation-menu"><span>Điều chỉnh hướng</span></p>
                       <div class="block-content">
                         <div class="gva-navigation">
                           <ul class="clearfix gva_menu gva_menu_main">
                               <li class="menu-item menu-item--expanded ">
-                                <a href="#"> Collections<span class="icaret nav-plus fas fa-chevron-down"></span> </a>
+                                <a href="#"> Bộ sưu tập<span class="icaret nav-plus fas fa-chevron-down"></span> </a>
                                 <ul class="menu sub-menu">
                                   <span class="back-menu-m"><i class="fal fa-chevron-left"></i></span>
                                     @foreach ($listCollection as $collection)
@@ -57,8 +57,7 @@
                   <div class="d-lg-none">
                     <div>
                         <nav aria-labelledby="block-topmenu-menu" id="block-topmenu" class="top-menu block block-menu navigation menu--top-menu">
-                            <p class="visually-hidden block-title block-title" id="block-topmenu-menu">
-                                <span>Top Menu anonymous</span></p>
+                            {{-- <p class="visually-hidden block-title block-title" id="block-topmenu-menu"><span>Top Menu anonymous</span></p> --}}
                             <div class="block-content">
                                 <img src="{{ asset('icons/cart.svg') }}" alt="">
                                 <ul class="gva_menu">
@@ -71,7 +70,7 @@
                                             gva_block_ru="gavias_facdori_about"
                                             gva_block_ar="gavias_facdori_about"
                                             gva_block_fr="gavias_facdori_about"
-                                            data-drupal-link-system-path="node/123">About us
+                                            data-drupal-link-system-path="node/123">Về chúng tôi
                                         </a>
                                     </li>
 
@@ -85,11 +84,11 @@
                                             gva_block_ru="gavias_facdori_about"
                                             gva_block_ar="gavias_facdori_about"
                                             gva_block_fr="gavias_facdori_about"
-                                            data-drupal-link-system-path="node/153">Contacts</a>
+                                            data-drupal-link-system-path="node/153">Liên hệ</a>
 
                                     </li>
 
-                                    {{-- <li class="menu-item">
+                                    <li class="menu-item">
                                         <a href="/news"
                                             gva_layout="menu-list"
                                             gva_layout_columns="3"
@@ -99,10 +98,10 @@
                                             gva_block_ru="gavias_facdori_about"
                                             gva_block_ar="gavias_facdori_about"
                                             gva_block_fr="gavias_facdori_about"
-                                            data-drupal-link-system-path="node/125">News</a>
+                                            data-drupal-link-system-path="node/125">Sản phẩm mới</a>
 
-                                    </li> --}}
-
+                                    </li>
+                                    {{--
                                     <li class="menu-item">
                                         <a href="/press"
                                             gva_layout="menu-list"
@@ -115,7 +114,7 @@
                                             gva_block_fr="gavias_facdori_about"
                                             data-drupal-link-system-path="node/133">Press</a>
 
-                                    </li>
+                                    </li> --}}
 
                                     <li class="menu-item">
                                         <a href="/privatearea-3d-2d-hd"
@@ -127,35 +126,11 @@
                                             gva_block_ru="gavias_facdori_about"
                                             gva_block_ar="gavias_facdori_about"
                                             gva_block_fr="gavias_facdori_about"
-                                            data-drupal-link-system-path="node/3422">Login
-                                            or Register</a>
-
+                                            data-drupal-link-system-path="node/3422">Đăng nhập</a>
                                     </li>
                                 </ul>
-
-
-
                             </div>
                         </nav>
-                        <div id="block-dropdownlanguage" class="language-top block block-dropdown-language block-dropdown-languagelanguage-interface no-title">
-                            <div class="content block-content">
-                                <div class="dropbutton-wrapper">
-                                    <div class="dropbutton-widget">
-                                        <ul
-                                            class="dropdown-language-item dropbutton">
-                                            <li class="en">
-                                                <span class="language-link active-language" hreflang="en">EN</span>
-                                            </li>
-
-                                            <li class="fr">
-                                                <a href="/fr/charisma-fixed-sofa-1" class="language-link"  hreflang="fr">FR</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>

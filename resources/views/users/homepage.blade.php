@@ -213,7 +213,7 @@
                                                     </div>
                                                     <div class="widget gsc-image text-none play-video-btn">
                                                       <div class="widget-content">
-                                                        <img src="https://giorgiocollection.com/sites/default/files/play-button.png" alt="" />
+                                                        {{-- <img src="https://giorgiocollection.com/sites/default/files/play-button.png" alt="" /> --}}
                                                       </div>
                                                     </div>
                                                     <div class="gbb-row-wrapper section discover-row gbb-row  bg-size-cover" style="">
@@ -264,7 +264,7 @@
                                                   <div class="column-content-inner">
                                                     <div class="column-content luxury-heading ">
                                                       <h1 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0.5rem; font-family: 'Ibarra Real Nova', serif; line-height: 1.26; font-size: 32px; text-transform: uppercase; text-align: center; background-color: #ffffff;"><span style="box-sizing: border-box; font-weight: bolder;">LUXURY &amp; DESIGN</span></h1>
-                                                      <p style="text-align: center;"><span style="color: #7f8284; font-family: 'Ibarra Real Nova', serif; font-size: 14px; text-align: center; background-color: #ffffff;">The perfect match of finest materials, attention to details and Italian craftsmanship. Art Deco vibes mingle with cutting-edge shapes, bringing a fresh feel to the most exclusive homes all around the world.</span></p>
+                                                      <p style="text-align: center;"><span style="color: #7f8284; font-family: 'Ibarra Real Nova', serif; font-size: 14px; text-align: center; background-color: #ffffff;">fsadfsdafsd.</span></p>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -403,14 +403,15 @@
                                                       #button-fvpyimuq5hto {
                                                         color: #000;
                                                         border-color: #000;
+                                                        max-width: fit-content;
                                                       }
 
                                                       #button-fvpyimuq5hto:hover {}
                                                     </style>
 
                                                     <div class="clearfix"></div>
-                                                    <a href="/privatearea-3d-2d-hd" class="gsc-button button-transparent-black  mini " id="button-fvpyimuq5hto">
-                                                      LOGIN - SIGN UP </a>
+                                                    <a href="/privatearea-3d-2d-hd" class="gsc-button button-transparent-black mini " id="button-fvpyimuq5hto">
+                                                      Đăng nhập - Đăng ký </a>
 
                                                   </div>
                                                 </div>
@@ -474,10 +475,10 @@
                                                 <div class="column-inner  bg-size-cover  ">
                                                   <div class="column-content-inner">
                                                     <div class="column-content title ">
-                                                      <p>NEWSLETTER</p>
+                                                      <p>Bản Tin</p>
                                                     </div>
                                                     <div class="column-content description ">
-                                                      <p>Stay up to date on the latest collections and latest news from Giorgio Collection</p>
+                                                      <p>Theo dõi những sản phẩm mới nhất và và những bộ sưu tập độc đáo tại inoxpro</p>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -495,17 +496,17 @@
                                                             <div class="js-form-item form-item js-form-type-checkbox form-item-mailchimp-lists-gdpr-consent js-form-item-mailchimp-lists-gdpr-consent">
                                                               <input data-drupal-selector="edit-mailchimp-lists-gdpr-consent" type="checkbox" id="edit-mailchimp-lists-gdpr-consent" name="mailchimp_lists[gdpr_consent]" value="1" class="form-checkbox required" required="required" aria-required="true" />
 
-                                                              <label for="edit-mailchimp-lists-gdpr-consent" class="option js-form-required form-required">I accept the cookie and privacy policy</label>
+                                                              <label for="edit-mailchimp-lists-gdpr-consent" class="option js-form-required form-required">Tôi đồng ý với tất cả điều khoản và dịch vụ của inoxpro</label>
                                                             </div>
                                                             <div id="mailchimp-newsletter-1c47768d72-mergefields" class="mailchimp-newsletter-mergefields">
                                                               <div class="js-form-item form-item js-form-type-email form-item-mergevars-email js-form-item-mergevars-email">
-                                                                <label for="edit-mergevars-email" class="js-form-required form-required">Email Address</label>
+                                                                <label for="edit-mergevars-email" class="js-form-required form-required">Địa chỉ email</label>
                                                                 <input data-drupal-selector="edit-mergevars-email" type="email" id="edit-mergevars-email" name="mergevars[EMAIL]" value="" size="25" maxlength="254" class="form-email required" required="required" aria-required="true" />
 
                                                               </div>
                                                             </div><input autocomplete="off" data-drupal-selector="form-zyq9ah1sn-y9a4j9yqse-4hjkzz36f-yc53bk-oxpgq" type="hidden" name="form_build_id" value="form-ZYQ9aH1Sn-Y9a4j9yQsE-4hJkZZ36f-Yc53Bk-oXpGQ" />
                                                             <input data-drupal-selector="edit-mailchimp-signup-subscribe-block-subscribe-newsletter-form" type="hidden" name="form_id" value="mailchimp_signup_subscribe_block_subscribe_newsletter_form" />
-                                                            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Subscribe now" class="button js-form-submit form-submit" />
+                                                            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Theo dõi ngay" class="button js-form-submit form-submit" />
                                                             </div>
 
                                                           </form>

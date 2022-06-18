@@ -48,7 +48,12 @@ Route::get('/press', function () {
 
 Route::post('/ckeditor', [DashboardController::class, 'index'])->name('ckeditor.upload');
 
+Route::group(['middlware' => 'noDebugbar'], function () {
+    // Route::get("sitemap.xml", "Frontend\SitemapController@index")->name('sitemap.index');
+});
+
 Route::prefix('')->group(function () {
+
     route::get('/', [HomeController::class, 'indexHome'])->name('home');
     Route::prefix('product')->group(function () {
         route::get('/{slug}', [ProductController::class, 'productDetail'])->name('product.detail');

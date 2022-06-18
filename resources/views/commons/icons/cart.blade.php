@@ -15,10 +15,10 @@
     <div class="position-absolute rounded row bg-light box-cart">
         @if (@$cart)
             <div class="col-8 pt-3 text-left font-weight-bold">
-                Products
+                Sản phẩm
             </div>
             <div class="col-4 pt-3 text-right font-weight-bold">
-                Quantity
+                Số lượng
             </div>
             <div class="col-12 pb-2">
                 <div class="border border-secondary"></div>
@@ -47,7 +47,7 @@
             </div>
             @endif
             <div class="col-6 mb-3 offset-6">
-                <div class="btn-checkout product-asinfo-2">Checkout</div>
+                <div class="btn-checkout product-asinfo-2">Đặt hàng</div>
             </div>
         @endif
     </div>

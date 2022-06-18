@@ -21,8 +21,8 @@
                             <div id="block-footertel" class="block block-block-content block-block-contentc8b04782-b1e2-412a-9bb8-2690fec81fbe no-title">
                                 <div class="content block-content">
                                     <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                                        <p>T. <a href="tel:+39 0362 243 471">+39 0362 243 471</a><br />
-                                            T. <a href="tel:+39 0362 326 814">+39 0362 326 814</a></p>
+                                        <p>T. <a href="tel:+84 7938 456 66">+84 7938 456 66</a><br />
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -33,7 +33,7 @@
                             <div id="block-footeremails" class="block block-block-content block-block-content0b1cf2c7-e512-40da-9a4b-0af60dc520b8 no-title">
                                 <div class="content block-content">
                                     <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                                        <p><a href="mailto:giorgiocollection@giorgiocollection.it">giorgiocollection@giorgiocollection.it</a><br /><a href="mailto:sales@giorgiocollection.it">sales@giorgiocollection.it</a></p>
+                                        <p><a href="mailto:noithat.inoxpro@gmail.com">noithat.inoxpro@gmail.com</a><br /></p>
                                     </div>
                                 </div>
                             </div>
@@ -45,7 +45,7 @@
                             <div id="block-footersocial" class="block block-block-content block-block-content486f085d-1635-4972-b2da-2dd90ea07115 no-title">
                                 <div class="content block-content">
                                     <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                                        <p>Follow Giorgio Collection</p>
+                                        <p>Theo dõi chúng tôi</p>
                                         <div class="social-copyright">
                                             <div class="socials">
                                                 <a href="https://www.facebook.com/giorgiocollectionofficial/" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="copyright">
+    {{-- <div class="copyright">
         <div class="container">
             <div class="copyright-inner">
                 <div>
@@ -80,7 +80,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 </footer>
 
 <div class="gva-quick-side quick-side">

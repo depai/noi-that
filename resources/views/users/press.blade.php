@@ -986,8 +986,8 @@ Seregno (MB) - ITALY</p>
 
       <div class="content block-content">
 
-            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>T. <a href="tel:+39 0362 243 471">+39 0362 243 471</a><br />
-T. <a href="tel:+39 0362 326 814">+39 0362 326 814</a></p>
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>T. <a href="tel:+84 7938 456 66">+84 7938 456 66</a><br />
+</p>
 </div>
 
     </div>
@@ -1004,7 +1004,7 @@ T. <a href="tel:+39 0362 326 814">+39 0362 326 814</a></p>
 
       <div class="content block-content">
 
-            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a href="mailto:giorgiocollection@giorgiocollection.it">giorgiocollection@giorgiocollection.it</a><br /><a href="mailto:sales@giorgiocollection.it">sales@giorgiocollection.it</a></p>
+            <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item"><p><a href="mailto:noithat.inoxpro@gmail.com">noithat.inoxpro@gmail.com</a><br /></p>
 </div>
 
     </div>
