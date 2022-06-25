@@ -1,24 +1,21 @@
 <nav class="pager">
     <ul class="pager__items js-pager__items">
-        <li class="pager__item is-active">
-            <a href="?page=0%2C0" title="Current page">
-                <span class="visually-hidden">Current page</span>1
-            </a>
+
+        @for ($i = 1; $i <= $object->lastPage(); $i++)
+        <li class="pager__item {{ $i == $object->currentPage() ? 'is-active' : '' }}">
+            <a href="{{ $object->path() . '?page=' . $i }}">{{ $i }}</a>
         </li>
-        <li class="pager__item">
-            <a href="?page=0%2C1" title="Go to page 2">
-                <span class="visually-hidden"> Page </span>2</a>
-        </li>
+        @endfor
+
         <li class="pager__item pager__item--next">
-            <a href="?page=0%2C1" title="Go to next page" rel="next">
+            <a href="{{ $object->path() . '?page=' . ($object->currentPage() + 1 > $object->lastPage() ? $object->lastPage() : ($object->currentPage() + 1)) }}" title="Go to next page" rel="next">
                 <span class="visually-hidden">Next page</span>
-                <span aria-hidden="true">Next ›</span>
             </a>
         </li>
+
         <li class="pager__item pager__item--last">
-            <a href="?page=0%2C1" title="Go to last page">
+            <a href="{{ $object->path() . '?page=' . $object->lastPage() }}" title="Go to last page">
                 <span class="visually-hidden">Last page</span>
-                <span aria-hidden="true">Last »</span>
             </a>
         </li>
     </ul>

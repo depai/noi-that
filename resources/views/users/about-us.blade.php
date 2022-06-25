@@ -69,70 +69,15 @@
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/bootstrap.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/template.css?r8qfr8" />
 
-    <!--[if lte IE 8]>
-<script src="/core/assets/vendor/html5shiv/html5shiv.min.js?v=3.7.3"></script>
-<![endif]-->
-    <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
-    <script src="/core/misc/drupalSettingsLoader.js?v=8.9.13"></script>
-    <script src="/core/misc/drupal.js?v=8.9.13"></script>
-    <script src="/core/misc/drupal.init.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/jquery-migrate.min.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/js/bootstrap.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/js/imagesloader.min.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/jquery.easing.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/jquery.appear.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/jquery.easypiechart.min.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/owl-carousel/owl.carousel.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/waypoint.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/count-to.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/masonry.pkgd.min.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/isotope.pkgd.min.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/aos.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/prettyphoto/js/jquery.prettyPhoto.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/ytplayer/js/jquery.mb.YTPlayer.min.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/jquery.typer/src/jquery.typer.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/magnific/jquery.magnific-popup.min.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/quotes_rotator/js/modernizr.custom.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/quotes_rotator/js/jquery.cbpQTRotator.min.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/jquery.nicescroll.min.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/vendor/slick/slick.min.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/js/main.js?v=8.9.13"></script>
-    <script src="/themes/gavias_facdori/js/custom.js?v=8.9.13"></script>
-    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDUknyOTN5RnNNbz46hgfoEQ4F89B7OFZs"></script>
-    <script src="/themes/gavias_facdori/js/store_locator.js?v=8.9.13"></script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/jquery.themepunch.tools.min.js?v=1.x"></script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/jquery.themepunch.revolution.min.js?v=1.x"></script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.actions.min.js?v=1.x">
-    </script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.carousel.min.js?v=1.x">
-    </script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.kenburn.min.js?v=1.x">
-    </script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js?v=1.x">
-    </script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.migration.min.js?v=1.x">
-    </script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.navigation.min.js?v=1.x">
-    </script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.parallax.min.js?v=1.x">
-    </script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js?v=1.x">
-    </script>
-    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x">
-    </script>
-
 </head>
 
 
 <body class="gavias-content-builder hide-page-title azienda-page Wide layout-no-sidebars wide path-node node--type-page">
-
     <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
         <div class="gva-body-wrapper">
             <div class="body-page gva-body-page">
                 <header id="header" class="header-1">
-
                     @include('users.layouts.topbar')
-
                     <div class="header-main ">
                         <div class="container header-content-layout">
                             <div class="header-main-inner p-relative">
@@ -140,17 +85,11 @@
                                     <div class="col-md-12 col-sm-12 col-xs-12 content-inner">
                                         <div class="branding">
                                             <div>
-
                                                 <a href="/" title="Home" rel="home" class="site-branding-logo">
-                                                    <img class="logo-default logo-one"
-                                                        src="/themes/gavias_facdori/logo.png" alt="Home" />
-                                                    <img class="logo-default logo-two hidden"
-                                                        src="/themes/gavias_facdori/logo-white.png" alt="Home" />
-                                                    <img class="logo-default logo-three hidden"
-                                                        src="/themes/gavias_facdori/logo-black.png" alt="Home" />
-
+                                                    <img class="logo-default logo-one" src="/themes/gavias_facdori/logo.png" alt="Home" />
+                                                    <img class="logo-default logo-two hidden" src="/themes/gavias_facdori/logo-white.png" alt="Home" />
+                                                    <img class="logo-default logo-three hidden" src="/themes/gavias_facdori/logo-black.png" alt="Home" />
                                                 </a>
-
                                             </div>
 
 
@@ -170,7 +109,6 @@
                 </header>
 
                 <div role="main" class="main main-page">
-
                     <div class="clearfix"></div>
                     <div class="help gav-help-region">
                         <div class="container">
@@ -178,7 +116,6 @@
                                 <div>
                                     <div data-drupal-messages-fallback class="hidden"></div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -192,31 +129,24 @@
 
                                         <div class="content-main">
                                             <div>
-                                                <div id="block-gavias-facdori-content"
-                                                    class="block block-system block-system-main-block no-title">
+                                                <div id="block-gavias-facdori-content" class="block block-system block-system-main-block no-title">
 
 
                                                     <div class="content block-content">
                                                         <!-- Start Display article for detail page -->
 
-                                                        <div data-history-node-id="123" role="article"
-                                                            typeof="schema:WebPage"
-                                                            class="node node--type-page node--view-mode-full">
+                                                        <div data-history-node-id="123" role="article" typeof="schema:WebPage" class="node node--type-page node--view-mode-full">
                                                             <div class="header-title">
-
                                                                 <div class="container">
-                                                                    <h2 class="title"><span><span
-                                                                                property="schema:name">About us</span>
-                                                                        </span></h2>
+                                                                    <h2 class="title">
+                                                                        <span property="schema:name">Về chúng tôi</span>
+                                                                    <h2>
                                                                 </div>
                                                             </div>
 
                                                             <div class="node__content clearfix">
-
-                                                                <div
-                                                                    class="field field--name-field-content-builder field--type-gavias-content-builder field--label-hidden field__item">
+                                                                <div class="field field--name-field-content-builder field--type-gavias-content-builder field--label-hidden field__item">
                                                                     <div class="gavias-blockbuilder-content">
-
                                                                         <div class="gavias-builder--content">
                                                                             <div class="gbb-row-wrapper section row-first-level main-banner gbb-row  bg-size-cover"
                                                                                 style="background-image:url('/sites/default/files/lion-azienda%403x.jpg'); background-repeat:no-repeat; background-position:center top"
@@ -538,17 +468,6 @@
         </div>
     </div>
 
-    <script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
-    <script src="/modules/_d8_recaptcha_v3/js/recaptcha.js?r8qfr8" defer="true" async="true"></script>
-    <script src="/modules/iubenda/js/iubenda.js?v=8.9.13"></script>
-    <script src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-    <script src="/modules/gavias_content_builder/vendor/skrollr.min.js?v=1.x"></script>
-    <script src="/modules/gavias_content_builder/vendor/main.js?v=1.x"></script>
-    <script src="/modules/dropdown_language/js/dropdown_language_selector.js?v=8.9.13"></script>
-    <script src="/core/misc/dropbutton/dropbutton.js?v=8.9.13"></script>
-
-
-    <div id="gva-overlay"></div>
 </body>
 
 </html>

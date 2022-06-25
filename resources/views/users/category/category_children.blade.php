@@ -143,7 +143,7 @@
                                                 </div>
                                                 @endforeach
                                             </div>
-                                            @include('users.layouts.paginate')
+                                            @include('users.layouts.paginate', ['object'=>$listProduct])
                                         </div>
                                     </div>
                                 </div>
