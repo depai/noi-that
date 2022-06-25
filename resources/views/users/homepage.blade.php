@@ -263,8 +263,12 @@
                                                 <div class="column-inner  bg-size-cover  ">
                                                   <div class="column-content-inner">
                                                     <div class="column-content luxury-heading ">
-                                                      <h1 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0.5rem; font-family: 'Ibarra Real Nova', serif; line-height: 1.26; font-size: 32px; text-transform: uppercase; text-align: center; background-color: #ffffff;"><span style="box-sizing: border-box; font-weight: bolder;">LUXURY &amp; DESIGN</span></h1>
-                                                      <p style="text-align: center;"><span style="color: #7f8284; font-family: 'Ibarra Real Nova', serif; font-size: 14px; text-align: center; background-color: #ffffff;">fsadfsdafsd.</span></p>
+                                                        <h1 style="box-sizing: border-box; margin-top: 0px; margin-bottom: 0.5rem; font-family: 'Ibarra Real Nova', serif; line-height: 1.26; font-size: 32px; text-transform: uppercase; text-align: center; background-color: #ffffff;">
+                                                            <span style="box-sizing: border-box; font-weight: bolder;">SANG TRỌNG &amp; THIẾT KẾ</span></h1>
+                                                        <p style="text-align: center;">
+                                                            <span style="color: #7f8284; font-family: 'Ibarra Real Nova', serif; font-size: 14px; text-align: center; background-color: #ffffff;">
+                                                            fsadfsdafsd.</span>
+                                                        </p>
                                                     </div>
                                                   </div>
                                                 </div>

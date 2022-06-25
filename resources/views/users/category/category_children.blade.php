@@ -47,7 +47,7 @@
                                                                             <div class="col-lg-5 col-sm-12 offset-lg-1">
                                                                                 <div class="title-wrapper">
                                                                                     <i class="fas fa-chevron-left"></i></a>
-                                                                                    <h1 class="category-title"> {{ $detailCategory->title }} </h1>
+                                                                                    <h1 class="category-title" style="width: 100%;"> {{ $detailCategory->title }} </h1>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-lg-6 col-sm-12 description-row">

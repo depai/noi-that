@@ -47,7 +47,7 @@
                                                                             <div class="col-lg-5 col-sm-12 offset-lg-1">
                                                                                 <div class="title-wrapper">
                                                                                     <i class="fas fa-chevron-left"></i></a>
-                                                                                    <h1 class="category-title"> {{ $detailCategory->title }} </h1>
+                                                                                    <h1 class="category-title" style="width: 100%;"> {{ $detailCategory->title }} </h1>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-lg-6 col-sm-12 description-row">
@@ -88,7 +88,7 @@
                                                                     <div class="gva-view js-view-dom-id-b92bf216bdae24e6ea67d17395966dcb738d9ef26243b6b406f4f2d1a22f53e7">
                                                                         <div class="view-content-wrap">
                                                                             @foreach ($category->products as $product)
-                                                                                <div class="item">
+                                                                            <div class="item">
                                                                                 <div class="views-field views-field-nothing">
                                                                                     <span class="field-content">
                                                                                         <div class="related-products">
@@ -134,7 +134,6 @@
                                                                             </div>
                                                                         </div>
                                                                         @endforeach
-
                                                                         </div>
                                                                     </div>
                                                                 </div>

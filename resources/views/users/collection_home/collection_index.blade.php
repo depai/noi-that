@@ -37,7 +37,7 @@
                                                                     <div class="category-image">
 
                                                                         <div class="item-image">
-                                                                            <img src="{{ !empty($detailCollection->image) ? asset($detailCollection->image) : null }}" alt="CHARISMA" typeof="Image" />
+                                                                            <img src="{{ !empty($detailCollection->image) ? asset('storage/collections/' . $detailCollection->image) : null }}" alt="CHARISMA" typeof="Image" />
                                                                         </div>
 
                                                                     </div>
@@ -47,7 +47,7 @@
                                                                             <div class="col-lg-5 col-sm-12 offset-lg-1">
                                                                                 <div class="title-wrapper">
                                                                                     <i class="fas fa-chevron-left"></i></a>
-                                                                                    <h1 class="category-title"> {{ $detailCollection->title }} </h1>
+                                                                                    <h1 class="category-title" style="width: 100%;"> {{ $detailCollection->title }} </h1>
                                                                                 </div>
                                                                             </div>
                                                                             <div class="col-lg-6 col-sm-12 description-row">
