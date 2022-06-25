@@ -3,7 +3,7 @@
       <div class="column-content-inner">
         <div class="widget gsc-image text-left ">
           <div class="widget-content">
-            <img src="{{ !empty($collection->image) ? asset($collection->image) : '' }}" alt="" />
+            <img src="{{ !empty($collection->image) ? asset('storage/collections/' . $collection->image) : '' }}" alt="" />
           </div>
         </div>
       </div>
