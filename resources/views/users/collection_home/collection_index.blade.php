@@ -1,5 +1,12 @@
 @extends('users.layouts.app')
-@section('title_for_layout', 'collection detail')
+
+@section('title_for_layout', $detailCollection->title )
+@section('site_name', $detailCollection->title)
+
+@section('image_seo', asset('storage/collections/' . $detailCollection->image))
+@section('meta_keywords', $detailCollection->meta_keywords)
+@section('meta_description', $detailCollection->description)
+
 @section('css')
 @endsection
 @section('content')

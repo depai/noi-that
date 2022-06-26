@@ -1,5 +1,11 @@
 @extends('users.layouts.app')
-@section('title_for_layout', 'categogy')
+@section('title_for_layout', $detailCategory->title )
+@section('site_name', $detailCategory->title)
+
+@section('image_seo', asset('storage/categories/' . $detailCategory->image))
+@section('meta_keywords', $detailCategory->meta_keywords)
+@section('meta_description', nl2br($detailCategory->description))
+
 @section('css')
 @endsection
 @section('content')

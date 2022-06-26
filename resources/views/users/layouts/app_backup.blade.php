@@ -7,25 +7,9 @@
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="twitter:description" content="@yield('meta_description')">
-    <meta property="og:description" content="@yield('meta_description')">
-    <meta name="description" content="@yield('meta_description')">
-    <title>@yield('site_name')</title>
-    <meta property="og:site_name" content="@yield('site_name')">
-
-    <meta property="og:image" content="@yield('image_seo')">
-    <meta property="og:image:height" content="300">
-    <meta property="og:image:width" content="300">
-
-    <meta property="og:site_name" content="@yield('site_name')">
-    <meta name="keywords" content="@yield('meta_keywords')">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:type" content="website">
-    <meta name="robots" content="noindex">
-    <meta name="googlebot" content="noindex">
-
-
     <link rel="shortcut icon" href="/sites/default/files/favicon.png" type="image/png" />
+
+    <title>@yield('title_for_layout')</title>
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <link rel="stylesheet" media="all"  href="/core/themes/stable/css/system/components/ajax-progress.module.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/align.module.css?r8qfr8" />
@@ -71,6 +55,53 @@
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/bootstrap.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/template.css?r8qfr8" />
 
+    {{-- <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
+    <script src="/core/misc/drupalSettingsLoader.js?v=8.9.13"></script>
+    <script src="/core/misc/drupal.js?v=8.9.13"></script>
+    <script src="/core/misc/drupal.init.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery-migrate.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/js/bootstrap.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/js/imagesloader.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery.easing.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery.appear.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery.easypiechart.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/owl-carousel/owl.carousel.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/waypoint.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/count-to.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/masonry.pkgd.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/isotope.pkgd.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/aos.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/prettyphoto/js/jquery.prettyPhoto.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/ytplayer/js/jquery.mb.YTPlayer.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery.typer/src/jquery.typer.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/magnific/jquery.magnific-popup.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/quotes_rotator/js/modernizr.custom.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/quotes_rotator/js/jquery.cbpQTRotator.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery.nicescroll.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/slick/slick.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/js/main.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/js/custom.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/js/store_locator.js?v=8.9.13"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/jquery.themepunch.tools.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/jquery.themepunch.revolution.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.actions.min.js?v=1.x">
+    </script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.carousel.min.js?v=1.x">
+    </script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.kenburn.min.js?v=1.x">
+    </script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js?v=1.x">
+    </script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.migration.min.js?v=1.x">
+    </script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.navigation.min.js?v=1.x">
+    </script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.parallax.min.js?v=1.x">
+    </script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js?v=1.x">
+    </script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x">
+    </script> --}}
 
     <style type="text/css">
         @media only screen and (max-device-width: 480px) and (min-device-width:320px) {
@@ -130,6 +161,24 @@
     @if (session('thanks'))
         @include('commons.modals.thanks')
     @endif
+    {{-- <script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
+    <script src="/modules/_d8_recaptcha_v3/js/recaptcha.js?r8qfr8" defer="true" async="true"></script>
+    <script src="/modules/iubenda/js/iubenda.js?v=8.9.13"></script>
+    <script src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+    <script src="/modules/gavias_content_builder/vendor/skrollr.min.js?v=1.x"></script>
+    <script src="/modules/gavias_content_builder/vendor/main.js?v=1.x"></script>
+    <script src="/core/misc/debounce.js?v=8.9.13"></script>
+    <script src="/core/misc/form.js?v=8.9.13"></script>
+    <script src="/modules/webform/js/webform.behaviors.js?v=8.9.13"></script>
+    <script src="/core/misc/states.js?v=8.9.13"></script>
+    <script src="/modules/webform/js/webform.states.js?v=8.9.13"></script>
+    <script src="/modules/webform/js/webform.form.js?v=8.9.13"></script>
+    <script src="/modules/webform/js/webform.element.details.save.js?v=8.9.13"></script>
+    <script src="/core/misc/announce.js?v=8.9.13"></script>
+    <script src="/modules/webform/js/webform.element.details.toggle.js?v=8.9.13"></script>
+    <script src="/modules/webform/js/webform.element.message.js?v=8.9.13"></script>
+    <script src="/modules/dropdown_language/js/dropdown_language_selector.js?v=8.9.13"></script>
+    <script src="/core/misc/dropbutton/dropbutton.js?v=8.9.13"></script> --}}
     @push('after-scripts')
     @endpush
     <div id="gva-overlay"></div>

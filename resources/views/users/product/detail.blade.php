@@ -1,5 +1,13 @@
 @extends('users.layouts.app')
-@section('title_for_layout', 'Detail product')
+
+@section('title_for_layout', $product->title )
+@section('site_name', $product->title)
+
+@section('image_seo', !empty($product->productImages->first()) ? asset('storage/' . $product->productImages->first()->name) : '')
+@section('meta_keywords', $product->meta_keywords)
+@section('meta_description', nl2br($product->description))
+
+
 @section('css')
 @endsection
 @section('content')
@@ -43,7 +51,6 @@
                                                                             alt="{{ $product->image }}"
                                                                             typeof="foaf:Image" />
                                                                     @endif
-
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -121,7 +128,7 @@
                                                                 {!! nl2br($product->description) !!}
                                                             </div>
 
-                                                            
+
                                                             <p class="available-materials">Available
                                                                 materials</p>
 
@@ -213,7 +220,7 @@
                                                     <div class="related-products">
                                                         <div class="prod-related-img">
                                                             <div class="item-image">
-                                                            
+
                                                                 <img src="{{ asset('storage/' . @$relatedProduct->productImages->first()->name) }}"
                                                                     alt="{{ $relatedProduct->title }}" typeof="Image" />
 
