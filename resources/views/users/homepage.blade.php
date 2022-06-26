@@ -2,16 +2,31 @@
 <html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Enter the world of Giorgio Collection and get inspired by the timeless elegance of luxury Italian furniture." />
-  <meta name="MobileOptimized" content="width" />
-  <meta name="HandheldFriendly" content="true" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="p:domain_verify" content="307b8d6765ab5ca822326af169fcb2dc" />
+    <meta name="twitter:description" content="Mô tả trang chủ...">
+    <meta property="og:description" content="Mô tả trang chủ...">
+    <meta name="description" content="Mô tả trang chủ...">
+    <meta property="og:site_name" content="home">
+
+    <meta property="og:image" content="{{ asset('/themes/gavias_facdori/logo.png') }}">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:width" content="300">
+
+    <meta property="og:site_name" content="home">
+    <meta name="keywords" content="@yield('meta_keywords')">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+
+  {{-- <meta name="p:domain_verify" content="307b8d6765ab5ca822326af169fcb2dc" /> --}}
   <link rel="shortcut icon" href="/sites/default/files/favicon.png" type="image/png" />
 
-  <title>Giorgio Collection: luxury Italian furniture &amp; designer interiors</title>
+  <title>Inox pro &amp; designer interiors</title>
 
   <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/autocomplete-loading.module.css?r8l2sm" />
   <link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/fieldgroup.module.css?r8l2sm" />
@@ -50,7 +65,7 @@
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/vendor/slick/slick.css?r8l2sm" />
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/bootstrap.css?r8l2sm" />
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/template.css?r8l2sm" />
-
+{{--
   <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
   <script src="/core/misc/drupalSettingsLoader.js?v=8.9.13"></script>
   <script src="/core/misc/drupal.js?v=8.9.13"></script>
@@ -89,20 +104,13 @@
   <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.navigation.min.js?v=1.x"></script>
   <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.parallax.min.js?v=1.x"></script>
   <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js?v=1.x"></script>
-  <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x"></script>
+  <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x"></script> --}}
 
 </head>
 
 
 <body class="gavias-content-builder hide-page-title Wide layout-no-sidebars wide frontpage node--type-page">
-
-  <a href="#main-content" class="visually-hidden focusable">
-    Skip to main content
-  </a>
-
-
-
-
+  <a href="#main-content" class="visually-hidden focusable"> Skip to main content</a>
   <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
     <div class="gva-body-wrapper">
       <div class="body-page gva-body-page">
@@ -144,13 +152,8 @@
             </div>
         </header>
 
-
-
         <div role="main" class="main main-page">
-
           <div class="clearfix"></div>
-
-
           <div class="help gav-help-region">
             <div class="container">
               <div class="content-inner">
@@ -557,14 +560,14 @@
     </div>
   </div>
 
-  <script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
+  {{-- <script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
   <script src="/modules/_d8_recaptcha_v3/js/recaptcha.js?r8l2sm" defer="true" async="true"></script>
   <script src="/modules/iubenda/js/iubenda.js?v=8.9.13"></script>
   <script src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
   <script src="/modules/gavias_content_builder/vendor/skrollr.min.js?v=1.x"></script>
   <script src="/modules/gavias_content_builder/vendor/main.js?v=1.x"></script>
   <script src="/modules/dropdown_language/js/dropdown_language_selector.js?v=8.9.13"></script>
-  <script src="/core/misc/dropbutton/dropbutton.js?v=8.9.13"></script>
+  <script src="/core/misc/dropbutton/dropbutton.js?v=8.9.13"></script> --}}
   <div id="gva-overlay"></div>
 </body>
 

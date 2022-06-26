@@ -161,12 +161,10 @@
 
                                                             <a href="#" class="product-asinfo">ADD TO CART</a>
 
-                                                            <div class="field__item"><span
-                                                                    class="file file--mime-application-pdf file--application-pdf"><a
-                                                                        href="/login-or-register"
-                                                                        type="application/pdf; length=7945"
-                                                                        title="pdf-test.pdf">Download
-                                                                        Technical Documents</a></span>
+                                                            <div class="field__item">
+                                                                <span class="file file--mime-application-pdf file--application-pdf">
+                                                                    <a href="/login-or-register" type="application/pdf; length=7945" title="pdf-test.pdf">Download Technical Documents</a>
+                                                                </span>
                                                             </div>
                                                         </div>
 
