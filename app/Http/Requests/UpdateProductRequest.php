@@ -31,7 +31,7 @@ class UpdateProductRequest extends FormRequest
             'price' => 'required|numeric|min:0',
             'description' => 'required|max:2000',
             'rocks.*.name' => 'required|max:255',
-            'size.*.name' => 'required|max:255'
+            'size.*.name' => 'required|max:255',
         ];
     }
 }

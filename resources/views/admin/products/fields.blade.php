@@ -1,6 +1,6 @@
 @if(@$data)
     <input type="hidden" name="id" value="{{ $data->id }}">
-@endif 
+@endif
 <div class="row">
     @include('commons.input.input', ['title' => 'Title', 'field' => 'title', 'entry' => @$data->title, 'require' => true, 'half' => true, 'class' => 'name'])
     @include('commons.input.input', ['title' => 'Slug', 'field' => 'slug', 'entry' => @$data->slug, 'half' => true, 'require' => true, 'class' => 'slug'])
@@ -13,6 +13,11 @@
     @include('commons.input.input', ['type' => 'number', 'title' => 'Price (VND)', 'field' => 'price', 'entry' => @$data->price, 'require' => true, 'half' => true])
     @include('commons.input.textarea', ['title' => 'Description', 'field' => 'description', 'entry' => @$data->description, 'require' => true, 'half' => true])
 </div>
+
+<div class="row">
+    @include('commons.input.checkbox', ['title' => 'Sản phẩm bán chạy', 'field' => 'best_seller', 'entry' => @$data->best_seller, 'half' => true])
+</div>
+
 <div class="row">
     @include('commons.input.dropzone', ['title' => 'Image', 'field' => 'image[]', 'entry' => @$images, 'half' => true])
     <div class="form-group col-6">
@@ -60,7 +65,7 @@
                     <input type="number" class="form-control" name="size[{{ $countSize }}][width]" value="{{ $size->width }}">
                 </div>
                 <div class="col-2 align-self-center">
-                    <input type="number" class="form-control" name="size[{{ $countSize }}][depth]" value="{{ $size->depth }}">  
+                    <input type="number" class="form-control" name="size[{{ $countSize }}][depth]" value="{{ $size->depth }}">
                 </div>
                 <div class="col-2">
                     <input type="number" class="form-control" name="size[{{ $countSize }}][height]" value="{{ $size->height }}">
@@ -68,7 +73,7 @@
                 <div class="col-2">
                     <input type="number" class="form-control" name="size[{{ $countSize }}][price]" value="{{ $size->price }}">
                 </div>
-                <div class="col-1"> 
+                <div class="col-1">
                     <button class="btn btn-primary w-100 js-remove" type="button">-</button>
                 </div>
             </div>
@@ -82,7 +87,7 @@
                     <input type="number" class="form-control" name="size[0][width]" value="">
                 </div>
                 <div class="col-2 align-self-center">
-                    <input type="number" class="form-control" name="size[0][depth]" value="">  
+                    <input type="number" class="form-control" name="size[0][depth]" value="">
                 </div>
                 <div class="col-2">
                     <input type="number" class="form-control" name="size[0][height]" value="">
@@ -90,7 +95,7 @@
                 <div class="col-2">
                     <input type="number" class="form-control" name="size[0][price]" value="0">
                 </div>
-                <div class="col-1"> 
+                <div class="col-1">
                     <button class="btn btn-primary w-100 js-remove" type="button">-</button>
                 </div>
             </div>
@@ -170,12 +175,12 @@
                 </div>
             </div>
         @endforelse
-        
+
         <div id="rock">
         </div>
     </div>
 
-    
+
 </div>
 <!-- Submit Field -->
 <div class="form-group col-sm-12 offset-5">

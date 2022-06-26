@@ -43,4 +43,11 @@ class Product extends Model
         }
         return $data->get();
     }
+
+    public function getProductsNew($request)
+    {
+        $data = $this->with('category', 'collection', 'productImages', 'rocks', 'sizes');
+        return $data->orderBy('id', 'desc')->paginate(20);
+    }
+
 }

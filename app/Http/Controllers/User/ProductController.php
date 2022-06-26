@@ -80,4 +80,29 @@ class ProductController extends BaseController
         session(['thanks' => true]);
         return redirect()->back();
     }
+
+    /**
+     * get best seller product
+     * @author lamnt
+     * @param
+     * @date
+     */
+    public function bestSellerProduct(Request $request, Product $product)
+    {
+        $request->merge([
+            'best_seller'=>1
+        ]);
+
+        $productList = $product->getProductsNew($request);
+        $product_image_seo = $productList->first();
+        $img = '';
+        if(!empty($product_image_seo)){
+            $img = $product_image_seo->productImages->first();
+            $img = !empty($product_image_seo) ? asset('storage/' . $img->name) : null;
+        }
+        return view('users.product.bestseller')->with([
+            'productList'=>$productList,
+            'product_image_seo'=>$img
+        ]);
+    }
 }

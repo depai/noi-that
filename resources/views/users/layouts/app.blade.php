@@ -90,8 +90,7 @@
     <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
         <div class="gva-body-wrapper">
             <div class="body-page gva-body-page">
-                <header id="header" class="header-1"
-                style="
+                <header id="header" class="header-1" style="
                     background: rgb(242 236 236 / 8%);
                     position: absolute;
                     width: 100%;">

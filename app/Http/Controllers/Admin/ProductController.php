@@ -31,6 +31,9 @@ class ProductController extends BaseController
 
     public function store(StoreProductRequest $request)
     {
+        $request->merge([
+            'best_seller'=>!empty($request->best_seller) ? 1 : 0
+        ]);
         $input = $request->except('_token', 'size', 'rocks', 'images');
         $product = Product::create($input);
         $product->productImages()->delete();
@@ -65,6 +68,9 @@ class ProductController extends BaseController
 
     public function update($id, UpdateProductRequest $request)
     {
+        $request->merge([
+            'best_seller'=>!empty($request->best_seller) ? 1 : 0
+        ]);
         $input = $request->except('_token', 'size', 'rocks', 'images');
         $product = Product::find($id);
         $product->update($input);
