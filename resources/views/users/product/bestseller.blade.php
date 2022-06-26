@@ -360,7 +360,10 @@
                                                                                                                                 @endforeach
                                                                                                                             </div>
                                                                                                                         </div>
-                                                                                                                        @include('users.layouts.paginate', ['object'=>$productList])
+                                                                                                                        @if ($productList->count() > 0)
+                                                                                                                            @include('users.layouts.paginate', ['object'=>$productList])
+                                                                                                                        @endif
+
                                                                                                                     </div>
                                                                                                                 </div>
                                                                                                             </div>
