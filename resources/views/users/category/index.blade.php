@@ -4,7 +4,7 @@
 
 @section('image_seo', asset('storage/categories/' . $detailCategory->image))
 @section('meta_keywords', $detailCategory->meta_keywords)
-@section('meta_description', nl2br($detailCategory->description))
+@section('meta_description', $detailCategory->description)
 
 @section('css')
 @endsection
