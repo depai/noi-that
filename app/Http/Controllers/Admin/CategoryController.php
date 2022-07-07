@@ -77,7 +77,7 @@ class CategoryController extends BaseController
             })
             ->addColumn('parent', function ($datum) {
                 if ($datum->parent_id) {
-                    return $datum->parent->title;
+                    return !empty($datum->parent) ? $datum->parent->title : '-';
                 }
                 return '';
             })
