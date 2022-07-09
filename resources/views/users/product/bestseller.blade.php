@@ -15,14 +15,12 @@
     <meta property="og:description" content="Những sản phẩm bán chạy nhất của chúng tôi">
     <meta name="description" content="Những sản phẩm bán chạy nhất của chúng tôi">
 
-    <title>Sản phẩm bán chạy</title>
     <meta property="og:site_name" content="Sản phẩm bán chạy">
 
     <meta property="og:image" content="{{ $product_image_seo }}">
     <meta property="og:image:height" content="300">
     <meta property="og:image:width" content="300">
 
-    <meta property="og:site_name" content="Sản phẩm bán chạy">
     <meta name="keywords" content="best seller">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta property="og:type" content="website">

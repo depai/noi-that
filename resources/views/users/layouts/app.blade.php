@@ -90,9 +90,9 @@
     <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
         <div class="gva-body-wrapper">
             <div class="body-page gva-body-page">
-                <header id="header" class="header-1" style="
+                <header id="header" class="header-{{ empty($viewDetailProduct) ? '1' : 'default' }}" style="
                     background: rgb(242 236 236 / 8%);
-                    position: absolute;
+                    position: {{ empty($viewDetailProduct) ? 'absolute' : 'relative' }};
                     width: 100%;">
                     @include('users.layouts.topbar')
                     <div class="header-main ">

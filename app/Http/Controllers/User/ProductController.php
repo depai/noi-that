@@ -22,7 +22,8 @@ class ProductController extends BaseController
         $cart = session('cart') ?: [];
         $product = Product::with('collection', 'productImages', 'sizes', 'rocks')->firstWhere('slug', $slug);
         $relatedProducts = Product::with('productImages', 'collection')->where('category_id', $product->category_id)->orWhere('collection_id', $product->collection_id)->get()->except($product->id)->take(4);
-        return view('users.product.detail', compact('product', 'relatedProducts', 'cart'));
+        $viewDetailProduct = 1;
+        return view('users.product.detail', compact('product', 'relatedProducts', 'cart', 'viewDetailProduct'));
     }
 
     public function addToCart (Request $request)
