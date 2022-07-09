@@ -241,139 +241,41 @@
                                                                                                             <div class="widget block clearfix gsc-block-view  gsc-block-drupal block-view title-align-left evets-page text-dark remove-margin-off">
                                                                                                                 <div class="views-element-container">
                                                                                                                     <div class="gva-view js-view-dom-id-f292d574023d6caba2dbda62f3544335a7c956c1233b70cd8c4823a190d1d792">
-                                                                                                                        {{-- <form
-                                                                                                                            class="views-exposed-form bef-exposed-form"
-                                                                                                                            data-bef-auto-submit-full-form=""
-                                                                                                                            data-bef-auto-submit=""
-                                                                                                                            data-bef-auto-submit-delay="500"
-                                                                                                                            data-drupal-selector="views-exposed-form-event-block-2"
-                                                                                                                            action="/events"
-                                                                                                                            method="get"
-                                                                                                                            id="views-exposed-form-event-block-2"
-                                                                                                                            accept-charset="UTF-8">
-                                                                                                                            <fieldset
-                                                                                                                                data-drupal-selector="edit-field-event-category-value"
-                                                                                                                                id="edit-field-event-category-value--wrapper"
-                                                                                                                                class="fieldgroup form-composite js-form-item form-item js-form-wrapper form-wrapper">
+                                                                                                                        <form class="views-exposed-form bef-exposed-form" data-bef-auto-submit-full-form=""
+                                                                                                                            data-bef-auto-submit="" data-bef-auto-submit-delay="500" data-drupal-selector="views-exposed-form-event-block-2"
+                                                                                                                            action="/events" method="get" id="views-exposed-form-event-block-2" accept-charset="UTF-8">
+                                                                                                                            <fieldset data-drupal-selector="edit-field-event-category-value" id="edit-field-event-category-value--wrapper" class="fieldgroup form-composite js-form-item form-item js-form-wrapper form-wrapper">
                                                                                                                                 <legend>
-                                                                                                                                    <span
-                                                                                                                                        class="fieldset-legend"></span>
+                                                                                                                                    <span class="fieldset-legend"></span>
                                                                                                                                 </legend>
-                                                                                                                                <div
-                                                                                                                                    class="fieldset-wrapper">
-                                                                                                                                    <div
-                                                                                                                                        id="edit-field-event-category-value">
-                                                                                                                                        <div
-                                                                                                                                            class="form-radios form--inline">
-                                                                                                                                            <div
-                                                                                                                                                class="js-form-item form-item js-form-type-radio form-item-field-event-category-value js-form-item-field-event-category-value">
-                                                                                                                                                <input
-                                                                                                                                                    data-drupal-selector="edit-field-event-category-value-all"
-                                                                                                                                                    type="radio"
-                                                                                                                                                    id="edit-field-event-category-value-all"
-                                                                                                                                                    name="field_event_category_value"
-                                                                                                                                                    value="All"
-                                                                                                                                                    checked="checked"
-                                                                                                                                                    class="form-radio" />
-
-                                                                                                                                                <label
-                                                                                                                                                    for="edit-field-event-category-value-all"
-                                                                                                                                                    class="option">-
-                                                                                                                                                    Any
-                                                                                                                                                    -</label>
+                                                                                                                                <div class="fieldset-wrapper">
+                                                                                                                                    <div id="edit-field-event-category-value">
+                                                                                                                                        <div class="form-radios form--inline">
+                                                                                                                                            <div class="js-form-item form-item js-form-type-radio form-item-field-event-category-value js-form-item-field-event-category-value">
+                                                                                                                                                <select data-drupal-selector="edit-field-event-category-value-1" id="edit-field-event-category-value-1" name="field_event_category_value_1" class="form-select">
+                                                                                                                                                    <option value="All" selected="selected"> - Any - </option>
+                                                                                                                                                </select>
+                                                                                                                                                <select data-drupal-selector="edit-field-event-category-value-1" id="edit-field-event-category-value-1" name="field_event_category_value_1" class="form-select">
+                                                                                                                                                    <option value="All" selected="selected"> - Any - </option>
+                                                                                                                                                </select>
                                                                                                                                             </div>
-
-                                                                                                                                            <div
-                                                                                                                                                class="js-form-item form-item js-form-type-radio form-item-field-event-category-value js-form-item-field-event-category-value">
-                                                                                                                                                <input
-                                                                                                                                                    data-drupal-selector="edit-field-event-category-value-fiere"
-                                                                                                                                                    type="radio"
-                                                                                                                                                    id="edit-field-event-category-value-fiere"
-                                                                                                                                                    name="field_event_category_value"
-                                                                                                                                                    value="Fiere"
-                                                                                                                                                    class="form-radio" />
-
-                                                                                                                                                <label
-                                                                                                                                                    for="edit-field-event-category-value-fiere"
-                                                                                                                                                    class="option">Fairs</label>
-                                                                                                                                            </div>
-
-                                                                                                                                            <div
-                                                                                                                                                class="js-form-item form-item js-form-type-radio form-item-field-event-category-value js-form-item-field-event-category-value">
-                                                                                                                                                <input
-                                                                                                                                                    data-drupal-selector="edit-field-event-category-value-showroom"
-                                                                                                                                                    type="radio"
-                                                                                                                                                    id="edit-field-event-category-value-showroom"
-                                                                                                                                                    name="field_event_category_value"
-                                                                                                                                                    value="Showroom"
-                                                                                                                                                    class="form-radio" />
-
-                                                                                                                                                <label
-                                                                                                                                                    for="edit-field-event-category-value-showroom"
-                                                                                                                                                    class="option">Showroom</label>
-                                                                                                                                            </div>
-
-                                                                                                                                            <div
-                                                                                                                                                class="js-form-item form-item js-form-type-radio form-item-field-event-category-value js-form-item-field-event-category-value">
-                                                                                                                                                <input
-                                                                                                                                                    data-drupal-selector="edit-field-event-category-value-news"
-                                                                                                                                                    type="radio"
-                                                                                                                                                    id="edit-field-event-category-value-news"
-                                                                                                                                                    name="field_event_category_value"
-                                                                                                                                                    value="News"
-                                                                                                                                                    class="form-radio" />
-
-                                                                                                                                                <label
-                                                                                                                                                    for="edit-field-event-category-value-news"
-                                                                                                                                                    class="option">News</label>
-                                                                                                                                            </div>
-
                                                                                                                                         </div>
                                                                                                                                     </div>
-
                                                                                                                                 </div>
                                                                                                                             </fieldset>
-                                                                                                                            <div
-                                                                                                                                class="js-form-item form-item js-form-type-select form-item-field-event-category-value-1 js-form-item-field-event-category-value-1">
-
-                                                                                                                                <select
-                                                                                                                                    data-drupal-selector="edit-field-event-category-value-1"
-                                                                                                                                    id="edit-field-event-category-value-1"
-                                                                                                                                    name="field_event_category_value_1"
-                                                                                                                                    class="form-select">
-                                                                                                                                    <option
-                                                                                                                                        value="All"
-                                                                                                                                        selected="selected">
-                                                                                                                                        -
-                                                                                                                                        Any
-                                                                                                                                        -
-                                                                                                                                    </option>
-                                                                                                                                    <option
-                                                                                                                                        value="Fiere">
-                                                                                                                                        Fairs
-                                                                                                                                    </option>
-                                                                                                                                    <option
-                                                                                                                                        value="Showroom">
-                                                                                                                                        Showroom
-                                                                                                                                    </option>
-                                                                                                                                    <option
-                                                                                                                                        value="News">
-                                                                                                                                        News
-                                                                                                                                    </option>
+                                                                                                                            <div class="js-form-item form-item js-form-type-select form-item-field-event-category-value-1 js-form-item-field-event-category-value-1">
+                                                                                                                                <select data-drupal-selector="edit-field-event-category-value-1" id="edit-field-event-category-value-1" name="field_event_category_value_1" class="form-select">
+                                                                                                                                    <option value="All" selected="selected"> - Any - </option>
+                                                                                                                                </select>
+                                                                                                                                <select data-drupal-selector="edit-field-event-category-value-1" id="edit-field-event-category-value-1" name="field_event_category_value_1" class="form-select">
+                                                                                                                                    <option value="All" selected="selected"> - Any - </option>
                                                                                                                                 </select>
                                                                                                                             </div>
-                                                                                                                            {{-- <div data-drupal-selector="edit-actions"
-                                                                                                                                class="form-actions js-form-wrapper form-wrapper"
-                                                                                                                                id="edit-actions">
-                                                                                                                                <input
-                                                                                                                                    data-bef-auto-submit-click=""
-                                                                                                                                    class="js-hide button js-form-submit form-submit"
-                                                                                                                                    data-drupal-selector="edit-submit-event"
-                                                                                                                                    type="submit"
-                                                                                                                                    id="edit-submit-event"
-                                                                                                                                    value="Apply" />
-                                                                                                                            </div> --}}
-                                                                                                                        {{-- </form>  --}}
+                                                                                                                            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                                                                                                                                <input data-bef-auto-submit-click="" class="js-hide button js-form-submit form-submit" data-drupal-selector="edit-submit-event"
+                                                                                                                                    type="submit" id="edit-submit-event" value="Apply" />
+                                                                                                                            </div>
+                                                                                                                        </form>
 
                                                                                                                         <div class="views-view-grid horizontal clearfix">
                                                                                                                             <div class="rowspace10 views-row row clearfix row-1">

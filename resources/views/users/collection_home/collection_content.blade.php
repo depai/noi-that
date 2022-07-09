@@ -36,8 +36,8 @@
             </div>
           </div>
           <div class="clearfix"></div>
-          <a href="#" class="gsc-button button-transparent-black  mini " id="button-64qw7tkpqkdl">See all products </a>
         @endif
+        <a href="{{ route('view.detail.collection', $collection->slug) }}" class="gsc-button button-transparent-black  mini " id="button-64qw7tkpqkdl">Chi tiết</a>
       </div>
     </div>
 
