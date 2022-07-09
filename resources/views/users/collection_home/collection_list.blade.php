@@ -385,7 +385,11 @@
                                                                                                                                                 <div class="item-image">
                                                                                                                                                     <a href="{{ route('view.detail.collection', $collection->slug) }}">
                                                                                                                                                         <img src="{{ !empty($collection->image) ? asset('storage/collections/' . $collection->image) : '' }}" alt="Oasi Preview"
-                                                                                                                                                        title="Oasi Preview" typeof="Image" />
+                                                                                                                                                        title="Oasi Preview" typeof="Image"
+                                                                                                                                                        style="max-height: 300px;
+                                                                                                                                                            vertical-align: middle;
+                                                                                                                                                            width: 100%;
+                                                                                                                                                            object-fit: cover;"/>
                                                                                                                                                     </a>
                                                                                                                                                 </div>
 
