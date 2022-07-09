@@ -65,6 +65,7 @@ Route::prefix('')->group(function () {
     });
     Route::prefix('collection')->group(function () {
         route::get('/{slug}', [UserCategoryController::class, 'viewCollection'])->name('view.detail.collection');
+        route::get('/', [UserCategoryController::class, 'indexCollection'])->name('view.all.colection');
     });
 });
 

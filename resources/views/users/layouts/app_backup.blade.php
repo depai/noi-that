@@ -55,7 +55,7 @@
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/bootstrap.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/template.css?r8qfr8" />
 
-    {{-- <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
+    <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
     <script src="/core/misc/drupalSettingsLoader.js?v=8.9.13"></script>
     <script src="/core/misc/drupal.js?v=8.9.13"></script>
     <script src="/core/misc/drupal.init.js?v=8.9.13"></script>
@@ -101,7 +101,7 @@
     <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js?v=1.x">
     </script>
     <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x">
-    </script> --}}
+    </script>
 
     <style type="text/css">
         @media only screen and (max-device-width: 480px) and (min-device-width:320px) {

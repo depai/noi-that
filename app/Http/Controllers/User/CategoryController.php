@@ -36,4 +36,11 @@ class CategoryController extends BaseController
             'listProduct'=>$listProduct
         ]);
     }
+
+    public function indexCollection(Request $request, Collection $collection)
+    {
+        $list = $collection->getCollection();
+        $viewDetailProduct = 1;
+        return view('users.collection_home.collection_list', compact('list','viewDetailProduct'));
+    }
 }

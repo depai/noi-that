@@ -65,7 +65,7 @@
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/vendor/slick/slick.css?r8l2sm" />
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/bootstrap.css?r8l2sm" />
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/template.css?r8l2sm" />
-{{--
+
   <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
   <script src="/core/misc/drupalSettingsLoader.js?v=8.9.13"></script>
   <script src="/core/misc/drupal.js?v=8.9.13"></script>
@@ -104,7 +104,7 @@
   <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.navigation.min.js?v=1.x"></script>
   <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.parallax.min.js?v=1.x"></script>
   <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js?v=1.x"></script>
-  <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x"></script> --}}
+  <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x"></script>
 
 </head>
 
@@ -447,21 +447,6 @@
                                                       <div class="widget block clearfix gsc-block-view  gsc-block-drupal block-view title-align-left events-home-list text-dark remove-margin-off">
                                                         <div class="views-element-container">
                                                           <div class="gva-view js-view-dom-id-5d97a7c0f644bb6d759173c04be89d790ba0be78c3f0a2db22267b9c6bdac0ef">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                                           </div>
                                                         </div>
                                                       </div>

@@ -4,20 +4,20 @@
 
 <head>
     <link rel="shortcut icon" href="/sites/default/files/favicon.png" type="image/png" />
-    <title>Sản phẩm bán chạy | Inox pro</title>
+    <title>Bộ sưu tập sản phẩm | Inox pro</title>
 
     <meta charset="utf-8" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="twitter:description" content="Những sản phẩm bán chạy nhất của chúng tôi">
-    <meta property="og:description" content="Những sản phẩm bán chạy nhất của chúng tôi">
-    <meta name="description" content="Những sản phẩm bán chạy nhất của chúng tôi">
+    <meta name="twitter:description" content="Tổng hợp những bộ sưu tập độc đáo, phù hợp với mọi không gian trong căn nhà của bạn">
+    <meta property="og:description" content="Tổng hợp những bộ sưu tập độc đáo, phù hợp với mọi không gian trong căn nhà của bạn">
+    <meta name="description" content="Tổng hợp những bộ sưu tập độc đáo, phù hợp với mọi không gian trong căn nhà của bạn">
 
-    <meta property="og:site_name" content="Sản phẩm bán chạy">
+    <meta property="og:site_name" content="Bộ sưu tập sản phẩm">
 
-    <meta property="og:image" content="{{ $product_image_seo }}">
+    <meta property="og:image" content="{{ !empty($list->first()->image) ? asset('storage/collections/' . $list->first()->image) : '' }}">
     <meta property="og:image:height" content="300">
     <meta property="og:image:width" content="300">
 
@@ -223,7 +223,7 @@
                                                             class="node node--type-page node--view-mode-full">
                                                             <div class="header-title">
                                                                 <div class="container">
-                                                                    <h2 class="title"><span property="schema:name">Sản phẩm bán chạy</span></h2>
+                                                                    <h2 class="title"><span property="schema:name">Bộ sưu tập sản phẩm</span></h2>
                                                                 </div>
                                                             </div>
                                                             <div class="node__content clearfix">
@@ -377,21 +377,22 @@
 
                                                                                                                         <div class="views-view-grid horizontal clearfix">
                                                                                                                             <div class="rowspace10 views-row row clearfix row-1">
-                                                                                                                                @foreach ($productList as $product)
+                                                                                                                                @foreach ($list as $collection)
                                                                                                                                 <div class="colspace10 views-col col-lg-3 col-md-3 col-sm-12 col-xs-12" style="width: 25%;">
                                                                                                                                     <div class="views-field views-field-nothing">
                                                                                                                                         <span class="field-content">
                                                                                                                                             <div class="event-item-home">
                                                                                                                                                 <div class="item-image">
-                                                                                                                                                    <a href="{{ route('product.detail', $product->slug) }}">
-                                                                                                                                                        <img src="{{ asset('storage/' . $product->productImages->first()->name) }}" alt="Oasi Preview"
+                                                                                                                                                    <a href="{{ route('view.detail.collection', $collection->slug) }}">
+                                                                                                                                                        <img src="{{ !empty($collection->image) ? asset('storage/collections/' . $collection->image) : '' }}" alt="Oasi Preview"
                                                                                                                                                         title="Oasi Preview" typeof="Image" />
                                                                                                                                                     </a>
                                                                                                                                                 </div>
 
                                                                                                                                                 <p class="event-time-home"> </p>
-                                                                                                                                                {{-- <p class="event-category-home"> Bán chạy </p> --}}
-                                                                                                                                                <a href="{{ route('product.detail', $product->slug) }}" hreflang="en">{{ $product->title }}</a>
+                                                                                                                                                <a href="{{ route('view.detail.collection', $collection->slug) }}" hreflang="en">{{ $collection->title }}</a>
+                                                                                                                                                <p class="event-category-home"> {{ $collection->content }} </p>
+
                                                                                                                                             </div>
                                                                                                                                         </span>
                                                                                                                                     </div>
@@ -399,9 +400,9 @@
                                                                                                                                 @endforeach
                                                                                                                             </div>
                                                                                                                         </div>
-                                                                                                                        @if ($productList->count() > 0)
+                                                                                                                        {{-- @if ($productList->count() > 0)
                                                                                                                             @include('users.layouts.paginate', ['object'=>$productList])
-                                                                                                                        @endif
+                                                                                                                        @endif --}}
 
                                                                                                                     </div>
                                                                                                                 </div>

@@ -798,8 +798,7 @@
 
                                                         </div>
 
-                                                        <div id="menu-bar"
-                                                            class="menu-bar menu-bar-mobile d-lg-none d-xl-none">
+                                                        <div id="menu-bar" class="menu-bar menu-bar-mobile d-lg-none d-xl-none">
                                                             <span class="one"></span>
                                                             <span class="two"></span>
                                                             <span class="three"></span>

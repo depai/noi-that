@@ -69,6 +69,47 @@
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/bootstrap.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/template.css?r8qfr8" />
 
+    <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
+    <script src="/core/misc/drupalSettingsLoader.js?v=8.9.13"></script>
+    <script src="/core/misc/drupal.js?v=8.9.13"></script>
+    <script src="/core/misc/drupal.init.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery-migrate.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/js/bootstrap.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/js/imagesloader.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery.easing.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery.appear.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery.easypiechart.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/owl-carousel/owl.carousel.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/waypoint.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/count-to.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/masonry.pkgd.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/isotope.pkgd.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/aos.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/prettyphoto/js/jquery.prettyPhoto.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/ytplayer/js/jquery.mb.YTPlayer.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery.typer/src/jquery.typer.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/magnific/jquery.magnific-popup.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/quotes_rotator/js/modernizr.custom.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/quotes_rotator/js/jquery.cbpQTRotator.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/jquery.nicescroll.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/vendor/slick/slick.min.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/js/main.js?v=8.9.13"></script>
+    <script src="/themes/gavias_facdori/js/custom.js?v=8.9.13"></script>
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyDUknyOTN5RnNNbz46hgfoEQ4F89B7OFZs"></script>
+    <script src="/themes/gavias_facdori/js/store_locator.js?v=8.9.13"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/jquery.themepunch.tools.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/jquery.themepunch.revolution.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.actions.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.carousel.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.kenburn.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.migration.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.navigation.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.parallax.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js?v=1.x"></script>
+    <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x"></script>
+
+
 </head>
 
 

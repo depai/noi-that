@@ -52,7 +52,7 @@
                                                                         <div class="row category-entity">
                                                                             <div class="col-lg-5 col-sm-12 offset-lg-1">
                                                                                 <div class="title-wrapper">
-                                                                                    <i class="fas fa-chevron-left"></i></a>
+                                                                                    {{-- <i class="fas fa-chevron-left"></i></a> --}}
                                                                                     <h1 class="category-title" style="width: 100%;"> {{ $detailCategory->title }} </h1>
                                                                                 </div>
                                                                             </div>

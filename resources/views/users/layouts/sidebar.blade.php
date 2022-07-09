@@ -19,7 +19,7 @@
                         <div class="gva-navigation">
                           <ul class="clearfix gva_menu gva_menu_main">
                               <li class="menu-item menu-item--expanded ">
-                                <a href="#"> Bộ sưu tập<span class="icaret nav-plus fas fa-chevron-down"></span> </a>
+                                <a href="{{ route('view.all.colection') }}">Bộ sưu tập<span class="icaret nav-plus fas fa-chevron-down"></span> </a>
                                 <ul class="menu sub-menu">
                                   <span class="back-menu-m"><i class="fal fa-chevron-left"></i></span>
                                     @foreach ($listCollection as $collection)
