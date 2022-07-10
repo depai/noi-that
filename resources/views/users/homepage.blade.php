@@ -227,7 +227,7 @@
                                                               <div class="column-inner  bg-size-cover  ">
                                                                 <div class="column-content-inner">
                                                                   <div class="column-content discover-collection-btn ">
-                                                                    <p><a href="/collections/mirage">Discover the collection</a></p>
+                                                                    <p><a href="{{ route('view.all.colection') }}">Tất cả bộ sưu tập</a></p>
                                                                   </div>
                                                                 </div>
                                                               </div>
