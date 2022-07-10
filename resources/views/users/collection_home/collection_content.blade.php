@@ -16,14 +16,18 @@
             <div class="bb-inner default">
               <div class="bb-container container">
                 <div class="row row-wrapper">
-                  @foreach ($collection->products as $item)
+                  @foreach ($collection->products->take(4) as $item)
                   <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
                     <div class="column-inner  bg-size-cover  ">
                       <div class="column-content-inner">
                         <div class="widget gsc-image text-none ">
                           <div class="widget-content">
                             <a href="{{ route('product.detail', $item->id) }}">
-                              <img src="{{ !empty($item->productImages->first()) ? asset('storage/' . $item->productImages->first()->name) : '' }}" alt="" />
+                              <img src="{{ !empty($item->productImages->first()) ? asset('storage/' . $item->productImages->first()->name) : '' }}"
+                              alt=""  style="max-height: 135px;
+                                    vertical-align: middle;
+                                    width: 100%;
+                                    object-fit: cover;"/>
                             </a>
                           </div>
                         </div>
