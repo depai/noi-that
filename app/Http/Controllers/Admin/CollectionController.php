@@ -60,7 +60,7 @@ class CollectionController extends BaseController
     public function destroy($id)
     {
         Collection::find($id)->delete();
-        return 'true';
+        return [1, 'Delete Record Success!'];
     }
 
     public function datatable()

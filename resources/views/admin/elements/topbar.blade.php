@@ -82,7 +82,7 @@
                             <li>
                                 <div class="drop-title bg-primary text-white">
                                     <h4 class="m-b-0 m-t-5"><span id="count_noti"></span> New</h4>
-                                    <span class="font-light">Notifications</span>
+                                    <span class="font-light">Thông báo</span>
                                 </div>
                             </li>
                             <li>
@@ -144,9 +144,9 @@
                             </div>
                         </div>
                         {{--  <a class="dropdown-item" href="javascript:void(0)"><i class="ti-user m-r-5 m-l-5"></i> My Profile</a>  --}}
-                        <a class="dropdown-item" href=""><i class="fas fa-lock m-r-5 m-l-5"></i>Change Password</a>
+                        <a class="dropdown-item" href=""><i class="fas fa-lock m-r-5 m-l-5"></i>Đổi mật khẩu</a>
                         <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();"><i class="fa fa-power-off m-r-5 m-l-5"></i> Logout</a>
+                        document.getElementById('logout-form').submit();"><i class="fa fa-power-off m-r-5 m-l-5"></i> Đăng xuất</a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                         </form>

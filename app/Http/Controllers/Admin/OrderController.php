@@ -83,7 +83,7 @@ class OrderController extends BaseController
     public function destroy($id)
     {
         Product::find($id)->delete();
-        return 'true';
+        return [1, 'Delete Record Success!'];
     }
 
     public function datatable()

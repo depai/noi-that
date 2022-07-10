@@ -2,16 +2,16 @@
     <input type="hidden" name="id" value="{{ $data->id }}">
 @endif
 <div class="row">
-    @include('commons.input.input', ['title' => 'Title', 'field' => 'title', 'entry' => @$data->title, 'require' => true, 'half' => true, 'class' => 'name'])
-    @include('commons.input.input', ['title' => 'Slug', 'field' => 'slug', 'entry' => @$data->slug, 'half' => true, 'require' => true, 'class' => 'slug'])
+    @include('commons.input.input', ['title' => 'Tên sản phẩm', 'field' => 'title', 'entry' => @$data->title, 'require' => true, 'half' => true, 'class' => 'name'])
+    @include('commons.input.input', ['title' => 'Slug (nên viết lại tên sản phẩm bằng tiếng việt không dấu và mỗi chữ phân cách nhau bằng ký tự "-")', 'field' => 'slug', 'entry' => @$data->slug, 'half' => true, 'require' => true, 'class' => 'slug'])
 </div>
 <div class="row">
-    @include('commons.input.select', ['title' => 'Collection', 'field' => 'collection_id', 'entry' => @$data->collection_id, 'selects' => @$collections, 'require' => true, 'half' => true, 'default' => ''])
-    @include('commons.input.select', ['title' => 'Category', 'field' => 'category_id', 'entry' => @$data->category_id, 'selects' => @$selects, 'require' => true, 'half' => true, 'default' => ''])
+    @include('commons.input.select', ['title' => 'Chọn bộ sưu tập', 'field' => 'collection_id', 'entry' => @$data->collection_id, 'selects' => @$collections, 'require' => true, 'half' => true, 'default' => ''])
+    @include('commons.input.select', ['title' => 'Chọn loại sản phẩm', 'field' => 'category_id', 'entry' => @$data->category_id, 'selects' => @$selects, 'require' => true, 'half' => true, 'default' => ''])
 </div>
 <div class="row">
-    @include('commons.input.input', ['type' => 'number', 'title' => 'Price (VND)', 'field' => 'price', 'entry' => @$data->price, 'require' => true, 'half' => true])
-    @include('commons.input.textarea', ['title' => 'Description', 'field' => 'description', 'entry' => @$data->description, 'require' => true, 'half' => true])
+    @include('commons.input.input', ['type' => 'number', 'title' => 'Giá (VND)', 'field' => 'price', 'entry' => @$data->price, 'require' => true, 'half' => true])
+    @include('commons.input.textarea', ['title' => 'Mô tả', 'field' => 'description', 'entry' => @$data->description, 'require' => true, 'half' => true])
 </div>
 
 <div class="row">
@@ -19,7 +19,7 @@
 </div>
 
 <div class="row">
-    @include('commons.input.dropzone', ['title' => 'Image', 'field' => 'image[]', 'entry' => @$images, 'half' => true])
+    @include('commons.input.dropzone', ['title' => 'Hình ảnh', 'field' => 'image[]', 'entry' => @$images, 'half' => true])
     <div class="form-group col-6">
         <div class="row mb-3">
             <div class="col-11">

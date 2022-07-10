@@ -14,13 +14,15 @@ $( document ).ready(function() {
                 let table = element.data('table');
                 TABU.api(route, 'DELETE', 'HTML')
                 .then(result => {
-                        if (result) {
-                            toastr.success('Delete Record Success!');
-                            TABU.dataTable(table, column, $('.dataTable'));
-                        } else {
-                            toastr.error('Delete Record Fail!');
-                        }
-                    })
+                    if (result[0] == 1) {
+                        toastr.success(result[1]);
+                        TABU.dataTable(table, column, $('.dataTable'));
+                    }else if(result[0] == 2){
+                        toastr.error(result[1]);
+                    }else{
+                        toastr.error('Lỗi không thể xóa');
+                    }
+                })
             }
 
         })

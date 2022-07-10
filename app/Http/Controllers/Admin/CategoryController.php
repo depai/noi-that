@@ -61,8 +61,17 @@ class CategoryController extends BaseController
 
     public function destroy($id)
     {
-        Category::find($id)->delete();
-        return 'true';
+        $detailCategory = (new Category())->getDetailCategoryById($id);
+        if($detailCategory->parent_id == 0 && count($detailCategory->children) > 0){
+            return [2, 'Bạn phải xóa các loại sản phẩm con trước khi xóa loại sản phẩm cha!'];
+        }
+        if(count($detailCategory->products)){
+            return [2, 'Bạn phải xóa tất cả sản phẩm thuộc loại sản phẩm này trước khi xóa'];
+        }
+        // dd($detailCategory);
+        $detailCategory->delete();
+        // Category::find($id)->delete();
+        return [1, 'Delete Record Success!'];
     }
 
     public function datatable()

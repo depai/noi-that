@@ -32,6 +32,14 @@ class Category extends Model
     }
 
     /**
+     * get detail by id
+     */
+    public function getDetailCategoryById($id)
+    {
+        return $this->with('parent', 'children', 'products')->where($this->primaryKey, $id)->first();
+    }
+
+    /**
      * get category
      * @author lamnt
      * @param int parent = 0 là get tất cả category cha, parent != 0 là get tất cả category con theo id parent

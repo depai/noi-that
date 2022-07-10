@@ -6,7 +6,7 @@
             <ul id="sidebarnav">
                 <li class="nav-small-cap"><i class="mdi mdi-dots-horizontal"></i> <span class="hide-menu">Personal</span></li>
                 <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('dashboard') }}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i>
-                         <span class="hide-menu">Dashboard</span>
+                         <span class="hide-menu">Trang chủ</span>
                     </a>
                     {{--  <ul aria-expanded="false" class="collapse  first-level">
                         <li class="sidebar-item"><a href="index.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Classic </span></a></li>
@@ -21,15 +21,15 @@
                         <li class="sidebar-item"><a href="index10.html" class="sidebar-link"><i class="mdi mdi-adjust"></i><span class="hide-menu"> Modern </span></a></li>
                     </ul>  --}}
                 </li>
-                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('products.index') }}" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Products</span></a>
+                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('products.index') }}" aria-expanded="false"><i class="mdi mdi-shopping"></i><span class="hide-menu">Quản lý sản phẩm</span></a>
                 </li>
-                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('categories.index') }}" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Categories</span></a>
+                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('categories.index') }}" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Quản lý loại sản phẩm</span></a>
                 </li>
-                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('collections.index') }}" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Collections</span></a>
+                <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('collections.index') }}" aria-expanded="false"><i class="mdi mdi-tune-vertical"></i><span class="hide-menu">Quản lý bộ sưu tập</span></a>
                 </li>
                 <li class="sidebar-item"> <a class="sidebar-link" href="{{ route('orders.index') }}" aria-expanded="false">
                         <i class="mdi mdi-motorbike"></i>
-                        <span class="hide-menu">Orders @if ($countNewOrder)
+                        <span class="hide-menu">Đơn hàng @if ($countNewOrder)
                                 <span class="badge badge-primary">{{ $countNewOrder }}</span>
                             @endif
                         </span>
@@ -38,7 +38,7 @@
                 <li class="sidebar-item">
                     <a class="sidebar-link" href="{{ route('settings.index') }}" aria-expanded="false">
                         <i class="mdi mdi-settings"></i>
-                        <span class="hide-menu">Settings</span>
+                        <span class="hide-menu">Cài đặt</span>
                     </a>
                 </li>
             </ul>

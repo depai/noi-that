@@ -22,7 +22,7 @@
                       <div class="column-content-inner">
                         <div class="widget gsc-image text-none ">
                           <div class="widget-content">
-                            <a href="{{ route('product.detail', $item->id) }}">
+                            <a href="{{ route('product.detail', $item->slug) }}">
                               <img src="{{ !empty($item->productImages->first()) ? asset('storage/' . $item->productImages->first()->name) : '' }}"
                               alt=""  style="max-height: 135px;
                                     vertical-align: middle;
