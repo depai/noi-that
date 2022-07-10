@@ -47,6 +47,12 @@ class Product extends Model
     public function getProductsNew($request)
     {
         $data = $this->with('category', 'collection', 'productImages', 'rocks', 'sizes');
+        if(!empty($request->category_id)){
+            $data->where('category_id', $request->category_id);
+        }
+        if(!empty($request->collection_id)){
+            $data->where('collection_id', $request->collection_id);
+        }
         return $data->orderBy('id', 'desc')->paginate(20);
     }
 

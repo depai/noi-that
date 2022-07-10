@@ -4,18 +4,18 @@
 
 <head>
     <link rel="shortcut icon" href="/sites/default/files/favicon.png" type="image/png" />
-    <title>Sản phẩm bán chạy | Inox pro</title>
+    <title>Sản phẩm | Inox pro</title>
 
     <meta charset="utf-8" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta name="twitter:description" content="Những sản phẩm bán chạy nhất của chúng tôi">
-    <meta property="og:description" content="Những sản phẩm bán chạy nhất của chúng tôi">
-    <meta name="description" content="Những sản phẩm bán chạy nhất của chúng tôi">
+    <meta name="twitter:description" content="Tất cả sản phẩm của chúng tôi">
+    <meta property="og:description" content="Tất cả sản phẩm của chúng tôi">
+    <meta name="description" content="Tất cả sản phẩm của chúng tôi">
 
-    <meta property="og:site_name" content="Sản phẩm bán chạy">
+    <meta property="og:site_name" content="Sản phẩm">
 
     <meta property="og:image" content="{{ $product_image_seo }}">
     <meta property="og:image:height" content="300">
@@ -133,7 +133,6 @@
     <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.slideanims.min.js?v=1.x"></script>
     <script src="/modules/gavias_sliderlayer/vendor/revolution/js/extensions/revolution.extension.video.min.js?v=1.x"></script>
 
-
     <style type="text/css">
         @media only screen and (max-device-width: 480px) and (min-device-width:320px) {
             div.product-gallery {
@@ -223,7 +222,7 @@
                                                             class="node node--type-page node--view-mode-full">
                                                             <div class="header-title">
                                                                 <div class="container">
-                                                                    <h2 class="title"><span property="schema:name">Sản phẩm bán chạy</span></h2>
+                                                                    <h2 class="title"><span property="schema:name">Sản phẩm</span></h2>
                                                                 </div>
                                                             </div>
                                                             <div class="node__content clearfix">
@@ -241,69 +240,24 @@
                                                                                                             <div class="widget block clearfix gsc-block-view  gsc-block-drupal block-view title-align-left evets-page text-dark remove-margin-off">
                                                                                                                 <div class="views-element-container">
                                                                                                                     <div class="gva-view js-view-dom-id-f292d574023d6caba2dbda62f3544335a7c956c1233b70cd8c4823a190d1d792">
-                                                                                                                        <form class="views-exposed-form bef-exposed-form" data-bef-auto-submit-full-form=""
-                                                                                                                            data-bef-auto-submit="" data-bef-auto-submit-delay="500" data-drupal-selector="views-exposed-form-event-block-2"
-                                                                                                                            action="/events" method="get" id="views-exposed-form-event-block-2" accept-charset="UTF-8">
-                                                                                                                            <fieldset data-drupal-selector="edit-field-event-category-value" id="edit-field-event-category-value--wrapper" class="fieldgroup form-composite js-form-item form-item js-form-wrapper form-wrapper">
-                                                                                                                                <legend>
-                                                                                                                                    <span class="fieldset-legend"></span>
-                                                                                                                                </legend>
-                                                                                                                                <div class="fieldset-wrapper">
-                                                                                                                                    <div id="edit-field-event-category-value">
-                                                                                                                                        <div class="form-radios form--inline">
-                                                                                                                                            <div class="js-form-item form-item js-form-type-radio form-item-field-event-category-value js-form-item-field-event-category-value">
-                                                                                                                                                <select data-drupal-selector="edit-field-event-category-value-1" id="edit-field-event-category-value-1" name="field_event_category_value_1" class="form-select">
-                                                                                                                                                    <option value="All" selected="selected"> - Any - </option>
-                                                                                                                                                </select>
-                                                                                                                                                <select data-drupal-selector="edit-field-event-category-value-1" id="edit-field-event-category-value-1" name="field_event_category_value_1" class="form-select">
-                                                                                                                                                    <option value="All" selected="selected"> - Any - </option>
-                                                                                                                                                </select>
-                                                                                                                                            </div>
-                                                                                                                                        </div>
-                                                                                                                                    </div>
-                                                                                                                                </div>
-                                                                                                                            </fieldset>
-                                                                                                                            <div class="js-form-item form-item js-form-type-select form-item-field-event-category-value-1 js-form-item-field-event-category-value-1">
-                                                                                                                                <select data-drupal-selector="edit-field-event-category-value-1" id="edit-field-event-category-value-1" name="field_event_category_value_1" class="form-select">
-                                                                                                                                    <option value="All" selected="selected"> - Any - </option>
-                                                                                                                                </select>
-                                                                                                                                <select data-drupal-selector="edit-field-event-category-value-1" id="edit-field-event-category-value-1" name="field_event_category_value_1" class="form-select">
-                                                                                                                                    <option value="All" selected="selected"> - Any - </option>
-                                                                                                                                </select>
-                                                                                                                            </div>
-                                                                                                                            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
-                                                                                                                                <input data-bef-auto-submit-click="" class="js-hide button js-form-submit form-submit" data-drupal-selector="edit-submit-event"
-                                                                                                                                    type="submit" id="edit-submit-event" value="Apply" />
-                                                                                                                            </div>
-                                                                                                                        </form>
-
-                                                                                                                        <div class="views-view-grid horizontal clearfix">
-                                                                                                                            <div class="rowspace10 views-row row clearfix row-1">
-                                                                                                                                @foreach ($productList as $product)
-                                                                                                                                <div class="colspace10 views-col col-lg-3 col-md-3 col-sm-12 col-xs-12" style="width: 25%;">
-                                                                                                                                    <div class="views-field views-field-nothing">
-                                                                                                                                        <span class="field-content">
-                                                                                                                                            <div class="event-item-home">
-                                                                                                                                                <div class="item-image">
-                                                                                                                                                    <a href="{{ route('product.detail', $product->slug) }}">
-                                                                                                                                                        <img src="{{ asset('storage/' . $product->productImages->first()->name) }}" alt="Oasi Preview"
-                                                                                                                                                        title="Oasi Preview" typeof="Image" />
-                                                                                                                                                    </a>
-                                                                                                                                                </div>
-
-                                                                                                                                                <p class="event-time-home"> </p>
-                                                                                                                                                {{-- <p class="event-category-home"> Bán chạy </p> --}}
-                                                                                                                                                <a href="{{ route('product.detail', $product->slug) }}" hreflang="en">{{ $product->title }}</a>
-                                                                                                                                            </div>
-                                                                                                                                        </span>
-                                                                                                                                    </div>
-                                                                                                                                </div>
+                                                                                                                        <div class="js-form-item form-item js-form-type-select form-item-field-event-category-value-1 js-form-item-field-event-category-value-1">
+                                                                                                                            <select data-drupal-selector="edit-field-event-category-value-1" id="select-category" name="field_event_category_value_1" class="form-select select-category">
+                                                                                                                                <option value=""> - Chọn loại sản phẩm - </option>
+                                                                                                                                @foreach ($categories as $category)
+                                                                                                                                <option value="{{ $category->id }}" {{ old('category') == $category->id ? 'selected' : '' }}> {{ (!empty($category->parent) ? $category->parent->title : null) . '-' .$category->title }} </option>
                                                                                                                                 @endforeach
-                                                                                                                            </div>
+                                                                                                                            </select>
+                                                                                                                            <select data-drupal-selector="edit-field-event-category-value-1" id="select-collection" name="field_event_category_value_1" class="form-select select-collection">
+                                                                                                                                <option value=""> - Chọn bộ sưu tập - </option>
+                                                                                                                                @foreach ($collections as $collection)
+                                                                                                                                <option value="{{ $collection->id }}" {{ old('category') == $collection->id ? 'selected' : '' }}> {{ $collection->title }} </option>
+                                                                                                                                @endforeach
+                                                                                                                            </select>
                                                                                                                         </div>
-                                                                                                                        @if ($productList->count() > 0)
-                                                                                                                            @include('users.layouts.paginate', ['object'=>$productList])
-                                                                                                                        @endif
+
+                                                                                                                        <div id="load_products">
+
+                                                                                                                        </div>
 
                                                                                                                     </div>
                                                                                                                 </div>
@@ -343,6 +297,37 @@
         </div>
     </div>
     <div id="gva-overlay"></div>
-</body>
 
+    <script>
+        const $jq = jQuery.noConflict();
+        $jq(document).ready(function () {
+            loadProducts();
+        });
+        $jq('#select-category').on('change', function(e){
+            loadProducts()
+        });
+        $jq('#select-collection').on('change', function(e){
+            loadProducts()
+        });
+
+        function loadProducts(){
+            $jq.ajax({
+                type: "GET",
+                url: "{{ route('all.product') }}",
+                data: {
+                    category_id: $jq('#select-category').val(),
+                    collection_id: $jq('#select-collection').val(),
+                    _token: "{{ csrf_token() }}"
+                },
+                success:function (result){
+                    $jq('#load_products').html(result);
+                },
+                error: function (xhr){
+
+                },
+            });
+        }
+
+    </script>
+</body>
 </html>

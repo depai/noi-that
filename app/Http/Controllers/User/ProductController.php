@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Category;
+use App\Models\Collection;
 use App\Models\Order;
 use App\Models\Product;
 use App\Models\Rock;
@@ -104,6 +106,31 @@ class ProductController extends BaseController
         return view('users.product.bestseller')->with([
             'productList'=>$productList,
             'product_image_seo'=>$img
+        ]);
+    }
+
+    public function allProducts(Request $request, Product $product, Category $category, Collection $collection)
+    {
+        if($request->ajax()){
+            $productList = $product->getProductsNew($request);
+            return view('users.product.load_product')->with([
+                'productList'=>$productList
+            ]);
+        }
+
+        $product_image_seo = $product->orderBy('id','desc')->first();
+        $img = '';
+        if(!empty($product_image_seo)){
+            $img = $product_image_seo->productImages->first();
+            $img = !empty($product_image_seo) ? asset('storage/' . $img->name) : null;
+        }
+        $categories = $category->getCategories();
+        $collections = $collection->getCollection();
+
+        return view('users.product.bestseller')->with([
+            'product_image_seo'=>$img,
+            'categories'=>$categories,
+            'collections'=>$collections,
         ]);
     }
 }

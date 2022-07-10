@@ -39,6 +39,7 @@ Route::get('/about-us', [HomeController::class,'viewAboutUs'])->name('view.about
 Route::get('/contacts', [HomeController::class, 'viewContactUs'])->name('view.contact.us');
 
 Route::get('/best-seller-product', [ProductController::class, 'bestSellerProduct'])->name('best.seller.product');
+Route::get('/products', [ProductController::class, 'allProducts'])->name('all.product');
 
 Route::get('/news', function () {
     return view('users.news');

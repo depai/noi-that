@@ -89,7 +89,7 @@
                                     </li>
 
                                     <li class="menu-item">
-                                        <a href="{{ route('best.seller.product') }}"
+                                        <a href="{{ route('all.product') }}"
                                             gva_layout="menu-list"
                                             gva_layout_columns="3"
                                             gva_block="gavias_facdori_about"
@@ -98,7 +98,7 @@
                                             gva_block_ru="gavias_facdori_about"
                                             gva_block_ar="gavias_facdori_about"
                                             gva_block_fr="gavias_facdori_about"
-                                            data-drupal-link-system-path="node/125">Sản phẩm bán chạy</a>
+                                            data-drupal-link-system-path="node/125">Sản phẩm</a>
 
                                     </li>
                                     {{--

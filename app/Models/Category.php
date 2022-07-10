@@ -42,6 +42,11 @@ class Category extends Model
         return $data->get();
     }
 
+    public function getCategories()
+    {
+        return $this->with('parent')->where('parent_id', '!=', 0)->orderBy('id','desc')->get();
+    }
+
     /**
      * get by slug
      * @author lamnt
