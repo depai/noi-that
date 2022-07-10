@@ -23,7 +23,7 @@
                         <div class="widget gsc-image text-none ">
                           <div class="widget-content">
                             <a href="{{ route('product.detail', $item->id) }}">
-                              <img src="{{ !empty($item->productImages->first()) ? asset($item->productImages->first()->name) : '' }}" alt="" />
+                              <img src="{{ !empty($item->productImages->first()) ? asset('storage/' . $item->productImages->first()->name) : '' }}" alt="" />
                             </a>
                           </div>
                         </div>
