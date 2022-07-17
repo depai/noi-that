@@ -82,9 +82,8 @@
 
                                                         <div class="title-collezione">
 
-                                                            <p class="event-type"><a
-                                                                    href="/collections/charisma">Discover
-                                                                    the collection {{ $product->collection->title }}</a></p>
+                                                            <p class="event-type">
+                                                                <a href="{{ route('view.detail.collection', $product->collection->slug) }}">Tham khảo bộ sưu tập {{ $product->collection->title }}</a></p>
                                                             <p class="collezione-big">{{ $product->collection->title }}</p>
 
                                                             <div class="title-and-links">
