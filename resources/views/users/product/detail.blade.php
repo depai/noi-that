@@ -116,8 +116,8 @@
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <h1 class="post-title"><span>{{ $product->title }}</span>
-                                                                </h1>
+                                                                {{-- <h1 class="post-title"><span>{{ $product->title }}</span>
+                                                                </h1> --}}
                                                             </div>
                                                         </div>
 
