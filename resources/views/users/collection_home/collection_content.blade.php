@@ -16,7 +16,7 @@
             <div class="bb-inner default">
               <div class="bb-container container">
                 <div class="row row-wrapper">
-                  @foreach ($collection->products->take(4) as $item)
+                  @foreach ($collection->products->take(3) as $item)
                   <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
                     <div class="column-inner  bg-size-cover  ">
                       <div class="column-content-inner">
