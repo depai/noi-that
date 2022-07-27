@@ -24,7 +24,7 @@ class StoreCollectionRequest extends FormRequest
     public function rules()
     {
         return [
-            'image' => 'nullable|image|max:2048|mimes:jpeg,bmp,png,jpg',
+            'image' => 'nullable|image|max:10240|mimes:jpeg,bmp,png,jpg',
             'title' => 'required|unique:collections,title|max:50',
             'slug' => 'required|unique:collections,slug|max:50',
         ];
