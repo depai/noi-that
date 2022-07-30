@@ -70,6 +70,7 @@
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/vendor/slick/slick.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/bootstrap.css?r8qfr8" />
     <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/template.css?r8qfr8" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
 
     <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
     <script src="/core/misc/drupalSettingsLoader.js?v=8.9.13"></script>
@@ -169,8 +170,38 @@
     @if (session('thanks'))
         @include('commons.modals.thanks')
     @endif
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    @stack('scripts')
+    <script>
+        @if( Session::has("success") )
+            toastr.success("{{ Session::get('success') }}");
+        @endif
+        @if(Session::has('message'))
+            var type = "{{ Session::get('alert-type', 'info') }}";
+            switch(type){
+                case 'info':
+                    toastr.info("{{ Session::get('message') }}");
+                    break;
+
+                case 'warning':
+                    toastr.warning("{{ Session::get('message') }}");
+                    break;
+
+                case 'success':
+                    // toastr.options.positionClass = 'toast-bottom-right';
+                    toastr.success("{{ Session::get('message') }}");
+                    break;
+
+                case 'error':
+                    // toastr.options.positionClass = 'toast-bottom-right';
+                    toastr.error("{{ Session::get('message') }}");
+                    break;
+            }
+        @endif
+    </script>
     @push('after-scripts')
     @endpush
+
     <div id="gva-overlay"></div>
 </body>
 

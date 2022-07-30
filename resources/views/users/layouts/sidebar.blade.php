@@ -115,19 +115,24 @@
                                             data-drupal-link-system-path="node/133">Press</a>
 
                                     </li> --}}
+                                    @if (!Auth::check())
+                                        <li class="menu-item">
+                                            <a href="{{ route('user.view.login') }}" gva_layout="menu-list"  gva_layout_columns="3" gva_block="gavias_facdori_about"
+                                                gva_block_en="gavias_facdori_about"
+                                                gva_block_it="gavias_facdori_about"
+                                                gva_block_ru="gavias_facdori_about"
+                                                gva_block_ar="gavias_facdori_about"
+                                                gva_block_fr="gavias_facdori_about"
+                                                data-drupal-link-system-path="node/3422">Đăng nhập</a>
+                                        </li>
+                                    @else
+                                        <li class="menu-item">
+                                            <a href="{{ route('detail.user') }}" gva_layout="menu-list">Xin chào {{ Auth::user()->last_name }}</a>
+                                        </li>
+                                    @endif
 
-                                    <li class="menu-item">
-                                        <a href="/privatearea-3d-2d-hd"
-                                            gva_layout="menu-list"
-                                            gva_layout_columns="3"
-                                            gva_block="gavias_facdori_about"
-                                            gva_block_en="gavias_facdori_about"
-                                            gva_block_it="gavias_facdori_about"
-                                            gva_block_ru="gavias_facdori_about"
-                                            gva_block_ar="gavias_facdori_about"
-                                            gva_block_fr="gavias_facdori_about"
-                                            data-drupal-link-system-path="node/3422">Đăng nhập</a>
-                                    </li>
+
+
                                 </ul>
                             </div>
                         </nav>

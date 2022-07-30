@@ -35,11 +35,16 @@ Route::get('/collection', function () {
 });
 
 Route::get('/about-us', [HomeController::class,'viewAboutUs'])->name('view.about.us');
-
 Route::get('/contacts', [HomeController::class, 'viewContactUs'])->name('view.contact.us');
-
 Route::get('/best-seller-product', [ProductController::class, 'bestSellerProduct'])->name('best.seller.product');
 Route::get('/products', [ProductController::class, 'allProducts'])->name('all.product');
+Route::prefix('user')->group(function () {
+    route::get('/login-and-register', [HomeController::class, 'viewLogin'])->name('user.view.login');
+    route::post('register', [HomeController::class, 'register'])->name('register.user');
+    route::post('login', [HomeController::class, 'login'])->name('user.login');
+    route::get('/', [HomeController::class, 'userDetail'])->name('detail.user');
+    route::post('forgot-password', [HomeController::class, 'forgotPass'])->name('user.forgot.pass');
+});
 
 Route::get('/news', function () {
     return view('users.news');
@@ -56,7 +61,7 @@ Route::group(['middlware' => 'noDebugbar'], function () {
 });
 
 Route::prefix('')->group(function () {
-
+    route::post('register-email', [HomeController::class, 'registerEmail'])->name('register.email');
     route::get('/', [HomeController::class, 'indexHome'])->name('home');
     Route::prefix('product')->group(function () {
         route::get('/{slug}', [ProductController::class, 'productDetail'])->name('product.detail');

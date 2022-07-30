@@ -65,6 +65,7 @@
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/vendor/slick/slick.css?r8l2sm" />
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/bootstrap.css?r8l2sm" />
   <link rel="stylesheet" media="all" href="/themes/gavias_facdori/compiledcss/template.css?r8l2sm" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.css">
 
   <script src="/core/assets/vendor/jquery/jquery.min.js?v=3.5.1"></script>
   <script src="/core/misc/drupalSettingsLoader.js?v=8.9.13"></script>
@@ -402,6 +403,7 @@
                                                 </div>
 
                                               </div>
+
                                               <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
                                                 <div class="column-inner  bg-size-cover  ">
                                                   <div class="column-content-inner">
@@ -415,15 +417,14 @@
 
                                                       #button-fvpyimuq5hto:hover {}
                                                     </style>
-
                                                     <div class="clearfix"></div>
-                                                    <a href="/privatearea-3d-2d-hd" class="gsc-button button-transparent-black mini " id="button-fvpyimuq5hto">
+                                                    <a href="{{ route('user.view.login') }}" class="gsc-button button-transparent-black mini " id="button-fvpyimuq5hto">
                                                       Đăng nhập - Đăng ký </a>
 
                                                   </div>
                                                 </div>
-
                                               </div>
+
                                               <div class="gsc-column col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12  ">
                                                 <div class="column-inner  bg-size-cover  ">
                                                   <div class="column-content-inner">
@@ -484,7 +485,8 @@
 
 
                                                         <div class="content block-content">
-                                                          <form action="/" method="post" id="mailchimp-signup-subscribe-block-subscribe-newsletter-form" accept-charset="UTF-8">
+                                                          <form action="{{ route('register.email') }}" method="post" id="mailchimp-signup-subscribe-block-subscribe-newsletter-form" accept-charset="UTF-8">
+                                                            @csrf
                                                             <div class="js-form-item form-item js-form-type-checkbox form-item-mailchimp-lists-gdpr-consent js-form-item-mailchimp-lists-gdpr-consent">
                                                               <input data-drupal-selector="edit-mailchimp-lists-gdpr-consent" type="checkbox" id="edit-mailchimp-lists-gdpr-consent" name="mailchimp_lists[gdpr_consent]" value="1" class="form-checkbox required" required="required" aria-required="true" />
 
@@ -492,53 +494,42 @@
                                                             </div>
                                                             <div id="mailchimp-newsletter-1c47768d72-mergefields" class="mailchimp-newsletter-mergefields">
                                                               <div class="js-form-item form-item js-form-type-email form-item-mergevars-email js-form-item-mergevars-email">
-                                                                <label for="edit-mergevars-email" class="js-form-required form-required">Địa chỉ email</label>
-                                                                <input data-drupal-selector="edit-mergevars-email" type="email" id="edit-mergevars-email" name="mergevars[EMAIL]" value="" size="25" maxlength="254" class="form-email required" required="required" aria-required="true" />
+                                                                {{-- <label for="edit-mergevars-email" class="js-form-required form-required">Địa chỉ email</label> --}}
+                                                                <input data-drupal-selector="edit-mergevars-email" type="email"
+                                                                id="edit-mergevars-email" name="email" placeholder="Địa chỉ email"
+                                                                value="" size="25" maxlength="254" class="form-email required" required="required" aria-required="true" />
 
                                                               </div>
                                                             </div><input autocomplete="off" data-drupal-selector="form-zyq9ah1sn-y9a4j9yqse-4hjkzz36f-yc53bk-oxpgq" type="hidden" name="form_build_id" value="form-ZYQ9aH1Sn-Y9a4j9yQsE-4hJkZZ36f-Yc53Bk-oXpGQ" />
                                                             <input data-drupal-selector="edit-mailchimp-signup-subscribe-block-subscribe-newsletter-form" type="hidden" name="form_id" value="mailchimp_signup_subscribe_block_subscribe_newsletter_form" />
-                                                            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions"><input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Theo dõi ngay" class="button js-form-submit form-submit" />
+                                                            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                                                                <input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Theo dõi ngay" class="button js-form-submit form-submit" />
                                                             </div>
-
                                                           </form>
-
                                                         </div>
                                                       </div>
                                                     </div>
                                                   </div>
                                                 </div>
-
                                               </div>
                                             </div>
                                           </div>
                                         </div>
                                       </div>
-
                                     </div>
                                   </div>
                                 </div>
-
                               </div>
                             </div>
-
-
                           </div>
                         </div>
-
                       </div>
-
                     </div>
-
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
-
-
-
         </div>
       </div>
       @include('users.layouts.footer')
@@ -553,7 +544,35 @@
   <script src="/modules/gavias_content_builder/vendor/main.js?v=1.x"></script>
   <script src="/modules/dropdown_language/js/dropdown_language_selector.js?v=8.9.13"></script>
   <script src="/core/misc/dropbutton/dropbutton.js?v=8.9.13"></script> --}}
-  <div id="gva-overlay"></div>
-</body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+  <script>
+    @if( Session::has("success") )
+        toastr.success("{{ Session::get('success') }}");
+    @endif
+    @if(Session::has('message'))
+        var type = "{{ Session::get('alert-type', 'info') }}";
+        switch(type){
+            case 'info':
+                toastr.info("{{ Session::get('message') }}");
+                break;
 
+            case 'warning':
+                toastr.warning("{{ Session::get('message') }}");
+                break;
+
+            case 'success':
+                // toastr.options.positionClass = 'toast-bottom-right';
+                toastr.success("{{ Session::get('message') }}");
+                break;
+
+            case 'error':
+                // toastr.options.positionClass = 'toast-bottom-right';
+                toastr.error("{{ Session::get('message') }}");
+                break;
+        }
+    @endif
+</script>
+  <div id="gva-overlay"></div>
+
+</body>
 </html>

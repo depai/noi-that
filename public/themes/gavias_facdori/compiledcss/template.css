@@ -14625,6 +14625,7 @@ header {
   content: "*";
   position: relative;
   left: 5px;
+  color: red;
 }
 .login-row .gsc-column:nth-child(2) div {
   height: 100% !important;

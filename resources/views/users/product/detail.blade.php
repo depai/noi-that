@@ -159,7 +159,7 @@
                                                                 @endforeach
                                                             </div>
 
-                                                            <a href="#" class="product-asinfo">ADD TO CART</a>
+                                                            <a href="#" class="product-asinfo" style="line-height: 2">Thêm vào giỏ hàng</a>
 
                                                             <div class="field__item">
                                                                 <span class="file file--mime-application-pdf file--application-pdf">
