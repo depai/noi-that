@@ -23,7 +23,6 @@ class HomeController extends BaseController
 
     public function forgotPass(Request $request)
     {
-        dd($request->all());
     }
 
 
