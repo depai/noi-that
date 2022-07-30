@@ -121,7 +121,7 @@
                                                         </div>
 
                                                         <div class="product-info">
-                                                            <p class="available-sizes">Price: {{ number_format($product->price) }} đ
+                                                            <p class="available-sizes">Giá: {{ number_format($product->price) }} đ
                                                             </p>
                                                             <div
                                                                 class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
@@ -129,8 +129,7 @@
                                                             </div>
 
 
-                                                            <p class="available-materials">Available
-                                                                materials</p>
+                                                            <p class="available-materials">Available materials</p>
 
                                                             <p class="available-sizes">Available sizes
                                                             </p>
@@ -161,11 +160,11 @@
 
                                                             <a href="#" class="product-asinfo" style="line-height: 2">Thêm vào giỏ hàng</a>
 
-                                                            <div class="field__item">
+                                                            {{-- <div class="field__item">
                                                                 <span class="file file--mime-application-pdf file--application-pdf">
                                                                     <a href="/login-or-register" type="application/pdf; length=7945" title="pdf-test.pdf">Download Technical Documents</a>
                                                                 </span>
-                                                            </div>
+                                                            </div> --}}
                                                         </div>
 
                                                     </div>
@@ -183,7 +182,7 @@
 
                                         <!-- End Display article for detail page -->
 
-                                        <h3 class="related-products-title">Related Products</h3>
+                                        <h3 class="related-products-title">Các sản phẩm liên quan</h3>
 
                                     </div>
                                 </div>
