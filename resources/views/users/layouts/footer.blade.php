@@ -9,8 +9,8 @@
                             <div id="block-footeraddress" class="block block-block-content block-block-content619a5508-258d-4888-8057-23306ce38656 no-title">
                                 <div class="content block-content">
                                     <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                                        <p>6 Via Einstein - 20831<br />
-                                            Seregno (MB) - ITALY</p>
+                                        <p>64 ngõ 99 - Định Công Hạ - Định Công<br />
+                                            Hoàng Mai - Hà Nội</p>
                                     </div>
                                 </div>
                             </div>

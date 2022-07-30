@@ -211,15 +211,15 @@
                                                                                                 <div class="column-inner  bg-size-cover  ">
                                                                                                     <div class="column-content-inner">
                                                                                                         <div class="column-content  ">
-                                                                                                            <h1>CONTACTS </h1>
+                                                                                                            <h1>Thông tin liên hệ </h1>
                                                                                                         </div>
                                                                                                         <div
                                                                                                             class="column-content  ">
-                                                                                                            <h4><span style="font-weight: 400;">HEADQUARTERS</span> </h4>
-                                                                                                            <p>Via Einstein, 6</p>
-                                                                                                            <p>I-20831 Seregno (MB) &ndash; Italy </p>
-                                                                                                            <p>Ph. +39 0362 243471 / 326814 </p>
-                                                                                                            <p>Fax + 39 0362 325410 </p>
+                                                                                                            <h4><span style="font-weight: 400;">Cơ sở chính</span> </h4>
+                                                                                                            <p>64 ngõ 99 - Định Công Hạ</p>
+                                                                                                            <p>Định Công - Hoàng Mai &ndash; Hà Nội </p>
+                                                                                                            <p>Ph. +84 7938 456 66 </p>
+                                                                                                            {{-- <p>Fax + 39 0362 325410 </p> --}}
                                                                                                             <p>noithat.inoxpro@gmail.com</p>
                                                                                                         </div>
                                                                                                     </div>
@@ -232,7 +232,7 @@
                                                                                                 </div>
                                                                                                 <div class="column-inner  bg-size-cover  ">
                                                                                                     <div class="column-content-inner">
-                                                                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5568.45641833314!2d105.80204139468205!3d20.988807468149197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135acee471b1745%3A0x6947c3b536f4a9f5!2zxJDGsOG7nW5nIE5ndXnhu4VuIFhp4buDbiwgVGhhbmggWHXDom4sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1656155001739!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                                                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.300716067727!2d105.82665089999999!3d20.980579499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135add1d0490933%3A0xe0603e2ef5da8af6!2sInoxPro!5e0!3m2!1sen!2s!4v1659147529597!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                                                                                                     </div>
                                                                                                 </div>
                                                                                             </div>

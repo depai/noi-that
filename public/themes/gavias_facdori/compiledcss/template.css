@@ -16966,8 +16966,8 @@ header.header-default .header-main-inner .content-inner .branding .site-branding
   display: none !important;
 }
 .logo-default.logo-one {
-  height: 150px;
-  max-height: 150px !important;
+  height: 230px;
+  max-height: 230px !important;
 }
 header.header-default nav#block-topmenu .gva_menu > li a, header.header-default nav#block-topmenuloggeduser .gva_menu > li a {
   color: rgba(0, 0, 0, 0.54);

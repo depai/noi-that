@@ -5,8 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="canonical" href="{{ route('view.about.us') }}" />
-    <meta name="description"
-        content="The finest craftsmanship, entrepreneurial spirit and service are the ingredients of the success of Giorgio Collection, an italian company fouded in 1956" />
+    <meta name="description" content="The finest craftsmanship, entrepreneurial spirit and service are the ingredients of the success of Giorgio Collection, an italian company fouded in 1956" />
     <meta name="MobileOptimized" content="width" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />

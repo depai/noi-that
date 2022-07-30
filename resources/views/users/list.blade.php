@@ -6104,39 +6104,24 @@
                     <div class="footer-center">
                         <div class="container">
                             <div class="row">
-                                <div
-                                    class="footer-first col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 footer-column">
+                                <div class="footer-first col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 footer-column">
                                     <div>
-                                        <div id="block-footeraddress"
-                                            class="block block-block-content block-block-content619a5508-258d-4888-8057-23306ce38656 no-title">
-
-
+                                        <div id="block-footeraddress" class="block block-block-content block-block-content619a5508-258d-4888-8057-23306ce38656 no-title">
                                             <div class="content block-content">
-
-                                                <div
-                                                    class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                                                    <p>6 Via Einstein - 20831<br />
-                                                        Seregno (MB) - ITALY</p>
+                                                <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
+                                                    <p>64 ngõ 99 - Định Công Hạ - Định Công<br />
+                                                        Hoàng Mai - Hà Nội</p>
                                                 </div>
-
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
 
-                                <div
-                                    class="footer-second col-xl-3 col-lg-4 col-md-12 col-sm-12 col-xs-12 footer-column">
+                                <div class="footer-second col-xl-3 col-lg-4 col-md-12 col-sm-12 col-xs-12 footer-column">
                                     <div>
-                                        <div id="block-footertel"
-                                            class="block block-block-content block-block-contentc8b04782-b1e2-412a-9bb8-2690fec81fbe no-title">
-
-
+                                        <div id="block-footertel" class="block block-block-content block-block-contentc8b04782-b1e2-412a-9bb8-2690fec81fbe no-title">
                                             <div class="content block-content">
-
-                                                <div
-                                                    class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
+                                                <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
                                                     <p>T. <a href="tel:+84 7938 456 66">+84 7938 456 66</a><br />
                                                     </p>
                                                 </div>
@@ -6148,17 +6133,11 @@
 
                                 </div>
 
-                                <div
-                                    class="footer-third col-xl-3 col-lg-2 col-md-12 col-sm-12 col-xs-12 footer-column">
+                                <div class="footer-third col-xl-3 col-lg-2 col-md-12 col-sm-12 col-xs-12 footer-column">
                                     <div>
-                                        <div id="block-footeremails"
-                                            class="block block-block-content block-block-content0b1cf2c7-e512-40da-9a4b-0af60dc520b8 no-title">
-
-
+                                        <div id="block-footeremails" class="block block-block-content block-block-content0b1cf2c7-e512-40da-9a4b-0af60dc520b8 no-title">
                                             <div class="content block-content">
-
-                                                <div
-                                                    class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
+                                                <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
                                                     <p>
                                                         <a href="mailto:noithat.inoxpro@gmail.com">noithat.inoxpro@gmail.com</a><br />
                                                     </p>
@@ -6166,23 +6145,14 @@
 
                                             </div>
                                         </div>
-
                                     </div>
-
                                 </div>
-
-                                <div
-                                    class="footer-four col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 footer-column">
+                                <div class="footer-four col-xl-3 col-lg-3 col-md-12 col-sm-12 col-xs-12 footer-column">
                                     <div>
-                                        <div id="block-footersocial"
-                                            class="block block-block-content block-block-content486f085d-1635-4972-b2da-2dd90ea07115 no-title">
-
-
+                                        <div id="block-footersocial" class="block block-block-content block-block-content486f085d-1635-4972-b2da-2dd90ea07115 no-title">
                                             <div class="content block-content">
-
-                                                <div
-                                                    class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                                                    <p>Follow Giorgio Collection</p>
+                                                <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
+                                                    <p>Follow Inox Pro</p>
                                                     <div class="social-copyright">
                                                         <div class="socials">
                                                             <a href="https://www.facebook.com/giorgiocollectionofficial/"
@@ -6214,14 +6184,12 @@
                     <div class="container">
                         <div class="copyright-inner">
                             <div>
-                                <div id="block-footerlegal"
-                                    class="block block-block-content block-block-content484fd5d3-054d-4968-9ac3-6f01b7a62336 no-title">
+                                <div id="block-footerlegal" class="block block-block-content block-block-content484fd5d3-054d-4968-9ac3-6f01b7a62336 no-title">
 
 
                                     <div class="content block-content">
 
-                                        <div
-                                            class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
+                                        <div class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
                                             <p><b>Giorgio Collection </b>Via Einstein 6, 20831 Seregno (MB) - ITALY |
                                                 V.A.T./Tax Code: IT00863740965 - <a
                                                     href="https://www.iubenda.com/privacy-policy/28371116"

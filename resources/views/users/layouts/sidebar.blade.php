@@ -84,7 +84,7 @@
                                             gva_block_ru="gavias_facdori_about"
                                             gva_block_ar="gavias_facdori_about"
                                             gva_block_fr="gavias_facdori_about"
-                                            data-drupal-link-system-path="node/153">Liên hệ</a>
+                                            data-drupal-link-system-path="node/153">Liên lạc</a>
 
                                     </li>
 

@@ -139,6 +139,11 @@
                 width: 100% !important;
             }
         }
+        .image_product{
+            object-fit: cover;
+            height: 350px;
+            width: -webkit-fill-available;
+        }
     </style>
 
     <style class="customize"></style>

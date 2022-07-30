@@ -7,7 +7,7 @@
                     <div class="event-item-home">
                         <div class="item-image">
                             <a href="{{ route('product.detail', $product->slug) }}">
-                                <img src="{{ asset('storage/' . $product->productImages->first()->name) }}" alt="Oasi Preview"
+                                <img class="image_product" src="{{ !empty($product->productImages->first()) ? asset('storage/' . $product->productImages->first()->name) : '#' }}" alt="Oasi Preview"
                                 title="Oasi Preview" typeof="Image" />
                             </a>
                         </div>

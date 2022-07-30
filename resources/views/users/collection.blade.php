@@ -6301,8 +6301,8 @@
 
                                                 <div
                                                     class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                                                    <p>6 Via Einstein - 20831<br />
-                                                        Seregno (MB) - ITALY</p>
+                                                    <p>64 ngõ 99 - Định Công Hạ - Định Công<br />
+                                                        Hoàng Mai - Hà Nội</p>
                                                 </div>
 
                                             </div>
@@ -6369,7 +6369,7 @@
 
                                                 <div
                                                     class="field field--name-body field--type-text-with-summary field--label-hidden field__item">
-                                                    <p>Follow Giorgio Collection</p>
+                                                    <p>Follow Inox Pro</p>
                                                     <div class="social-copyright">
                                                         <div class="socials">
                                                             <a href="https://www.facebook.com/giorgiocollectionofficial/"
