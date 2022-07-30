@@ -418,9 +418,9 @@
                                                       #button-fvpyimuq5hto:hover {}
                                                     </style>
                                                     <div class="clearfix"></div>
-                                                    <a href="{{ route('user.view.login') }}" class="gsc-button button-transparent-black mini " id="button-fvpyimuq5hto">
-                                                      Đăng nhập - Đăng ký </a>
-
+                                                        <a href="{{ !Auth::check() ? route('user.view.login') : route('detail.user') }}" class="gsc-button button-transparent-black mini " id="button-fvpyimuq5hto">
+                                                        Đăng nhập - Đăng ký
+                                                        </a>
                                                   </div>
                                                 </div>
                                               </div>
