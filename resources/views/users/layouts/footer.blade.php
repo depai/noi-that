@@ -1,3 +1,6 @@
+<a href="tel:+84 7938 456 66" class="text-center" style="position: fixed; bottom: 15%; left: 88%; text-align: center;">
+    <img src="{{ asset('images/ezgif.com-gif-maker-2.gif') }}" alt="" style="width:60px">
+</a>
 <footer id="footer" class="footer">
     <div class="footer-inner">
 
